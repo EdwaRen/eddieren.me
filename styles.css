@@ -1,0 +1,67 @@
+@font-face { font-family: RalewayReg; src: url('Raleway/Raleway-Regular.ttf'); }
+
+body {
+  background-color: #111111;
+}
+
+.bothWindows{
+  width: 900px;
+  height: 600px;
+  /*background-color: #333333;*/
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.finderTopBar {
+  position: absolute;
+
+  width:900px;
+  height: 100px;
+  background-image: url("Images/finderTopBar.png");
+
+}
+
+.finderTopBar p {
+  /*text-align: center;*/
+  font-size: 23px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  font-family: RalewayReg, sans-serif;
+}
+
+.bottomElemeents {
+  /*background-color: #555555;*/
+  padding-top: 0;
+  margin-top: 100px;
+  width: 900px;
+  height: 500px;
+}
+
+
+
+.finderSideBar {
+  /*padding-top: 100px;*/
+  float: left;
+  min-width: 200px;
+  min-height: 500px;
+  background-image: url("images/finderSideBar.png");
+}
+
+.finderFilesBar {
+  /*padding-top: 100px;*/
+  float: left;
+  width: 250px;
+  height: 500px;
+  background-image: url("images/finderFilesBar.png");
+}
+
+.finderDescriptionBar {
+  /*padding-top: 100px;*/
+  float: left;
+  width: 450px;
+  height: 500px;
+  /*background-color: #111111;*/
+  background-image: url("images/finderDescriptionBar.png");
+}
