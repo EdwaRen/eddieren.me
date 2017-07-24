@@ -99,8 +99,8 @@
   margin: auto;
   width: 150px;
   height: 150px;
-  margin-top: 30px;
-  background-size: contain;
+  margin-top: 20px;
+  background-size: cover;
 
   opacity: 1.0;
   /*background-color: #111111;*/
