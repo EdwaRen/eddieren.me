@@ -88,17 +88,91 @@ body {
 #myProfile {
   /*margin: 0 auto;*/
   /*position: relative;*/
-  /*background-color: #AAAAAA;*/
+  background-color: #eef2f2;
   height: 42px;
-  width: 200px;
+  width: 198px;
 }
 
 #myExperience {
   /*margin: 0 auto;*/
   /*position: relative;*/
-  background-color: #AAAAAA;
+  background-color: #eef2f2;
   height: 42px;
-  width: 200px;
+  width: 198px;
+}
+#myProjects {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  background-color: #eef2f2;
+  height: 42px;
+  width: 198px;
+}
+#myNetwork {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  background-color: #eef2f2;
+  height: 42px;
+  width: 198px;
+}
+
+#myLanguages {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  background-color: #eef2f2;
+  height: 42px;
+  width: 198px;
+}
+#myEducation {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  background-color: #eef2f2;
+  height: 42px;
+  width: 198px;
+}
+#myOther {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  background-color: #eef2f2;
+  height: 42px;
+  width: 198px;
+}
+
+#myFiles1 {
+  /*margin: 0 auto;*/
+  /*position: relative;*/
+  /*background-color: #FFFFFF;*/
+  height: 30px;
+  width: 248px;
+}
+
+#descReadmeTutorial {
+  /*background-color: #FFFFFF;*/
+  height: 500px;
+  width: 448px;
+  bottom: 0;
+}
+
+#descDescription {
+  margin-top: -10px;
+  /*padding-top: -30px;*/
+}
+
+#descDescription p{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 18px;
+  font-family: RalewayReg, sans-serif;
+
+}
+#descDescription h1{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 26px;
+  font-family: RalewayMed, sans-serif;
+
 }
 
 #myProfile p {
@@ -113,10 +187,6 @@ body {
   overflow: hidden;
   padding-left: 69px;
   position: absolute;
-  /*float:right;*/
-  /*text-align: center;
-  vertical-align: middle;*/
-
 }
 
 #profileDiv p {
@@ -125,5 +195,54 @@ body {
   line-height: 1px;
   font-family: RalewayMed, sans-serif;
 
+}
+
+#filesDiv {
+  height: 27px;
+  width: 248;
+  overflow: hidden;
+  padding-left: 40px;
+  position: absolute;
+}
+
+#filesDiv p {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1px;
+  font-family: RalewayMed, sans-serif;
+
+}
+
+#datesContainer {
+  margin: 0px auto;
+  /*bottom: 0;*/
+  height: 72px;
+  width: 300px;
+  /*background-color: #111111;*/
+}
+#datesTitle {
+  line-height:  3px;
+
+  float: left;
+  height: 72px;
+  text-align: right;
+  font-family: RalewayMed, sans-serif;
+  color: #888888;
+  font-size: 16px;
+
+  width: 140px;
+
+}
+#datesText {
+  line-height:  3px;
+  margin-left: 10px;
+  float: left;
+  height: 72px;
+  width: 140px;
+  text-align: left;
+  color: #111111;
+  font-size: 16px;
+
+  font-family: RalewayMed, sans-serif;
 
 }

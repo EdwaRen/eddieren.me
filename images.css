@@ -81,3 +81,28 @@
 
   background-image: url("images/Other.png");
 }
+
+#imagePlaceholderDocument {
+  float: left;
+  margin: 0;
+  margin-left: 8px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 8px;
+
+  background-image: url("images/Document.png");
+}
+
+#descImage {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  background-size: contain;
+
+  opacity: 1.0;
+  /*background-color: #111111;*/
+  background-image: url("images/Edward_ProfilePic.png");
+}
