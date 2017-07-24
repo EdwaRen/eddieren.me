@@ -1,0 +1,83 @@
+#imagePlaceholderProfile {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Profile.png");
+}
+
+#imagePlaceholderExperience {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Experience.png");
+}
+
+#imagePlaceholderProjects {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Projects.png");
+}
+
+#imagePlaceholderNetwork {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Network.png");
+}
+
+#imagePlaceholderLanguages {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Languages.png");
+}
+
+#imagePlaceholderEducation {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Education.png");
+}
+
+#imagePlaceholderOther {
+  float: left;
+  margin: 0;
+  margin-left: 28px;
+  padding: 16px;
+  max-width: : 30px;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  background-image: url("images/Other.png");
+}
