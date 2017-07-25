@@ -1,4 +1,7 @@
+
 $(document).ready(function(){
+  // $(".bothWindows").remove();
+
     $("#myGroup0").click(function(){
         fadeFiles();
     });

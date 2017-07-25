@@ -4,13 +4,13 @@
 
 body {
   background-color: #A3ACC2;
-  zoom: 0.75;
-    -moz-transform: scale(0.75);
+  /*zoom: 0.75;
+    -moz-transform: scale(0.75);*/
 }
 
 .bothWindows{
-  width: 900px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   /*background-color: #333333;*/
   margin: auto;
   position: absolute;
@@ -20,10 +20,11 @@ body {
 .finderTopBar {
   position: absolute;
 
-  width:900px;
-  height: 100px;
+  width:700px;
+  height: 70px;
   background-image: url("images/finderTopBar.png");
-  /*text-align: center;*/
+  background-size: cover;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -87,9 +88,9 @@ body {
 .bottomElemeents {
   /*background-color: #555555;*/
   padding-top: 0;
-  margin-top: 100px;
-  width: 900px;
-  height: 500px;
+  margin-top: 70px;
+  width: 700px;
+  height: 430px;
 }
 
 
@@ -97,25 +98,40 @@ body {
 .finderSideBar {
   /*padding-top: 100px;*/
   float: left;
-  min-width: 200px;
-  min-height: 500px;
+  width: 150px;
+  height: 430px;
+
+  background-size: cover;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("images/finderSideBar.png");
 }
 
 .finderFilesBar {
   /*padding-top: 100px;*/
   float: left;
-  width: 250px;
-  height: 500px;
+  width: 200px;
+  height: 430px;
+  background-size: cover;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("images/finderFilesBar.png");
 }
 
 .finderDescriptionBar {
   /*padding-top: 100px;*/
   float: left;
-  width: 450px;
-  height: 500px;
-  /*background-color: #111111;*/
+  width: 350px;
+  height: 430px;
+  background-size: cover;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url("images/finderDescriptionBar.png");
 }
 
@@ -217,8 +233,8 @@ body {
 
 #descReadmeTutorial {
   /*background-color: #FFFFFF;*/
-  height: 500px;
-  width: 448px;
+  height: 430px;
+  width: 350px;
   bottom: 0;
 }
 
@@ -330,4 +346,13 @@ body {
 
   font-family: RalewayMed, sans-serif;
 
+}
+
+#chartEnclosure {
+  /*zoom: 1.0;
+    -moz-transform: scale(1.0);*/
+  /*height: 400px;
+  width: 400px;*/
+  /*position: absolute;
+  opacity: 0;*/
 }

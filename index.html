@@ -12,10 +12,19 @@
 <!--  Jquery-->
 
 <script src = "jqueryAnimate.js"></script>
+<style>
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+</style>
+
 </head>
 
 
 <body>
+
 
   <div class="bothWindows">
     <div class="finderTopBar">
@@ -138,6 +147,14 @@
       <div class="finderDescriptionBar">
 
         <div id = "descReadmeTutorial">
+          <div id = "chartEnclosure">
+            <canvas id="myChart" style="width: 75%;"></canvas>
+          </div>
+
+          <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+          <script src="node_modules/chart.js/samples/utils.js"></script>
+          <script src = "languageChart.js"></script>
+
           <div id = "descImage"></div>
           <!--  My profile picture is in the above div-->
 
@@ -166,16 +183,26 @@
           </div>
         </div>
 
+
       </div>
+
+
+
+
+
       <script src = "myInfo.js"></script>
       <script src= "resetBarColor.js"></script>
       <script src="sideBar.js"></script>
       <script src = "initialClick.js"></script>
 
+
     </div>
 
 
+
+
   </div>
+
 
   </div>
 
