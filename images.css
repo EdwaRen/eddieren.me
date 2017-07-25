@@ -1,4 +1,4 @@
-#imagePlaceholderProfile {
+#imagePlaceholder0 {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -10,7 +10,7 @@
   background-image: url("images/Profile.png");
 }
 
-#imagePlaceholderExperience {
+#imagePlaceholder1{
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -22,7 +22,7 @@
   background-image: url("images/Experience.png");
 }
 
-#imagePlaceholderProjects {
+#imagePlaceholder2 {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -34,7 +34,7 @@
   background-image: url("images/Projects.png");
 }
 
-#imagePlaceholderNetwork {
+#imagePlaceholder3 {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -46,7 +46,7 @@
   background-image: url("images/Network.png");
 }
 
-#imagePlaceholderLanguages {
+#imagePlaceholder4  {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -58,7 +58,7 @@
   background-image: url("images/Languages.png");
 }
 
-#imagePlaceholderEducation {
+#imagePlaceholder5 {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -70,7 +70,7 @@
   background-image: url("images/Education.png");
 }
 
-#imagePlaceholderOther {
+#imagePlaceholder6 {
   float: left;
   margin: 0;
   margin-left: 28px;
@@ -125,6 +125,7 @@
 }
 
 #descImage {
+  /*position: static;*/
   display: block;
   margin: auto;
   width: 150px;

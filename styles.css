@@ -22,7 +22,7 @@ body {
 
   width:900px;
   height: 100px;
-  background-image: url("Images/finderTopBar.png");
+  background-image: url("images/finderTopBar.png");
   /*text-align: center;*/
   display: block;
   margin-left: auto;
@@ -135,7 +135,7 @@ body {
 
 }
 
-#myProfile {
+#myGroup0 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
@@ -143,21 +143,21 @@ body {
   width: 198px;
 }
 
-#myExperience {
+#myGroup1 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
   height: 42px;
   width: 198px;
 }
-#myProjects {
+#myGroup2 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
   height: 42px;
   width: 198px;
 }
-#myNetwork {
+#myGroup3 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
@@ -165,21 +165,21 @@ body {
   width: 198px;
 }
 
-#myLanguages {
+#myGroup4 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
   height: 42px;
   width: 198px;
 }
-#myEducation {
+#myGroup5 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
   height: 42px;
   width: 198px;
 }
-#myOther {
+#myGroup6 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
@@ -230,9 +230,9 @@ body {
 #descDescription p{
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: -10px;
-  text-align: center;
-  font-size: 18px;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 16px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -242,6 +242,16 @@ body {
   padding-right: 15px;
   text-align: center;
   font-size: 24px;
+  font-family: RalewayReg, sans-serif;
+  color: #333333;
+
+}
+#descDescription h2{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 18px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 

@@ -29,56 +29,56 @@
           <!-- </div> -->
         </div>
 
-        <div id = "myProfile" onclick="profileClick()">
-          <div id = "imagePlaceholderProfile" style="clear: both;">
+        <div id = "myGroup0" onclick="groupClick(0)">
+          <div id = "imagePlaceholder0" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Profile</p>
           </div>
         </div>
 
-        <div id = "myExperience" onclick="experienceClick()">
-          <div id = "imagePlaceholderExperience" style="clear: both;">
+        <div id = "myGroup1" onclick="groupClick(1)">
+          <div id = "imagePlaceholder1" style="clear: both;">
           </div>
           <div id = "profileDiv">
-            <p>Experience</p>
+            <p>Work</p>
           </div>
         </div>
 
-        <div id = "myProjects" onclick="projectsClick()">
-          <div id = "imagePlaceholderProjects" style="clear: both;">
+        <div id = "myGroup2" onclick="groupClick(2)">
+          <div id = "imagePlaceholder2" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Projects</p>
           </div>
         </div>
 
-        <div id = "myNetwork" onclick="networkClick()">
-          <div id = "imagePlaceholderNetwork" style="clear: both;">
+        <div id = "myGroup3" onclick="groupClick(3)">
+          <div id = "imagePlaceholder3" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Network</p>
           </div>
         </div>
 
-        <div id = "myLanguages" onclick="languagesClick()">
-          <div id = "imagePlaceholderLanguages" style="clear: both;">
+        <div id = "myGroup4" onclick="groupClick(4)">
+          <div id = "imagePlaceholder4" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Languages</p>
           </div>
         </div>
 
-        <div id = "myEducation" onclick="educationClick()">
-          <div id = "imagePlaceholderEducation" style="clear: both;">
+        <div id = "myGroup5" onclick="groupClick(5)">
+          <div id = "imagePlaceholder5" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Education</p>
           </div>
         </div>
 
-        <div id = "myOther" onclick="otherClick()">
-          <div id = "imagePlaceholderOther" style="clear: both;">
+        <div id = "myGroup6" onclick="groupClick(6)">
+          <div id = "imagePlaceholder6" style="clear: both;">
           </div>
           <div id = "profileDiv">
             <p>Other</p>
@@ -90,7 +90,7 @@
 
       <div class="finderFilesBar">
 
-        <div id = "myFiles0" onclick="files0Click(this.id)">
+        <div id = "myFiles0" onclick="filesClick(this.id, 0)">
           <div id = "imagePlaceholderDocument0" style="clear: both;">
           </div>
           <div id = "filesDiv">
@@ -98,7 +98,7 @@
           </div>
         </div>
 
-        <div id = "myFiles1" onclick="files1Click(this.id)">
+        <div id = "myFiles1" onclick="filesClick(this.id, 1)">
           <div id = "imagePlaceholderDocument1" style="clear: both;">
           </div>
           <div id = "filesDiv">
@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <div id = "myFiles2" onclick="files2Click(this.id)">
+        <div id = "myFiles2" onclick="filesClick(this.id,2)">
           <div id = "imagePlaceholderDocument2" style="clear: both;">
           </div>
           <div id = "filesDiv">
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div id = "myFiles3" onclick="files3Click(this.id)">
+        <div id = "myFiles3" onclick="filesClick(this.id, 3)">
           <div id = "imagePlaceholderDocument3" style="clear: both;">
           </div>
           <div id = "filesDiv">
@@ -135,6 +135,8 @@
           <div id = "descDescription">
             <h1 id = "fileTitle"></h1>
              <!-- This is the title of the file ex: Readme.txt -->
+            <h2 id= "fileSubTitle"></h2>
+            <!--  Subtitle: Getting started-->
             <p id = "fileDescription"></p>
             <!--  This is the description ex: Navigate through the bars under find tab-->
           </div>

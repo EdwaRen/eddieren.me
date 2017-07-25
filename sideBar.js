@@ -1,13 +1,37 @@
-function profileClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderProfile").style.opacity = 0.9;
-  document.getElementById("myProfile").style.backgroundColor = "#CCCCCC";
-  files = files1;
+function groupClick(num) {
 
-  // document.getElementById("filesP0").innerHTML = "Hello World";
-  // document.getElementById("imagePlaceholderDocument0").style.backgroundImage = "url('images/Document.png')";
+switch (num) {
+  case 0:
+    files = files0;
+    break;
+  case 1:
+    files = files1;
+    break;
+  case 2:
+    files = files2;
+    break;
+  case 3:
+    files = files3;
+    break;
+  case 4:
+    files = files4;
+    break;
+  case 5:
+    files = files5;
+    break;
+  case 6:
+    files = files6;
+    break;
+  default:
+    console.log("Error: Selected Group is out of index range")
 
-  files = files1;
+}
+resetColors();
+var selectedGroup = "myGroup" + num;
+var selectedImage = "imagePlaceholder" + num;
+document.getElementById(selectedImage).style.opacity = 0.9;
+document.getElementById(selectedGroup).style.backgroundColor = "#CCCCCC";
+
   for (i = 0; i < files.length; i++) {
     var fileName = "filesP" + i;
     var imageName = "imagePlaceholderDocument" + i;
@@ -16,54 +40,27 @@ function profileClick() {
   }
 }
 
-function experienceClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderExperience").style.opacity = 0.9;
-  document.getElementById("myExperience").style.backgroundColor = "#CCCCCC";
 
-}
+function filesClick(myId, number) {
+  if (number < files.length) {
+    document.getElementById(myId).style.backgroundColor = "#116CD6";
+    document.getElementById(myId).style.color = "#FFFFFF";
 
-function projectsClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderProjects").style.opacity = 0.9;
-  document.getElementById("myProjects").style.backgroundColor = "#CCCCCC";
-}
+    document.getElementById("fileTitle").innerHTML = files[number][0];
+    document.getElementById("descImage").style.backgroundImage = files[number][1];
+    if (files[number][1] == "") {
+      document.getElementById("descImage").style.position = "absolute";
+    } else {
+      document.getElementById("descImage").style.position = "static";
+    }
 
-function networkClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderNetwork").style.opacity = 0.9;
-  document.getElementById("myNetwork").style.backgroundColor = "#CCCCCC";
-}
+    document.getElementById("fileSubTitle").innerHTML = files[number][2];
 
-function languagesClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderLanguages").style.opacity = 0.9;
-  document.getElementById("myLanguages").style.backgroundColor = "#CCCCCC";
-}
-
-function educationClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderEducation").style.opacity = 0.9;
-  document.getElementById("myEducation").style.backgroundColor = "#CCCCCC";
-}
-
-function otherClick() {
-  resetColors();
-  document.getElementById("imagePlaceholderOther").style.opacity = 0.9;
-  document.getElementById("myOther").style.backgroundColor = "#CCCCCC";
-
-}
-
-function files0Click(myId) {
-  document.getElementById(myId).style.backgroundColor = "#116CD6";
-  document.getElementById(myId).style.color = "#FFFFFF";
-
-  document.getElementById("fileTitle").innerHTML = files[0][0];
-  document.getElementById("fileDescription").innerHTML = files1[0][1];
-  document.getElementById("startDate").innerHTML = files[0][2];
-  document.getElementById("untilDate").innerHTML = files[0][3];
-  document.getElementById("descImage").style.backgroundImage = "url('images/Edward_ProfilePic.png')";
-  document.getElementById("startTitle").innerHTML = "Start";
-  document.getElementById("untilTitle").innerHTML = "Until";
-  console.log("profile clicked");
+    document.getElementById("fileDescription").innerHTML = files[number][3];
+    document.getElementById("startDate").innerHTML = files[number][4];
+    // document.getElementById("untilDate").innerHTML = files[number][3];
+    document.getElementById("startTitle").innerHTML = "Duration";
+    // document.getElementById("untilTitle").innerHTML = "Until";
+    console.log("profile clicked");
+  }
 }

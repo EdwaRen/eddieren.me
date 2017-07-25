@@ -1,25 +1,24 @@
 function resetColors() {
-  document.getElementById("myProfile").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderProfile").style.opacity = 0.6;
 
-  document.getElementById("myExperience").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderExperience").style.opacity = 0.6;
+  for (i = 0; i < 7; i++) {
 
-  document.getElementById("myProjects").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderProjects").style.opacity = 0.6;
+    var selectedGroup = "myGroup" + i;
+    var selectedImage = "imagePlaceholder" + i;
 
-  document.getElementById("myNetwork").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderNetwork").style.opacity = 0.6;
-
-  document.getElementById("myLanguages").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderLanguages").style.opacity = 0.6;
-
-  document.getElementById("myEducation").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderEducation").style.opacity = 0.6;
-
-  document.getElementById("myOther").style.backgroundColor = "#eef2f2";
-  document.getElementById("imagePlaceholderOther").style.opacity = 0.6;
+    document.getElementById(selectedGroup).style.backgroundColor = "#eef2f2";
+    document.getElementById(selectedImage).style.opacity = 0.6;
+  }
 
 
 
+}
+
+function resetFileColors() {
+  for (i = 0; i < files.length; i++) {
+    var fileName = "myFiles" + i;
+    document.getElementById(fileName).style.backgroundColor = "#FFFFFF";
+    document.getElementById(fileName).style.color = "#333333";
+
+
+  }
 }
