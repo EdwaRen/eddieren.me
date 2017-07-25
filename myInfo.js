@@ -12,5 +12,23 @@ var files2 = [
   [ "Morsecret","", "Founder, Overall Developer", "Real-time chat application developped using Firebase that communicates using morse code.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By"],
   [ "Team Goals","", "Founder, Overall Developer", "Website coded with React and supported by Firebase to create a real-time database that organizes goals for a team.<br ><br >Employed Javascript ES6 with Redux to support a high degree of user interactivity with website.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By"]
 ]
+var str = "My LinkedIn";
+var myUrl = str.link("https://www.linkedin.com/in/edwardren/") ;
+var str2 = "My GitHub";
+var myUrl2 = str2.link("https://github.com/EdwaRen") ;
+var str3 = "My Facebook";
+var myUrl3 = str3.link("https://www.facebook.com/eddie.ren.1") ;
+var str4 = "My Email <br > Edward.ren.2013@gmail.com";
+var myUrl4 = str4.link("mailto:edward.ren.2013@gmail.com");
+
+var files3 = [
+
+  [ "LinkedIn","url('images/linkedin.png')", myUrl,"", "N/A", "N/A"],
+  [ "GitHub","url('images/github.png')", myUrl2, "", "N/A", "N/A"],
+  [ "Facebook","url('images/facebook.png')",  myUrl3, "", "N/A", "N/A"],
+  [ "Mail","url('images/mail.png')", myUrl4, "", "N/A", "N/A"]
+
+
+]
 
 var files = []

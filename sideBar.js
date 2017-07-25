@@ -56,6 +56,9 @@ function filesClick(myId, number) {
     } else {
       document.getElementById("descImage").style.position = "static";
     }
+    console.log(files[number][1])
+    console.log(document.getElementById("descImage").style.backgroundImage)
+
 
     document.getElementById("fileSubTitle").innerHTML = files[number][2];
 
