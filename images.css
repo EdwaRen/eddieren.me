@@ -1,11 +1,14 @@
 #imagePlaceholder0 {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
+
+
 
   background-image: url("images/Profile.png");
 }
@@ -13,9 +16,10 @@
 #imagePlaceholder1{
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -25,9 +29,10 @@
 #imagePlaceholder2 {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -37,9 +42,10 @@
 #imagePlaceholder3 {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -49,9 +55,10 @@
 #imagePlaceholder4  {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -61,9 +68,10 @@
 #imagePlaceholder5 {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -73,9 +81,10 @@
 #imagePlaceholder6 {
   float: left;
   margin: 0;
-  margin-left: 28px;
-  padding: 16px;
-  max-width: : 30px;
+  margin-left: 20px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
   opacity: 0.6;
   margin-top: 4px;
 
@@ -128,8 +137,8 @@
   /*position: static;*/
   display: block;
   margin: auto;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin-top: 20px;
   background-size: cover;
 

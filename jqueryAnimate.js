@@ -27,13 +27,19 @@ $(document).ready(function(){
       fadeDescription();
     });
     $("#myFiles1").click(function(){
-      fadeDescription();
+      if (1 < files.length) {
+        fadeDescription();
+      }
     });
     $("#myFiles2").click(function(){
-      fadeDescription();
+      if (2 < files.length) {
+        fadeDescription();
+      }
     });
     $("#myFiles3").click(function(){
-      fadeDescription();
+      if (3 < files.length) {
+        fadeDescription();
+      }
     });
 });
 

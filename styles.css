@@ -127,12 +127,18 @@ body {
   float: left;
   width: 350px;
   height: 430px;
-  background-size: cover;
+  /*background-size: cover;
 
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   background-image: url("images/finderDescriptionBar.png");
+  /*border-style: solid;
+  border-left-width: 2px;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-color: #CCCCCC;*/
 }
 
 #findSideTopBar {
@@ -155,7 +161,7 @@ body {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 
@@ -163,21 +169,21 @@ body {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 #myGroup2 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 #myGroup3 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 
@@ -185,21 +191,21 @@ body {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 #myGroup5 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 #myGroup6 {
   /*margin: 0 auto;*/
   /*position: relative;*/
   background-color: #eef2f2;
-  height: 42px;
+  height: 32px;
   width: 198px;
 }
 
@@ -232,6 +238,7 @@ body {
 }
 
 #descReadmeTutorial {
+
   /*background-color: #FFFFFF;*/
   height: 430px;
   width: 350px;
@@ -239,6 +246,7 @@ body {
 }
 
 #descDescription {
+
   margin-top: 0px;
   /*padding-top: -30px;*/
 }
@@ -246,9 +254,9 @@ body {
 #descDescription p{
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 0px;
+  margin-top: 5px;
   text-align: left;
-  font-size: 16px;
+  font-size: 13px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -257,7 +265,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -267,7 +275,7 @@ body {
   padding-right: 15px;
   margin-top: -12px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -283,13 +291,13 @@ body {
   height: 35px;
   width: 100px;
   overflow: hidden;
-  padding-left: 69px;
+  padding-left: 50px;
   position: absolute;
 }
 
 #profileDiv p {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 14px;
+  margin-top: 17px;
   line-height: 1px;
   font-family: RalewayMed, sans-serif;
 
@@ -306,7 +314,7 @@ body {
 }
 
 #filesDiv p {
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 16px;
   line-height: 0px;
   font-family: RalewayMed, sans-serif;
@@ -329,7 +337,7 @@ body {
   text-align: right;
   font-family: RalewayMed, sans-serif;
   color: #888888;
-  font-size: 15px;
+  font-size: 12px;
 
   width: 90px;
 
@@ -342,7 +350,7 @@ body {
   width: 200px;
   text-align: left;
   color: #333333;
-  font-size: 15px;
+  font-size: 12px;
 
   font-family: RalewayMed, sans-serif;
 
@@ -353,6 +361,14 @@ body {
     -moz-transform: scale(1.0);*/
   /*height: 400px;
   width: 400px;*/
-  /*position: absolute;
-  opacity: 0;*/
+  position: absolute;
+  opacity: 0;
+}
+#separator {
+  /*border-style: solid;
+  border-left-width: 2px;
+  border-right-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-left-color: #CCCCCC;*/
 }
