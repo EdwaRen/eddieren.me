@@ -90,19 +90,35 @@
 
       <div class="finderFilesBar">
 
-        <div id = "myFiles1" onclick="profileClick()">
-          <div id = "imagePlaceholderDocument" style="clear: both;">
+        <div id = "myFiles0" onclick="files0Click(this.id)">
+          <div id = "imagePlaceholderDocument0" style="clear: both;">
           </div>
           <div id = "filesDiv">
-            <p>Readme.md</p>
+            <p id = "filesP0"></p>
           </div>
         </div>
 
-        <div id = "myFiles1" onclick="profileClick()">
-          <div id = "imagePlaceholderDocument" style="clear: both;">
+        <div id = "myFiles1" onclick="files1Click(this.id)">
+          <div id = "imagePlaceholderDocument1" style="clear: both;">
           </div>
           <div id = "filesDiv">
-            <p>Readme.md</p>
+            <p id = "filesP1"></p>
+          </div>
+        </div>
+
+        <div id = "myFiles2" onclick="files2Click(this.id)">
+          <div id = "imagePlaceholderDocument2" style="clear: both;">
+          </div>
+          <div id = "filesDiv">
+            <p id = "filesP2"></p>
+          </div>
+        </div>
+
+        <div id = "myFiles3" onclick="files3Click(this.id)">
+          <div id = "imagePlaceholderDocument3" style="clear: both;">
+          </div>
+          <div id = "filesDiv">
+            <p id = "filesP3"></p>
           </div>
         </div>
 
@@ -114,22 +130,25 @@
 
         <div id = "descReadmeTutorial">
           <div id = "descImage"></div>
+          <!--  My profile picture is in the above div-->
 
           <div id = "descDescription">
-            <h1>Readme.md</h1>
-            <p>Navigate through the tabs under the 'find' bar to the right to find out more about me. Alternatively, a pdf version is availible <a href = "pdfversion.html">here</a> and my resume <a href="resume.html">here</a>.<br /><br /> Coded by Edward Ren with lots of coffee </p>
+            <h1 id = "fileTitle"></h1>
+             <!-- This is the title of the file ex: Readme.txt -->
+            <p id = "fileDescription"></p>
+            <!--  This is the description ex: Navigate through the bars under find tab-->
           </div>
 
           <div id = "datesContainer">
 
             <div id = "datesTitle">
-              <p>Start </p>
-              <p>Until </p>
+              <p id = "startTitle"> </p>
+              <p id = "untilTitle"> </p>
             </div>
 
             <div id = "datesText">
-              <p> July 20, 2017 </p>
-              <p> Present </p>
+              <p id = "startDate"> </p>
+              <p id = "untilDate"> </p>
 
             </div>
 
@@ -137,6 +156,7 @@
         </div>
 
       </div>
+      <script src = "myInfo.js"></script>
       <script src= "resetBarColor.js"></script>
       <script src="sideBar.js"></script>
     </div>

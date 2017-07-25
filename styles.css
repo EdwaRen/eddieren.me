@@ -187,12 +187,32 @@ body {
   width: 198px;
 }
 
-#myFiles1 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  /*background-color: #FFFFFF;*/
+#myFiles0 {
   height: 32px;
   width: 248px;
+  color: #333333;
+
+}
+
+#myFiles1 {
+  height: 32px;
+  width: 248px;
+  color: #333333;
+
+}
+
+#myFiles2 {
+  height: 32px;
+  width: 248px;
+  color: #333333;
+
+}
+
+#myFiles3 {
+  height: 32px;
+  width: 248px;
+  color: #333333;
+
 }
 
 #descReadmeTutorial {
@@ -261,10 +281,10 @@ body {
 
 #filesDiv p {
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 16px;
   line-height: 0px;
   font-family: RalewayMed, sans-serif;
-  color: #333333;
+  /*color: #333333;*/
 
 }
 
