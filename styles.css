@@ -313,9 +313,9 @@ body {
   text-align: right;
   font-family: RalewayMed, sans-serif;
   color: #888888;
-  font-size: 16px;
+  font-size: 15px;
 
-  width: 140px;
+  width: 90px;
 
 }
 #datesText {
@@ -323,10 +323,10 @@ body {
   margin-left: 10px;
   float: left;
   height: 72px;
-  width: 140px;
+  width: 200px;
   text-align: left;
   color: #333333;
-  font-size: 16px;
+  font-size: 15px;
 
   font-family: RalewayMed, sans-serif;
 

@@ -22,3 +22,15 @@ function resetFileColors() {
 
   }
 }
+
+function resetGroupFiles() {
+  for (i = 0; i < 4; i++) {
+    var fileName = "filesP" + i;
+    var imageName = "imagePlaceholderDocument" + i;
+
+    document.getElementById(fileName).innerHTML = "";
+    document.getElementById(imageName).style.backgroundImage = "none"
+
+
+  }
+}

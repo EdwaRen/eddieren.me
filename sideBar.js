@@ -1,4 +1,6 @@
 function groupClick(num) {
+  resetFileColors();
+  resetGroupFiles();
 
 switch (num) {
   case 0:
@@ -43,6 +45,7 @@ document.getElementById(selectedGroup).style.backgroundColor = "#CCCCCC";
 
 function filesClick(myId, number) {
   if (number < files.length) {
+    resetFileColors();
     document.getElementById(myId).style.backgroundColor = "#116CD6";
     document.getElementById(myId).style.color = "#FFFFFF";
 
@@ -58,9 +61,9 @@ function filesClick(myId, number) {
 
     document.getElementById("fileDescription").innerHTML = files[number][3];
     document.getElementById("startDate").innerHTML = files[number][4];
-    // document.getElementById("untilDate").innerHTML = files[number][3];
+    document.getElementById("untilDate").innerHTML = files[number][5];
     document.getElementById("startTitle").innerHTML = "Duration";
-    // document.getElementById("untilTitle").innerHTML = "Until";
+    document.getElementById("untilTitle").innerHTML = "Location";
     console.log("profile clicked");
   }
 }
