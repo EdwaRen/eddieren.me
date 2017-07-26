@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
+
+    // $( ".bothWindows" ).remove();
   // $(".bothWindows").remove();
 
     $("#myGroup0").click(function(){

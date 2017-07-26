@@ -9,8 +9,23 @@ body {
     -moz-transform: scale(0.75);*/
 }
 
+.backShadow{
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  /*background-color: #333333;*/
+background-image: url("images/finderWithShadow.png");
+  display: block;
+  margin: auto;
+  position: absolute;
+  margin-top: -15px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  /*font-size: 70px;*/
+}
+
 .bothWindows{
-  width: 700px;
+/*display: none;*/
+ width: 700px;
   height: 500px;
   /*background-color: #333333;*/
   margin: auto;
@@ -376,6 +391,7 @@ body {
   opacity: 0;
 }
 #bottomText {
+  padding-top: 25px;
   width: 500px;
   height: 50px;
   width: 50%;
