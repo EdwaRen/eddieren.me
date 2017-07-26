@@ -1,5 +1,5 @@
 var files0 = [
-  [ "Readme.txt","url('images/Edward_ProfilePic.png')", "Getting Started", "Navigate through the tabs under the 'find' bar to the right to find out more about me. Alternatively, a pdf version is availible <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo"]
+  [ "Readme.txt","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi it's Edward. I love constructing interative web architectures.<br > <br >Navigate through the tabs under the 'find' bar to the right to find out more about me. Alternatively, a pdf version is availible <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo"]
 ]
 
 var files1 = [

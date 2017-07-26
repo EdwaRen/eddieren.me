@@ -24,10 +24,10 @@
 
 #backShadow{
   /*position: absolute;*/
-  width: 700px;
-  height: 500px;
+  width: 600px;
+  height: 450px;
   /*background-color: #333333;*/
-background-image: url("images/finderWithShadow.png");
+  /*background-image: url("images/finderWithShadow.png");*/
 /*background-size: contain;*/
 
   /*display: block;
@@ -46,8 +46,8 @@ background-image: url("images/finderWithShadow.png");
 
 .bothWindows{
 /*display: none;*/
- width: 700px;
-  height: 500px;
+ width: 600px;
+  height: 450px;
   /*background-color: #333333;*/
   margin: auto;
   position: absolute;
@@ -59,11 +59,11 @@ background-image: url("images/finderWithShadow.png");
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-   height: 600px;
+  width: 700px;
+   height: 550px;
    position: absolute;
    z-index: -1;
-   background-image: url("images/finderWithShadow.png");
+   /*background-image: url("images/finderWithShadow.png");*/
 
 
 }
@@ -71,7 +71,7 @@ background-image: url("images/finderWithShadow.png");
 .finderTopBar {
   position: absolute;
 
-  width:700px;
+  width:600px;
   height: 70px;
   background-image: url("images/finderTopBar.png");
   background-size: cover;
@@ -149,8 +149,8 @@ background-image: url("images/finderWithShadow.png");
 .finderSideBar {
   /*padding-top: 100px;*/
   float: left;
-  width: 150px;
-  height: 430px;
+  width: 130px;
+  height: 380px;
 
   background-size: cover;
 
@@ -163,8 +163,8 @@ background-image: url("images/finderWithShadow.png");
 .finderFilesBar {
   /*padding-top: 100px;*/
   float: left;
-  width: 200px;
-  height: 430px;
+  width: 180px;
+  height: 380px;
   background-size: cover;
 
   display: block;
@@ -176,11 +176,11 @@ background-image: url("images/finderWithShadow.png");
 .finderDescriptionBar {
   /*padding-top: 100px;*/
   float: left;
-  width: 350px;
-  height: 430px;
-  /*background-size: cover;
+  width: 290px;
+  height: 380px;
+  /*background-size: cover;*/
 
-  display: block;
+  /*display: block;
   margin-left: auto;
   margin-right: auto;*/
   background-image: url("images/finderDescriptionBar.png");
@@ -298,8 +298,8 @@ background-image: url("images/finderWithShadow.png");
 #descReadmeTutorial {
 
   /*background-color: #FFFFFF;*/
-  height: 430px;
-  width: 350px;
+  height: 380px;
+  width: 290px;
   bottom: 0;
 }
 
@@ -310,11 +310,11 @@ background-image: url("images/finderWithShadow.png");
 }
 
 #descDescription p{
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 15px;
   text-align: left;
-  font-size: 13px;
+  font-size: 12px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -323,7 +323,7 @@ background-image: url("images/finderWithShadow.png");
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -333,7 +333,7 @@ background-image: url("images/finderWithShadow.png");
   padding-right: 15px;
   margin-top: -12px;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-family: RalewayRegIta, sans-serif;
   color: #333333;
 
