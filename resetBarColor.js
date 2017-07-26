@@ -18,6 +18,9 @@ function resetFileColors() {
     var fileName = "myFiles" + i;
     document.getElementById(fileName).style.backgroundColor = "#FFFFFF";
     document.getElementById(fileName).style.color = "#333333";
+    // $(document).ready(function(){
+    //   $(document.getElementById(fileName)).stop();
+    // });
 
 
   }

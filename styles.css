@@ -315,7 +315,7 @@ body {
   height: 32px;
   width: 178;
   overflow: hidden;
-  padding-left: 40px;
+  padding-left: 35px;
   position: absolute;
   /*background-color: #CCCCCC;*/
   /*opacity: 0.3;*/
@@ -375,11 +375,18 @@ body {
   position: absolute;
   opacity: 0;
 }
-#separator {
-  /*border-style: solid;
-  border-left-width: 2px;
-  border-right-width: 0;
-  border-top-width: 0;
-  border-bottom-width: 0;
-  border-left-color: #CCCCCC;*/
+#bottomText {
+  width: 500px;
+  height: 50px;
+  width: 50%;
+  margin: 0 auto;
+  /*background-color: #111111;*/
+}
+
+#bottomText p {
+  text-align: center;
+  font-size: 15px;
+  color: #333333;
+
+  font-family: RalewayMed, sans-serif;
 }

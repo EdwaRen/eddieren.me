@@ -50,29 +50,34 @@ $(document).ready(function(){
 
 function fadeFiles() {
   console.log("fading files");
+  $("#myFiles0").stop();
   $("#myFiles0").fadeOut(1);
   $("#myFiles0").fadeIn(300);
-  // $("#myFiles0").slideDown();
 
+  $("#myFiles1").stop();
   $("#myFiles1").fadeOut(1);
-  $("#myFiles1").fadeIn(300);
+  $("#myFiles1").fadeIn(350);
   // $("#myFiles1").slideDown();
 
+  $("#myFiles2").stop();
   $("#myFiles2").fadeOut(1);
-  $("#myFiles2").fadeIn(300);
+  $("#myFiles2").fadeIn(400);
   // $("#myFiles2").slideDown();
 
+  $("#myFiles3").stop();
   $("#myFiles3").fadeOut(1);
-  $("#myFiles3").fadeIn(300);
+  $("#myFiles3").fadeIn(450);
   // $("#myFiles3").slideDown();
 
+  $("#myFiles4").stop();
   $("#myFiles4").fadeOut(1);
-  $("#myFiles4").fadeIn(300);
+  $("#myFiles4").fadeIn(500);
 
   $("#descReadmeTutorial").fadeOut(1);
 }
 
 function fadeDescription() {
+  $("#descReadmeTutorial").stop();
   $("#descReadmeTutorial").fadeOut(1);
   $("#descReadmeTutorial").fadeIn(500);
 }
