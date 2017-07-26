@@ -1,7 +1,7 @@
 #imagePlaceholder0 {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -16,7 +16,7 @@
 #imagePlaceholder1{
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -29,7 +29,7 @@
 #imagePlaceholder2 {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -42,7 +42,7 @@
 #imagePlaceholder3 {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -55,7 +55,7 @@
 #imagePlaceholder4  {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -68,7 +68,7 @@
 #imagePlaceholder5 {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -81,7 +81,7 @@
 #imagePlaceholder6 {
   float: left;
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 12px;
   max-width: : 24;
   background-size: cover;
@@ -94,11 +94,14 @@
 #imagePlaceholderDocument0 {
   float: left;
   margin: 0;
-  margin-left: 8px;
+  margin-left: 6px;
   padding: 12px;
   max-width: : 30px;
+  /*height: 30px;*/
   opacity: 1.0;
-  margin-top: 4px;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   /*background-image: url("images/Document.png");*/
 }
@@ -106,41 +109,49 @@
 #imagePlaceholderDocument1 {
   float: left;
   margin: 0;
-  margin-left: 8px;
+  margin-left: 6px;
   padding: 12px;
   max-width: : 30px;
   opacity: 1.0;
-  margin-top: 4px;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #imagePlaceholderDocument2 {
   float: left;
   margin: 0;
-  margin-left: 8px;
+  margin-left: 6px;
   padding: 12px;
   max-width: : 30px;
   opacity: 1.0;
-  margin-top: 4px;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #imagePlaceholderDocument3 {
   float: left;
   margin: 0;
-  margin-left: 8px;
+  margin-left: 6px;
   padding: 12px;
   max-width: : 30px;
   opacity: 1.0;
-  margin-top: 4px;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #imagePlaceholderDocument4 {
   float: left;
   margin: 0;
-  margin-left: 8px;
+  margin-left: 6px;
   padding: 12px;
   max-width: : 30px;
   opacity: 1.0;
-  margin-top: 4px;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #descImage {

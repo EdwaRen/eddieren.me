@@ -62,8 +62,9 @@
   width: 700px;
    height: 550px;
    position: absolute;
-   z-index: -1;
-   /*background-image: url("images/finderWithShadow.png");*/
+   z-index: -2;
+   background-image: url("images/finderWithShadow.png");
+   /*background-size: contain;*/
 
 
 }
@@ -199,7 +200,7 @@
   /*margin-top: -15px;*/
 
   font-family: RalewayBld, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #666666;
 
 }
@@ -261,35 +262,35 @@
 }
 
 #myFiles0 {
-  height: 32px;
+  height: 36px;
   width: 198px;
   color: #333333;
 
 }
 
 #myFiles1 {
-  height: 32px;
+  height: 36px;
   width: 198px;
   color: #333333;
 
 }
 
 #myFiles2 {
-  height: 32px;
+  height: 36px;
   width: 198px;
   color: #333333;
 
 }
 
 #myFiles3 {
-  height: 32px;
+  height: 36px;
   width: 198px;
   color: #333333;
 
 }
 
 #myFiles4 {
-  height: 32px;
+  height: 36px;
   width: 198px;
   color: #333333;
 
@@ -349,12 +350,12 @@
   height: 35px;
   width: 100px;
   overflow: hidden;
-  padding-left: 50px;
+  padding-left: 48px;
   position: absolute;
 }
 
 #profileDiv p {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 17px;
   line-height: 1px;
   font-family: RalewayMed, sans-serif;
@@ -373,8 +374,8 @@
 }
 
 #filesDiv p {
-  font-size: 15px;
-  margin-top: 16px;
+  font-size: 13px;
+  margin-top: 18.5px;
   line-height: 0px;
   font-family: RalewayMed, sans-serif;
   /*color: #333333;*/
@@ -416,7 +417,7 @@
 }
 
 #chartEnclosure {
-  margin-left: 40px;
+  margin-left: 20px;
   width: 250px;
   height: 250px;
   /*zoom: 1.0;
@@ -424,6 +425,7 @@
   /*height: 400px;
   width: 400px;*/
   position: absolute;
+  z-index: -1;
   opacity: 0;
 }
 

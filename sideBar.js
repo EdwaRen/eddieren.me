@@ -52,7 +52,7 @@ function groupClick(num) {
     var fileName = "filesP" + i;
     var imageName = "imagePlaceholderDocument" + i;
     document.getElementById(fileName).innerHTML = files[i][0];
-    document.getElementById(imageName).style.backgroundImage = "url('images/Document.png')";
+    document.getElementById(imageName).style.backgroundImage = files[i][6];
   }
 }
 
@@ -93,6 +93,26 @@ function filesClick(myId, number) {
     } else {
       document.getElementById("descImage").style.position = "static";
     }
+
+    var str0 = "Recycle Can";
+    var myUrl0 = str0.link("https://github.com/EdwaRen/Recycle_Can_iOS") ;
+    var str1 = "Morsecret";
+    var myUrl1 = str1.link("https://github.com/EdwaRen/Morsecret") ;
+    var str2 = "Team Goals";
+    var myUrl2 = str2.link("https://github.com/EdwaRen/Team_Goals") ;
+
+    if (files[0][0] == "Recycle Can" ) {
+
+      if (number == 0) {
+        document.getElementById("fileTitle").innerHTML = myUrl0;
+      } else if (number == 1) {
+        document.getElementById("fileTitle").innerHTML = myUrl1;
+      } else if (number == 2) {
+        document.getElementById("fileTitle").innerHTML = myUrl2;
+      }
+
+    }
+
     console.log(files[number][1])
     console.log(document.getElementById("descImage").style.backgroundImage)
 
