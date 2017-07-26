@@ -1,6 +1,7 @@
 @font-face { font-family: RalewayReg; src: url('Raleway/Raleway-Regular.ttf'); }
 @font-face { font-family: RalewayBld; src: url('Raleway/Raleway-Bold.ttf'); }
 @font-face { font-family: RalewayMed; src: url('Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('Raleway/Raleway-Italic.ttf'); }
 
 body {
   background-color: #A3ACC2;
@@ -211,28 +212,28 @@ body {
 
 #myFiles0 {
   height: 32px;
-  width: 248px;
+  width: 198px;
   color: #333333;
 
 }
 
 #myFiles1 {
   height: 32px;
-  width: 248px;
+  width: 198px;
   color: #333333;
 
 }
 
 #myFiles2 {
   height: 32px;
-  width: 248px;
+  width: 198px;
   color: #333333;
 
 }
 
 #myFiles3 {
   height: 32px;
-  width: 248px;
+  width: 198px;
   color: #333333;
 
 }
@@ -254,7 +255,7 @@ body {
 #descDescription p{
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: left;
   font-size: 13px;
   font-family: RalewayReg, sans-serif;
@@ -276,7 +277,7 @@ body {
   margin-top: -12px;
   text-align: center;
   font-size: 14px;
-  font-family: RalewayReg, sans-serif;
+  font-family: RalewayRegIta, sans-serif;
   color: #333333;
 
 }
@@ -305,7 +306,7 @@ body {
 
 #filesDiv {
   height: 32px;
-  width: 248;
+  width: 178;
   overflow: hidden;
   padding-left: 40px;
   position: absolute;
@@ -357,6 +358,9 @@ body {
 }
 
 #chartEnclosure {
+  margin-left: 40px;
+  width: 250px;
+  height: 250px;
   /*zoom: 1.0;
     -moz-transform: scale(1.0);*/
   /*height: 400px;

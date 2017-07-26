@@ -47,12 +47,20 @@ function fadeFiles() {
   console.log("fading files");
   $("#myFiles0").fadeOut(1);
   $("#myFiles0").fadeIn(300);
+  // $("#myFiles0").slideDown();
+
   $("#myFiles1").fadeOut(1);
   $("#myFiles1").fadeIn(300);
+  // $("#myFiles1").slideDown();
+
   $("#myFiles2").fadeOut(1);
   $("#myFiles2").fadeIn(300);
+  // $("#myFiles2").slideDown();
+
   $("#myFiles3").fadeOut(1);
   $("#myFiles3").fadeIn(300);
+  // $("#myFiles3").slideDown();
+
   $("#descReadmeTutorial").fadeOut(1);
 }
 

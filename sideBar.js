@@ -68,5 +68,15 @@ function filesClick(myId, number) {
     document.getElementById("startTitle").innerHTML = "Duration";
     document.getElementById("untilTitle").innerHTML = "Location";
     console.log("profile clicked");
+
+    if (files[number][0] == "Coding Languages") {
+      console.log("Hopefully your browser supports HTML5 charts");
+      document.getElementById("chartEnclosure").style.opacity = "1.0";
+      document.getElementById("chartEnclosure").style.position = "static";
+    } else {
+      document.getElementById("chartEnclosure").style.opacity = "0.0";
+      document.getElementById("chartEnclosure").style.position = "absolute";
+    }
+
   }
 }
