@@ -238,6 +238,13 @@ body {
 
 }
 
+#myFiles4 {
+  height: 32px;
+  width: 198px;
+  color: #333333;
+
+}
+
 #descReadmeTutorial {
 
   /*background-color: #FFFFFF;*/
@@ -315,7 +322,7 @@ body {
 }
 
 #filesDiv p {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 16px;
   line-height: 0px;
   font-family: RalewayMed, sans-serif;

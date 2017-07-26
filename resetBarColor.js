@@ -24,7 +24,7 @@ function resetFileColors() {
 }
 
 function resetGroupFiles() {
-  for (i = 0; i < 4; i++) {
+  for (i = 0; i < 5; i++) {
     var fileName = "filesP" + i;
     var imageName = "imagePlaceholderDocument" + i;
 

@@ -133,6 +133,16 @@
   margin-top: 4px;
 }
 
+#imagePlaceholderDocument4 {
+  float: left;
+  margin: 0;
+  margin-left: 8px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 4px;
+}
+
 #descImage {
   /*position: static;*/
   display: block;

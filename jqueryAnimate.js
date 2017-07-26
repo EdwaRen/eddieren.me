@@ -41,6 +41,11 @@ $(document).ready(function(){
         fadeDescription();
       }
     });
+    $("#myFiles4").click(function(){
+      if (4 < files.length) {
+        fadeDescription();
+      }
+    });
 });
 
 function fadeFiles() {
@@ -61,10 +66,13 @@ function fadeFiles() {
   $("#myFiles3").fadeIn(300);
   // $("#myFiles3").slideDown();
 
+  $("#myFiles4").fadeOut(1);
+  $("#myFiles4").fadeIn(300);
+
   $("#descReadmeTutorial").fadeOut(1);
 }
 
 function fadeDescription() {
   $("#descReadmeTutorial").fadeOut(1);
-  $("#descReadmeTutorial").fadeIn(300);
+  $("#descReadmeTutorial").fadeIn(500);
 }

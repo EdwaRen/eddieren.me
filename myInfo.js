@@ -36,6 +36,22 @@ var files4 = [
   [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A"],
   [ "Linguistics","","Language Skills", "Proficient: English, French<br > <br > Experienced: Mandarin", "N/A", "N/A"],
 
+]
+
+var files5 = [
+
+  [ "University of Waterloo","", "Honours Software Engineering", "Coop program and class of 2022", "2017 - 2022 (Expected)", "Waterloo"],
+  [ "Colonel By","","Secondary School", "Received international baccalaureate diploma alongside Ontario Secondary School French Immersion Diploma.", "2012 - 2017", "Ottawa"]
+
+]
+
+var files6 = [
+  [ "CLS","","Aerospace Research Assistant", "Cooperated with researchers to analyze elemental composition of a Boeing 737 turbine engine using beamlines from the Canadian Light Source (CLS) national synchrotron.<br ><br >Presented findings to over 200 students and professors at the University of Saskatchewan.", "Summer 2016", "Saskatoon"],
+  [ "SHAD","","SHAD Alumnus (Formerly Shad Valley)", "1 of 7 students from my high school selected to participate in SHAD, a competitive national entrepreneurial enrichment program.", "Summer 2016", "Saskatoon"],
+  [ "Debate","","Debate Society - Executive Committee", "Semi-finalist in Ontario Provincial Debating Championships (2016).<br ><br >Practiced for 5 hours a week after school and competed at various provincial and national tournaments.", "2012 - 2017", "Ottawa, Tournaments Nationwide"],
+  [ "Cross Country Team","","Long Distance Runner", "Participated as a runner on the Colonel By Cross Country team and competed at the Louis Riel meets each year.", "2014 - 2017", "Ottawa-Gloucestor"],
+
+  [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming", "N/A", "N/A"],
 
 
 ]

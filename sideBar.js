@@ -44,6 +44,7 @@ document.getElementById(selectedGroup).style.backgroundColor = "#CCCCCC";
 
 
 function filesClick(myId, number) {
+  console.log("file clicked: ", number);
   if (number < files.length) {
     resetFileColors();
     document.getElementById(myId).style.backgroundColor = "#116CD6";
