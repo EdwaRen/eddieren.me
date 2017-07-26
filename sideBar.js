@@ -84,7 +84,7 @@ function filesClick(myId, number) {
       $(document.getElementById(myId)).animate({backgroundColor : '#116CD6'}, 300);
     });
     // document.getElementById(myId).style.backgroundColor = "#116CD6";
-    document.getElementById(myId).style.color = "#FFFFFF";
+    document.getElementById(myId).style.color = "#EEEEEE";
 
     document.getElementById("fileTitle").innerHTML = files[number][0];
     document.getElementById("descImage").style.backgroundImage = files[number][1];
