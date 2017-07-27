@@ -63,7 +63,7 @@
    height: 550px;
    position: absolute;
    z-index: -2;
-   /*background-image: url("../images/finderWithShadow.png");*/
+   background-image: url("../images/finderWithShadow.png");
    /*background-size: contain;*/
 
 
@@ -71,7 +71,7 @@
 
 .finderTopBar {
   position: absolute;
-  opacity: 0;
+  /*opacity: 0;*/
   width:600px;
   height: 70px;
   background-image: url("../images/finderTopBar.png");
@@ -460,7 +460,10 @@
 
   font-family: RalewayMed, sans-serif;
 }
-/*.draggable { width: 10px; height: 10px; padding: 0.5em; float: left; margin: 0 10px 10px 0; }*/
+.draggable {
+
+
+ }
 
 #containment-wrapper {
   /*width: 100%;
