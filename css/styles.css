@@ -63,7 +63,7 @@
    height: 550px;
    position: absolute;
    z-index: -2;
-   background-image: url("../images/finderWithShadow.png");
+   /*background-image: url("../images/finderWithShadow.png");*/
    /*background-size: contain;*/
 
 
