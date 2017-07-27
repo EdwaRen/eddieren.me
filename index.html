@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type = "text/css" href="css/styleGraph.css">
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" type="text/css" href="images.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/images.css">
 
 
 <html>
@@ -15,6 +16,8 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="//use.typekit.net/ftn5fet.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
   <script>
     $(function() {
       $("#backShadow").draggable({
@@ -43,7 +46,7 @@
     <div id="backShadow" class="draggable ui-widget-content">
       <!-- MEMES -->
       <div class="bothWindows">
-        <div class = "shadowWindow"> </div>
+        <div class="shadowWindow"> </div>
         <div class="finderTopBar">
           <div class="headerDisplay">
             <div class="finderTopBarIcon"></div>
@@ -173,11 +176,29 @@
             <div id="separator">
               <div id="descReadmeTutorial">
                 <div id="chartEnclosure">
-                  <canvas id="myChart" style="width: 75%;"></canvas>
+                  <!-- <canvas id="myChart" style="width: 75%;"></canvas> -->
+                  <dl>
+                    <dt>
+                        Experience
+                    </dt>
+                    <dd class="percentage percentage-100"><span class="text">Swift</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">Javascript</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">C++</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">Python</span></dd>
+                    <dd class="percentage percentage-90"><span class="text">Visual Basic</span></dd>
+                    <dd class="percentage percentage-90"><span class="text">React</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">Java</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">CSS</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">HTML</span></dd>
+                    <dd class="percentage percentage-70"><span class="text">C#</span></dd>
+                    <dd class="percentage percentage-60"><span class="text">Objective-C</span></dd>
+                    <!-- <dd class="percentage percentage-3000"><span class="text">Coffee</span></dd> -->
+                    <!--  I consume coffee like a black hole-->
+                  </dl>
                 </div>
 
-                <script src="node_modules/chart.js/dist/Chart.bundle.js"></script>
-                <script src="node_modules/chart.js/samples/utils.js"></script>
+                <script src="node_modules2/chart.js/dist/Chart.bundle.js"></script>
+                <script src="node_modules2/chart.js/samples/utils.js"></script>
                 <script src="languageChart.js"></script>
 
                 <div id="descImage"></div>

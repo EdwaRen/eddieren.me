@@ -1,5 +1,5 @@
 var files0 = [
-  [ "Readme.txt","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi it's Edward. I love constructing interative web architectures.<br > <br >Navigate through the tabs under the 'find' bar to the right to find out more about me. Alternatively, a pdf version is availible <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
+  [ "Readme.txt","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
 ]
 
 var files1 = [
@@ -9,7 +9,7 @@ var files1 = [
 
 var files2 = [
   [ "Recycle Can","", "Founder, Chief iOS and Web Developer", "Integrated application using delegates, MapKit, geocoding, and automatic route plotting connected to our database of over 20000 locations. <br ><br >Data Processing of over 50-megabyte raw text files in Microsoft Excel using VBA and formulas. <br > <br >Integrated a respective website using Google Maps API with over 24000 page visits in addition to 13000 mobile application downloads.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", "url('images/ProjectsIcon2.png')"],
-  [ "Morsecret","", "Founder, Overall Developer", "Real-time chat application developped using Firebase that communicates using morse code.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By",  "url('images/ProjectsIcon2.png')"],
+  [ "Morsecret","", "Founder, Overall Developer", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By",  "url('images/ProjectsIcon2.png')"],
   [ "Team Goals","", "Founder, Overall Developer", "Website coded with React and supported by Firebase to create a real-time database that organizes goals for a team.<br ><br >Employed Javascript ES6 with Redux to support a high degree of user interactivity with website.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By",  "url('images/ProjectsIcon2.png')"]
 ]
 var str = "My LinkedIn";

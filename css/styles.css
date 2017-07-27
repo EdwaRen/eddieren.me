@@ -9,7 +9,7 @@
  body {
   background-color: #A3ACC2;
   /*background-repeat: no-repeat;*/
-  background-image: url("images/triangulated-image.png");
+  background-image: url("../images/triangulated-image.png");
   background-size: cover;
 
     /*width: 100%;
@@ -63,7 +63,7 @@
    height: 550px;
    position: absolute;
    z-index: -2;
-   background-image: url("images/finderWithShadow.png");
+   background-image: url("../images/finderWithShadow.png");
    /*background-size: contain;*/
 
 
@@ -74,7 +74,7 @@
 
   width:600px;
   height: 70px;
-  background-image: url("images/finderTopBar.png");
+  background-image: url("../images/finderTopBar.png");
   background-size: cover;
 
   display: block;
@@ -93,7 +93,7 @@
   opacity: 1.0;
   margin-top: 8px;
 
-  background-image: url("images/folder.png");
+  background-image: url("../images/folder.png");
 }
 
 .headerDisplay {
@@ -158,7 +158,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("images/finderSideBar.png");
+  background-image: url("../images/finderSideBar.png");
 }
 
 .finderFilesBar {
@@ -171,7 +171,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("images/finderFilesBar.png");
+  background-image: url("../images/finderFilesBar.png");
 }
 
 .finderDescriptionBar {
@@ -184,7 +184,7 @@
   /*display: block;
   margin-left: auto;
   margin-right: auto;*/
-  background-image: url("images/finderDescriptionBar.png");
+  background-image: url("../images/finderDescriptionBar.png");
   /*border-style: solid;
   border-left-width: 2px;
   border-right-width: 0;
@@ -315,7 +315,7 @@
   padding-right: 20px;
   margin-top: 15px;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -324,7 +324,7 @@
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   font-family: RalewayReg, sans-serif;
   color: #333333;
 
@@ -334,7 +334,7 @@
   padding-right: 15px;
   margin-top: -12px;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   font-family: RalewayRegIta, sans-serif;
   color: #333333;
 
@@ -419,7 +419,7 @@
 #chartEnclosure {
   margin-left: 20px;
   width: 250px;
-  height: 250px;
+  height: 230px;
   /*zoom: 1.0;
     -moz-transform: scale(1.0);*/
   /*height: 400px;
@@ -446,8 +446,8 @@
 
   /*padding-top: 15px;*/
   height: 60px;
-  background-color: #CCCCCC;
-  opacity: 0.85;
+  background-color: #DDDDDD;
+  opacity: 0.9;
   /*background-color: #111111;*/
 }
 
