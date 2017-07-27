@@ -7,7 +7,7 @@
   height: 100%;
 }*/
  body {
-  background-color: #A3ACC2;
+  /*background-color: #A3ACC2;*/
   /*background-repeat: no-repeat;*/
   background-image: url("../images/triangulated-image.png");
   background-size: cover;
@@ -39,7 +39,7 @@
       vertical-align: middle;
       text-align:center*/
   transform: translate(-50%, -50%);
-  margin-top: 0px;
+  /*margin-top: 0px;*/
   /*top: 0; left: 0; bottom: 0; right: 0;*/
   /*font-size: 70px;*/
 }
@@ -71,7 +71,7 @@
 
 .finderTopBar {
   position: absolute;
-
+  opacity: 0;
   width:600px;
   height: 70px;
   background-image: url("../images/finderTopBar.png");
