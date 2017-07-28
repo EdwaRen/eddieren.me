@@ -8,6 +8,7 @@ $(document).ready(function(){
     // $( ".bothWindows" ).remove();
   // $(".bothWindows").remove();
     $("#backShadow").fadeOut(0);
+    $("#backShadow").fadeIn(400);
 
     $("#myGroup0").click(function(){
         fadeFiles();
