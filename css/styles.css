@@ -10,8 +10,8 @@
   /*background-color: #A3ACC2;*/
   /*background-repeat: no-repeat;*/
   background-image: url("../images/triangulated-image.png");
-  background-size: cover;
-
+  /*background-size: cover;*/
+  background-size: 100% 300%;
     /*width: 100%;
     height: 100%;*/
 
@@ -23,6 +23,7 @@
 }
 
 #backShadow{
+  /*opacity: 0;*/
   /*position: absolute;*/
   width: 600px;
   height: 450px;

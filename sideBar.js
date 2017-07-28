@@ -1,3 +1,10 @@
+//
+// Copyright (c) 2017 by Edward Ren. All Rights Reserved.
+//
+
+
+
+
 var selectedCurrent = -1;
 
 function groupClick(num) {

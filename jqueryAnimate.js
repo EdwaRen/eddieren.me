@@ -1,8 +1,13 @@
+//
+// Copyright (c) 2017 by Edward Ren. All Rights Reserved.
+//
+
 
 $(document).ready(function(){
 
     // $( ".bothWindows" ).remove();
   // $(".bothWindows").remove();
+    $("#backShadow").fadeOut(0);
 
     $("#myGroup0").click(function(){
         fadeFiles();
@@ -82,4 +87,9 @@ function fadeDescription() {
   $("#descReadmeTutorial").stop();
   $("#descReadmeTutorial").fadeOut(1);
   $("#descReadmeTutorial").fadeIn(500);
+}
+
+function fadeBackShadowIn() {
+  $("#backShadow").fadeIn(400);
+
 }

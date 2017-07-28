@@ -1,3 +1,7 @@
+//
+// Copyright (c) 2017 by Edward Ren. All Rights Reserved.
+//
+
 // var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 // var color = Chart.helpers.color;
 // var horizontalBarChartData = {

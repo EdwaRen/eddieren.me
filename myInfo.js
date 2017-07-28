@@ -1,5 +1,9 @@
+//
+// Copyright (c) 2017 by Edward Ren. All Rights Reserved.
+//
+
 var files0 = [
-  [ "Readme.txt","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
+  [ "Readme","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
 ]
 
 var files1 = [
