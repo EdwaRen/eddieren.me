@@ -41,13 +41,15 @@ The "files" variables consist of 10 two dimensional arrays that contain informat
 Which correspond to the following graph labelled as such
 
 ["1", "2", "3", "4", "5", "6", "7"]
-1 - Element Name
-2 - Image link
-3 Subtitle
-4 Description
-5 Duration
-6 Location
-7 Element Icon
+1 - Element Name <br />
+2 - Image link <br />
+3 - Subtitle <br />
+4 - Description <br />
+5 - Duration <br /> 
+6 - Location <br />
+7 - Element Icon <br />
+
+![Alt text](/Images/InstructionFilesLabelled.png?raw=true "")
 
 [[https://github.com/edwaren/Edwaren.github.io/blob/master/images/InstructionFilesLabelled.png|alt=octocat]]
 
