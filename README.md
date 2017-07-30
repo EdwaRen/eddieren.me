@@ -4,7 +4,21 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 # FinderMe
 
-My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display my proficiencies in different programming languages
+My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages
+
+![Alt Text](http://www.giphy.com/gifs/26n6R7uzMyJSaMgJW)
+
+
+# Links
+
+1. [Features](#features)
+..* [Draggable](#draggable)
+..* [Modularity](#modularity)
+..* [Graphs](#graphs)
+2. [Testing](#testing)
+3. [Template](#template)
+4. [License](#license)
+5. [Contact](#contact)
 
 # Features
 
@@ -14,13 +28,22 @@ This website was purposefully built to emulate the look of the 'Finder' program 
 
 Using jQuery UI, a draggable main div was implemented so that the finder tab can be dragged around just like the real program itself. This drag is limited to the container of the visible section of the page and avoids the footer. Clicking and holding anywhere on the main finder tab will drag it along. Though quite fun to play with on desktop computers, this drag functionality is not yet supported on mobile.
 
+![Alt Text](http://www.giphy.com/gifs/xT39Dj4rG1TaQm6j8k)
+
+
 ## Modularity
 
 Different sets of information can be easily added in or swapped out, new groups or files can be added with ease into the program. Through this modular programming, this website can also be used as a template for other purposes.
 
+![Alt text](/images/modularity.png?raw=true "")
+
+
 ## Graphs
 
 There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was torpoeded by GitHub Pages because it did not support node_modules.
+
+![Alt text](/images/graphs.png?raw=true "")
+
 
 # Testing
 
@@ -28,7 +51,7 @@ In the later stages of this project, it became apparent that GitHub Pages only s
 
 # Using FinderMe As A template
 
-Simply go on terminal and clone this repository by typing in: 
+Simply go on terminal and clone this repository by typing in:
 ```
 git clone https://github.com/EdwaRen/Edwaren.github.io
 ```
@@ -40,27 +63,23 @@ The "files" variables consist of 10 two dimensional arrays that contain informat
 
 Which correspond to the following graph labelled as such
 
-["1", "2", "3", "4", "5", "6", "7"]
+["1", "2", "3", "4", "5", "6", "7"] <br />
 1 - Element Name <br />
 2 - Image link <br />
 3 - Subtitle <br />
 4 - Description <br />
-5 - Duration <br /> 
+5 - Duration <br />
 6 - Location <br />
 7 - Element Icon <br />
 
-![Alt text](/Images/InstructionFilesLabelled.png?raw=true "")
+![Alt text](/images/InstructionFilesLabelled.png?raw=true "")
 
-[[https://github.com/edwaren/Edwaren.github.io/blob/master/images/InstructionFilesLabelled.png|alt=octocat]]
+# License
+This project and its use as a template is licensed under the GNU General Public License v3.0 (GNU GPL v3.0). Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. For more specific information see [LICENSE](../blob/master/LICENSE)
+
 
 # Contact
 
 If you have any questions or inquiries concerning this project or suggestions for future releases, please contact me at EdwardRen2013@gmail.com
 
 "Let's do this!"
-
-
-
-
-
-
