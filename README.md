@@ -6,7 +6,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages
 
-![Alt Text](http://www.giphy.com/gifs/26n6R7uzMyJSaMgJW)
+![Alt Text](images/readmeDisplay.gif)
 
 
 # Links
@@ -28,7 +28,7 @@ This website was purposefully built to emulate the look of the 'Finder' program 
 
 Using jQuery UI, a draggable main div was implemented so that the finder tab can be dragged around just like the real program itself. This drag is limited to the container of the visible section of the page and avoids the footer. Clicking and holding anywhere on the main finder tab will drag it along. Though quite fun to play with on desktop computers, this drag functionality is not yet supported on mobile.
 
-![Alt Text](http://www.giphy.com/gifs/xT39Dj4rG1TaQm6j8k)
+![Alt Text](images/draggable.gif)
 
 
 ## Modularity
