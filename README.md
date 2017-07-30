@@ -6,15 +6,15 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages
 
-![Alt Text](images/readmeDisplay.gif)
+![Alt Text](images/readmeDisplayGif.gif)
 
 
 # Links
 
 1. [Features](#features)
-..* [Draggable](#draggable)
-..* [Modularity](#modularity)
-..* [Graphs](#graphs)
+  * [Draggable](#draggable)
+  * [Modularity](#modularity)
+  * [Graphs](#graphs)
 2. [Testing](#testing)
 3. [Template](#template)
 4. [License](#license)
@@ -80,6 +80,6 @@ This project and its use as a template is licensed under the GNU General Public 
 
 # Contact
 
-If you have any questions or inquiries concerning this project or suggestions for future releases, please contact me at EdwardRen2013@gmail.com
+If you have any questions or inquiries concerning this project or suggestions for future releases, please contact me at Edward.ren.2013@gmail.com
 
 "Let's do this!"

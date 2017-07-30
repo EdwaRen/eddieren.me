@@ -67,7 +67,7 @@ function filesClick(myId, number) {
   console.log("file clicked: ", number);
 
 
-  for (i = 0; i < 5; i++) { //This for loop prevents a glitch where rapidly changing files causes unselected myFiles div to remain blue
+  for (i = 0; i < 10; i++) { //This for loop prevents a glitch where rapidly changing files causes unselected myFiles div to remain blue
     if (i != number) {
       console.log("file sad: ", number);
 

@@ -14,7 +14,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 
 
-  background-image: url("../images/Profile.png");
+  /*background-image: url("../images/Profile.png");*/
 }
 
 #imagePlaceholder1{
@@ -27,7 +27,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Experience.png");
+  /*background-image: url("../images/Experience.png");*/
 }
 
 #imagePlaceholder2 {
@@ -40,7 +40,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Projects.png");
+  /*background-image: url("../images/Projects.png");*/
 }
 
 #imagePlaceholder3 {
@@ -53,7 +53,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Network.png");
+  /*background-image: url("../images/Network.png");*/
 }
 
 #imagePlaceholder4  {
@@ -66,7 +66,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Languages.png");
+  /*background-image: url("../images/Languages.png");*/
 }
 
 #imagePlaceholder5 {
@@ -79,7 +79,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Education.png");
+  /*background-image: url("../images/Education.png");*/
 }
 
 #imagePlaceholder6 {
@@ -92,8 +92,48 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   opacity: 0.6;
   margin-top: 4px;
 
-  background-image: url("../images/Other.png");
+  /*background-image: url("../images/Other.png");*/
 }
+
+#imagePlaceholder7 {
+  float: left;
+  margin: 0;
+  margin-left: 15px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  /*background-image: url("../images/Other.png");*/
+}
+
+#imagePlaceholder8 {
+  float: left;
+  margin: 0;
+  margin-left: 15px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  /*background-image: url("../images/Other.png");*/
+}
+
+#imagePlaceholder9 {
+  float: left;
+  margin: 0;
+  margin-left: 15px;
+  padding: 12px;
+  max-width: : 24;
+  background-size: cover;
+  opacity: 0.6;
+  margin-top: 4px;
+
+  /*background-image: url("../images/Other.png");*/
+}
+
 
 #imagePlaceholderDocument0 {
   float: left;
@@ -157,6 +197,68 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+#imagePlaceholderDocument5 {
+  float: left;
+  margin: 0;
+  margin-left: 6px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#imagePlaceholderDocument6 {
+  float: left;
+  margin: 0;
+  margin-left: 6px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#imagePlaceholderDocument7 {
+  float: left;
+  margin: 0;
+  margin-left: 6px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#imagePlaceholderDocument8 {
+  float: left;
+  margin: 0;
+  margin-left: 6px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#imagePlaceholderDocument9 {
+  float: left;
+  margin: 0;
+  margin-left: 6px;
+  padding: 12px;
+  max-width: : 30px;
+  opacity: 1.0;
+  margin-top: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
 
 #descImage {
   /*position: static;*/

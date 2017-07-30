@@ -31,6 +31,17 @@ $(document).ready(function(){
     $("#myGroup6").click(function(){
       fadeFiles();
     });
+    $("#myGroup7").click(function(){
+      fadeFiles();
+    });
+    $("#myGroup8").click(function(){
+      fadeFiles();
+    });
+    $("#myGroup9").click(function(){
+      fadeFiles();
+    });
+
+
     $("#myFiles0").click(function(){
       fadeDescription();
     });
@@ -51,6 +62,36 @@ $(document).ready(function(){
     });
     $("#myFiles4").click(function(){
       if (4 < files.length) {
+        fadeDescription();
+      }
+    });
+
+    $("#myFiles5").click(function(){
+      if (5 < files.length) {
+        fadeDescription();
+      }
+    });
+
+    $("#myFiles6").click(function(){
+      if (6 < files.length) {
+        fadeDescription();
+      }
+    });
+
+    $("#myFiles7").click(function(){
+      if (7 < files.length) {
+        fadeDescription();
+      }
+    });
+
+    $("#myFiles8").click(function(){
+      if (8 < files.length) {
+        fadeDescription();
+      }
+    });
+
+    $("#myFiles9").click(function(){
+      if (9 < files.length) {
         fadeDescription();
       }
     });
