@@ -109,7 +109,6 @@ for (i = 0; i < groups.length; i++) {
     if (tempFiles[j][0] == "Readme" && files1[0][0] == "Ciena Corporation") {
       divDesc.innerHTML = "Hi I'm Edward! I love architecting interactive web designs.";
     } else {
-      // console.log("did not change readme file", tempFiles[j][3]);
 
       divDesc.innerHTML = tempFiles[j][3];
     }
@@ -125,17 +124,14 @@ for (i = 0; i < groups.length; i++) {
     document.getElementById("grpId" + i).appendChild(divDesc);
 
     if (tempFiles[j].length > 7) {
-      console.log("coding");
 
       var proficient = "";
       var fluent = "";
       var experienced = "";
       for (k = 7; k < tempFiles[j].length; k++) {
-        console.log("coding2");
 
         if (tempFiles[j][k+1] >= 90) {
           proficient = proficient + tempFiles[j][k] + ", ";
-          console.log("proficient", proficient);
         }
         else if (tempFiles[j][k+1] >= 70) {
           fluent = fluent + tempFiles[j][k] + ", ";

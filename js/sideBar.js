@@ -48,7 +48,7 @@ function groupClick(num) {
       console.log("Error: Selected Group is out of index range")
 
   }
-  console.log("selectedCurrent should now be -1");
+  // "selectedCurrent should now be -1"
   resetColors();
   var selectedGroup = "myGroup" + num;
   var selectedImage = "imagePlaceholder" + num;
@@ -61,15 +61,15 @@ function groupClick(num) {
     document.getElementById(fileName).innerHTML = files[i][0];
     document.getElementById(imageName).style.backgroundImage = files[i][6];
   }
+  document.getElementById("myFiles0").click();
+
 }
 
 function filesClick(myId, number) {
-  console.log("file clicked: ", number);
 
 
   for (i = 0; i < 10; i++) { //This for loop prevents a glitch where rapidly changing files causes unselected myFiles div to remain blue
     if (i != number) {
-      console.log("file sad: ", number);
 
       var fileNameTemp = "myFiles" + i;
       $(document.getElementById(fileNameTemp)).clearQueue().stop();
@@ -120,8 +120,6 @@ function filesClick(myId, number) {
 
     }
 
-    console.log(files[number][1])
-    console.log(document.getElementById("descImage").style.backgroundImage)
 
     document.getElementById("fileSubTitle").innerHTML = files[number][2];
 
@@ -130,10 +128,9 @@ function filesClick(myId, number) {
     document.getElementById("untilDate").innerHTML = files[number][5];
     document.getElementById("startTitle").innerHTML = "Duration";
     document.getElementById("untilTitle").innerHTML = "Location";
-    console.log("profile clicked");
 
     if (files[number][0] == "Coding Languages") {
-      console.log("Hopefully your browser supports HTML5 charts");
+      //"Hopefully your browser supports HTML5 charts";
       document.getElementById("chartEnclosure").style.opacity = "1.0";
       document.getElementById("chartEnclosure").style.position = "static";
     } else {
@@ -145,12 +142,15 @@ function filesClick(myId, number) {
 }
 document.onkeydown = checkKey;
 
+var typedString = "";
+
 function checkKey(e) {
+  typedString+= e.keyCode;
 
   e = e || window.event;
 
   if (e.keyCode == '38') {
-    console.log("38, ", selectedCurrent);
+    //Up arrow pressed
     if (selectedCurrent - 1 >= 0 && selectedCurrent != -1) {
       fadeDescription();
       var fileNameTemp = "myFiles" + (selectedCurrent - 1);
@@ -163,6 +163,17 @@ function checkKey(e) {
       filesClick(fileNameTemp, selectedCurrent + 1);
     }
     // down arrow
+  }
+// Eastereggs, please ignore
+  if (typedString.substr(typedString.length - 22) == "7376798669677970706969") {
+    console.log("Wow, I love coffee too!");
+    window.location.href = 'http://www.letsgoletsgo.gq';
+  } else if (typedString.substr(typedString.length-28) == "7376798669826967896776737871") {
+    console.log("Wow, I love recycling too!");
+    window.location.href = 'http://www.recyclecan.ca';
+  } else if (typedString.substr(typedString.length-28) == "7376798669787371728467798269") {
+    console.log("Wow, I love nightcore too!");
+    window.location.href = 'https://www.youtube.com/watch?v=cvaIgq5j2Q8&list=RDcvaIgq5j2Q8#t=0';
   }
 
 }

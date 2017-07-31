@@ -1,6 +1,6 @@
 function resetColors() {
 
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < groups.length; i++) {
 
     var selectedGroup = "myGroup" + i;
     var selectedImage = "imagePlaceholder" + i;

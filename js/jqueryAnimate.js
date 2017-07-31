@@ -98,10 +98,10 @@ $(document).ready(function(){
 });
 
 function fadeFiles() {
-  console.log("fading files");
-  $("#myFiles0").stop();
-  $("#myFiles0").fadeOut(1);
-  $("#myFiles0").fadeIn(300);
+  // fading files
+  // $("#myFiles0").stop();
+  // $("#myFiles0").fadeOut(1);
+  // $("#myFiles0").fadeIn(300);
 
   $("#myFiles1").stop();
   $("#myFiles1").fadeOut(1);
@@ -122,12 +122,32 @@ function fadeFiles() {
   $("#myFiles4").fadeOut(1);
   $("#myFiles4").fadeIn(500);
 
-  $("#descReadmeTutorial").fadeOut(1);
+  $("#myFiles5").stop();
+  $("#myFiles5").fadeOut(1);
+  $("#myFiles5").fadeIn(500);
+
+  $("#myFiles6").stop();
+  $("#myFiles6").fadeOut(1);
+  $("#myFiles6").fadeIn(500);
+
+  $("#myFiles7").stop();
+  $("#myFiles7").fadeOut(1);
+  $("#myFiles7").fadeIn(500);
+
+  $("#myFiles8").stop();
+  $("#myFiles8").fadeOut(1);
+  $("#myFiles8").fadeIn(500);
+
+  $("#myFiles9").stop();
+  $("#myFiles9").fadeOut(1);
+  $("#myFiles9").fadeIn(500);
+
+  // $("#descReadmeTutorial").fadeOut(1);
 }
 
 function fadeDescription() {
   $("#descReadmeTutorial").stop();
-  $("#descReadmeTutorial").fadeOut(1);
+  $("#descReadmeTutorial").fadeOut(0);
   $("#descReadmeTutorial").fadeIn(500);
 }
 
