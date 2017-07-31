@@ -10,7 +10,7 @@ var groupsImages =[
 ]
 
 var files0 = [
-  [ "Readme","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"pdfversion.html\">here</a> and my resume <a href=\"resume.html\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
+  [ "Readme","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"pdfversion.html\">here</a> and my resume <a href=\"images/resume.pdf\" download=\"resume.pdf\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
 ]
 
 var files1 = [
@@ -44,7 +44,7 @@ var files3 = [
 
 var files4 = [
 
-  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')"],
+  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", "Swift", 90, "Javascript",90, "C++", 90, "Python", 90, "Visual Basic",80, "React", 80, "Java" , 70 , "CSS", 70 , "HTML", 70, "C#", 60, "Objective-C", 50],
   [ "Linguistics","","Language Skills", "Proficient: English, French.<br > <br > Experienced: Mandarin.", "N/A", "N/A", "url('images/chat.png')"],
 
 ]
@@ -62,8 +62,19 @@ var files6 = [
   [ "Debate","","Debating Society - Executive Committee", "Semi-finalist in Ontario Provincial Debating Championships (2016).<br ><br >Practiced for 5 hours a week after school and competed at various provincial and national tournaments.", "2012 - 2017", "Nationwide", "url('images/Document.png')"],
   [ "Cross Country Team","","Long Distance Runner", "Participated as a runner on the Colonel By Cross Country team and competed at the Louis Riel meets each year.", "2014 - 2017", "Ottawa-Colonel By", "url('images/Document.png')"],
 
-  [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming", "N/A", "N/A", "url('images/Document.png')"],
+  [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming, Speed Rubik's Cubing", "N/A", "N/A", "url('images/Document.png')"],
 
+
+]
+
+var files7 = [
+
+]
+
+var files8 = [
+
+]
+var files9 = [
 
 ]
 

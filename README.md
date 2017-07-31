@@ -12,9 +12,9 @@ My personal website created primarily using Javascript in conjunction with HTML/
 # Links
 
 1. [Features](#features)
-  * [Draggable](#draggable)
-  * [Modularity](#modularity)
-  * [Graphs](#graphs)
+   * [Draggable](#draggable)
+   * [Modularity](#modularity)
+   * [Graphs](#graphs)<br >
 2. [Testing](#testing)
 3. [Template](#template)
 4. [License](#license)
