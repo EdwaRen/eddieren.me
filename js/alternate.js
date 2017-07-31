@@ -12,9 +12,27 @@ div.style.left = "50%";
 div.style.transform = "translateX(-50%) translateY(-50%)";
 
 div.style.overflowY = "scroll";
+
+
+
+var divBack2 = document.createElement("div");
+divBack2.id = "BackId";
+divBack2.innerHTML = "<a href = 'index.html'>Back</a>"
+divBack2.style.textAlign = "center";
+divBack2.style.margin = "10px";
+divBack2.style.fontFamily = "RalewayReg";
+divBack2.style.fontSize = "20px";
+
+// var divBack2 = divBack;
+
 document.body.appendChild(div);
+// document.getElementById("fixedWidth").appendChild(divBack);
+document.getElementById("fixedWidth").appendChild(divBack2);
+
+
 
 for (i = 0; i < groups.length; i++) {
+
   var divGrp = document.createElement("div");
   divGrp.id = "grpId" + i;
   divGrp.innerHTML = groups[i];
@@ -88,7 +106,13 @@ for (i = 0; i < groups.length; i++) {
 
     var divDesc = document.createElement("div");
     divDesc.id = "DescId" + i+"_"+j;
-    divDesc.innerHTML = tempFiles[j][3];
+    if (tempFiles[j][0] == "Readme" && files1[0][0] == "Ciena Corporation") {
+      divDesc.innerHTML = "Hi I'm Edward! I love architecting interactive web designs.";
+    } else {
+      // console.log("did not change readme file", tempFiles[j][3]);
+
+      divDesc.innerHTML = tempFiles[j][3];
+    }
     divDesc.style.marginLeft = "10px";
     divDesc.style.marginTop = "10px";
     divDesc.style.marginBottom = "40px";
@@ -134,10 +158,17 @@ for (i = 0; i < groups.length; i++) {
       document.getElementById("grpId" + i).appendChild(divChart);
     }
 
-
-
-
-
   }
 
 }
+var divBack = document.createElement("div");
+divBack.id = "BackId";
+divBack.innerHTML = "<a href = 'index.html'>Back</a>"
+divBack.style.textAlign = "center";
+divBack.style.margin = "10px";
+divBack.style.fontFamily = "RalewayReg";
+divBack.style.fontSize = "20px";
+
+// divBack.style.bottom = "0";
+// document.body.appendChild(divBack);
+document.getElementById("fixedWidth").appendChild(divBack);
