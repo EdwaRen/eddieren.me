@@ -2,6 +2,8 @@
 // Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 //
 
+var myName = "Edward Ren"
+
 var groups =[
   "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"
 ]

@@ -6,3 +6,6 @@ for (i = 0; i < groups.length; i++) {
   document.getElementById(groupImageNameTemp).style.backgroundImage = groupsImages[i];
 
 }
+
+var x = document.getElementById("finderTopBarTextP");
+x.innerHTML = myName;

@@ -4,7 +4,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 # FinderMe
 
-My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages
+My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, they can visit edwardren.me/alternate.html for a dynamically generated webpage with all the info on the main index page.
 
 ![Alt Text](images/readmeDisplayGif.gif)
 
@@ -76,6 +76,18 @@ Which correspond to the following graph labelled as such
 
 # License
 This project and its use as a template is licensed under the GNU General Public License v3.0 (GNU GPL v3.0). Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. For more specific information see [LICENSE](../blob/master/LICENSE)
+
+Constituent icons used in this project are licensed through Creative Commons BY 3.0. Some authors are responsible for multiple icons.
+
+Icon made by Dave Gandy from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Roundicon from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Chanut is Industries from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Freepik from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Madebyoliver from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Pixel Buddha from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0
+
+
 
 
 # Contact
