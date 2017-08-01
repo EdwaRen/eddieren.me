@@ -85,7 +85,8 @@ Icon made by Chanut is Industries from www.flaticon.com, licensed by Creative Co
 Icon made by Freepik from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 Icon made by Madebyoliver from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 Icon made by Pixel Buddha from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
-Icon made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0
+Icon made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
+Icon made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 
 
 
