@@ -138,11 +138,50 @@ function filesClick(myId, number) {
       document.getElementById("chartEnclosure").style.position = "absolute";
     }
 
+    if (files[number].length > 7) {
+      console.log("creating chart");
+      createChart(number);
+    }
+
   }
 }
 document.onkeydown = checkKey;
 
 var typedString = "";
+
+function createChart(number) {
+
+
+  document.getElementById("myChardId").remove();
+
+  var myChart = document.createElement("dl");
+  myChart.id = "myChardId";
+  document.getElementById("chartEnclosure").appendChild(myChart);
+
+  var myTitle = document.createElement("dt");
+  myTitle.innerHTML = files[number][files[number].length-1];
+  document.getElementById("myChardId").appendChild(myTitle);
+
+  for (i = 7; i < files[number].length-1; i++) {
+    console.log("creating bars");
+    var myBar = document.createElement("dd");
+    var uniqueId = "barId" + (Math.floor(Math.random() * 100000));
+    myBar.id = uniqueId;
+    myBar.className = "percentage percentage-" + (files[number][i+1] + 10);
+    document.getElementById("myChardId").appendChild(myBar);
+
+    var myBarTitle = document.createElement("span");
+    myBarTitle.className = "text";
+    myBarTitle.innerHTML = files[number][i];
+    document.getElementById(uniqueId).appendChild(myBarTitle);
+
+
+
+    i++;
+
+  }
+
+}
 
 function checkKey(e) {
   typedString+= e.keyCode;

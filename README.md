@@ -40,7 +40,7 @@ Different sets of information can be easily added in or swapped out, new groups 
 
 ## Graphs
 
-There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was torpoeded by GitHub Pages because it did not support node_modules.
+There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was unfortunately torpoeded by hosting issues with node modules.
 
 ![Alt text](/images/graphs.png?raw=true "")
 
@@ -73,6 +73,25 @@ Which correspond to the following graph labelled as such
 7 - Element Icon <br />
 
 ![Alt text](/images/InstructionFilesLabelled.png?raw=true "")
+
+### Using Charts In template
+While normally an information array (files variable) has a length of 7, extending the length will create a chart with the remaining values. With alternating values between label and value. For example, including charts, the new "files" variable will become the following:
+
+["1", "2", "3", "4", "5", "6", "7", **"8"**, **"9"**, ... **"files.length-1"**] <br />
+1 - Element Name <br />
+2 - Image link <br />
+3 - Subtitle <br />
+4 - Description <br />
+5 - Duration <br />
+6 - Location <br />
+7 - Element Icon <br />
+**8 - Bar Name** <br />
+**9 - Bar Length** (out of 100) <br />
+**Last - Chart name** <br />
+
+When the files array length is greater than 7, then the last value will be the title of the chart. In this version, only bar graphs are supported.
+<br />
+For more customizable chart options, you can mess with styleGraph.css and #chartEnclosure in styles.css.
 
 # License
 This project and its use as a template is licensed under the GNU General Public License v3.0 (GNU GPL v3.0). Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. For more specific information see [LICENSE](../blob/master/LICENSE)

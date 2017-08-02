@@ -46,7 +46,7 @@ var files3 = [
 
 var files4 = [
 
-  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", "Swift", 90, "Javascript",90, "C++", 90, "Python", 90, "Visual Basic",80, "React", 80, "Java" , 70 , "CSS", 70 , "HTML", 70, "C#", 60, "Objective-C", 50],
+  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", "Swift", 90, "Javascript",90, "C++", 90, "Python", 90, "Visual Basic",80, "React", 80, "Java" , 70 , "CSS", 70 , "HTML", 70, "C#", 60, "Objective-C", 50, "Proficiency"],
   [ "Linguistics","","Language Skills", "Proficient: English, French.<br > <br > Experienced: Mandarin.", "N/A", "N/A", "url('images/chat.png')"],
 
 ]
