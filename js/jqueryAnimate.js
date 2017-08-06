@@ -8,7 +8,7 @@ $(document).ready(function(){
     // $( ".bothWindows" ).remove();
   // $(".bothWindows").remove();
     $("#backShadow").fadeOut(0);
-    $("#backShadow").fadeIn(400);
+    $("#backShadow").fadeIn(700);
 
     $("#myGroup0").click(function(){
         fadeFiles();
@@ -104,42 +104,42 @@ function fadeFiles() {
   // $("#myFiles0").fadeIn(300);
 
   $("#myFiles1").stop();
-  $("#myFiles1").fadeOut(1);
+  $("#myFiles1").fadeOut(0);
   $("#myFiles1").fadeIn(350);
   // $("#myFiles1").slideDown();
 
   $("#myFiles2").stop();
-  $("#myFiles2").fadeOut(1);
+  $("#myFiles2").fadeOut(0);
   $("#myFiles2").fadeIn(400);
   // $("#myFiles2").slideDown();
 
   $("#myFiles3").stop();
-  $("#myFiles3").fadeOut(1);
+  $("#myFiles3").fadeOut(0);
   $("#myFiles3").fadeIn(450);
   // $("#myFiles3").slideDown();
 
   $("#myFiles4").stop();
-  $("#myFiles4").fadeOut(1);
+  $("#myFiles4").fadeOut(0);
   $("#myFiles4").fadeIn(500);
 
   $("#myFiles5").stop();
-  $("#myFiles5").fadeOut(1);
+  $("#myFiles5").fadeOut(0);
   $("#myFiles5").fadeIn(500);
 
   $("#myFiles6").stop();
-  $("#myFiles6").fadeOut(1);
+  $("#myFiles6").fadeOut(0);
   $("#myFiles6").fadeIn(500);
 
   $("#myFiles7").stop();
-  $("#myFiles7").fadeOut(1);
+  $("#myFiles7").fadeOut(0);
   $("#myFiles7").fadeIn(500);
 
   $("#myFiles8").stop();
-  $("#myFiles8").fadeOut(1);
+  $("#myFiles8").fadeOut(0);
   $("#myFiles8").fadeIn(500);
 
   $("#myFiles9").stop();
-  $("#myFiles9").fadeOut(1);
+  $("#myFiles9").fadeOut(0);
   $("#myFiles9").fadeIn(500);
 
   // $("#descReadmeTutorial").fadeOut(1);
