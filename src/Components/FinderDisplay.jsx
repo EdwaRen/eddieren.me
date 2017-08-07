@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+
 import GroupsBar from './GroupsBar';
 import FilesBar from './FilesBar';
 import DescBar from './DescBar';
-import {Profile} from '../Info/DatabaseImage.jsx';
+
+import Profile from '../images/Profile.png';
+import Experience from '../images/Experience.png';
+
+
 
 
 
@@ -24,6 +29,7 @@ class FinderDisplay extends Component {
   }
 
   render() {
+    console.log("Profile", Profile);
     return(
       <div id="backShadow" className="draggable">
         <div className="bothWindows">
@@ -43,7 +49,7 @@ class FinderDisplay extends Component {
                 groupIndex= {0}
                 fileIndex= {0}
                 groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
-                groupsImage = {[Profile, "url('../images/Experience.png')", "url('../images/Projects.png')", "url('../images/Network.png')", "url('../images/Languages.png')", "url('../images/Education.png')", "url('../images/Other.png')"]}
+                groupsImage = {[Profile, Experience, "url('../images/Projects.png')", "url('../images/Network.png')", "url('../images/Languages.png')", "url('../images/Education.png')", "url('../images/Other.png')"]}
                 onClick={i => this.groupClick(i)}
               />
             </div>

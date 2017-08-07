@@ -20,7 +20,7 @@ function Group(props) {
       backgroundSize: "cover",
       opacity: "0.9",
       marginTop: "4px",
-      backgroundImage: `url(${props.image})`,
+      backgroundImage:`url(${props.image})`,
     }
   } else {
     groupStyle = {
@@ -37,12 +37,13 @@ function Group(props) {
       backgroundSize: "cover",
       opacity: "0.9",
       marginTop: "4px",
-      backgroundImage: props.image
+      backgroundImage:`url(${props.image})`,
     }
   }
   return (
     <div style={groupStyle} id="myGroupId0" onClick={props.onClick}>
       <div style={imageStyle}></div>
+      {/* <img src = {props.image}/> */}
       <div id="profileDiv">
         <p >{props.value}</p>
       </div>
