@@ -6,8 +6,8 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, they can visit edwardren.me/alternate.html for a dynamically generated webpage with all the info on the main index page.
 
-![Readme Example](images/readmeDisplayGif.gif)
-<!--  To fix: This piece of s link that does not work-->
+![Readme Example](images/readMeDisplayGif.gif)
+
 
 # Links
 
@@ -23,7 +23,7 @@ My personal website created primarily using Javascript in conjunction with HTML/
 
 # Features
 
-This website was purposefully built to emulate the look of the 'Finder' program in Apple's MacBook computers. In doing so, I envisioned to construct a unique, friendly, and familiar website that does not implement the similar and overdone UI interfaces on many sites today. Some notable features are listed below
+This website was purposefully built to emulate the look of the 'Finder' program in Apple's Macbook computers. In doing so, I envisioned to construct a unique, friendly, and familiar website that does not implement the similar and overdone UI interfaces on many sites today. Some notable features are listed below
 
 ## Draggable
 
@@ -41,7 +41,7 @@ Different sets of information can be easily added in or swapped out, new groups 
 
 ## Graphs
 
-There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was unfortunately torpedoed by hosting issues with node modules.
+There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was unfortunately torpoeded by hosting issues with node modules.
 
 ![Graphs](/images/graphs.png?raw=true "")
 
@@ -120,4 +120,4 @@ Icon(s) made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.
 
 If you have any questions or inquiries concerning this project or suggestions for future releases, send an email to Edward.ren.2013@gmail.com
 
--"Let's do this!"
+"Let's do this!"

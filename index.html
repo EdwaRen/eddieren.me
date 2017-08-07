@@ -1,0 +1,355 @@
+<!--
+Copyright (c) 2017 by Edward Ren. All Rights Reserved.
+ -->
+
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/styleGraph.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/images.css">
+<link rel=icon href="images/ERlogo.png">
+
+
+<html>
+
+<head>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="//use.typekit.net/ftn5fet.js"></script>
+  <script>
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
+  <script>
+    $(function() {
+      $("#backShadow").draggable({
+        containment: "#containment-wrapper",
+        scroll: false
+      });
+    });
+  </script>
+  <!--  Jquery-->
+
+  <script src="js/jqueryAnimate.js"></script>
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- <script>
+  setTimeout(alert, 400);
+  function alert() {
+    console.log("Making main div visible");
+    // var x = document.getElementById("backShadow");
+    fadeBackShadowIn();
+  }
+
+
+</script> -->
+
+  <div id="containment-wrapper">
+
+    <div id="backShadow" class="draggable">
+      <!-- MEMES -->
+      <div class="bothWindows">
+        <div class="shadowWindow"> </div>
+        <div class="finderTopBar">
+          <div class="headerDisplay">
+            <div class="finderTopBarIcon"></div>
+            <div class="finderTopBarText">
+              <p id="finderTopBarTextP"></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="bottomElemeents">
+          <div class="finderSideBar">
+
+            <div id="findSideTopBar" onclick="profileClick()">
+              <!-- <div id = "imagePlaceholder" style="clear: both;">
+          </div>
+          <div id = "profileDiv"> -->
+              <p>Find</p>
+              <!-- </div> -->
+            </div>
+
+            <div id="myGroup0" onclick="groupClick(0)">
+              <div id="imagePlaceholder0" >
+              </div>
+              <div id="profileDiv">
+                <p id="grp0"></p>
+              </div>
+            </div>
+
+            <div id="myGroup1" onclick="groupClick(1)">
+              <div id="imagePlaceholder1" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp1"></p>
+              </div>
+            </div>
+
+            <div id="myGroup2" onclick="groupClick(2)">
+              <div id="imagePlaceholder2" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp2"></p>
+              </div>
+            </div>
+
+            <div id="myGroup3" onclick="groupClick(3)">
+              <div id="imagePlaceholder3" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp3"></p>
+              </div>
+            </div>
+
+            <div id="myGroup4" onclick="groupClick(4)">
+              <div id="imagePlaceholder4" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp4"></p>
+              </div>
+            </div>
+
+            <div id="myGroup5" onclick="groupClick(5)">
+              <div id="imagePlaceholder5" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp5"></p>
+              </div>
+            </div>
+
+            <div id="myGroup6" onclick="groupClick(6)">
+              <div id="imagePlaceholder6" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp6"></p>
+              </div>
+            </div>
+
+            <div id="myGroup7" onclick="groupClick(7)">
+              <div id="imagePlaceholder7" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp7"></p>
+              </div>
+            </div>
+
+            <div id="myGroup8" onclick="groupClick(8)">
+              <div id="imagePlaceholder8" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp8"></p>
+              </div>
+            </div>
+
+            <div id="myGroup9" onclick="groupClick(9)">
+              <div id="imagePlaceholder9" style="clear: both;">
+              </div>
+              <div id="profileDiv">
+                <p id="grp9"></p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="finderFilesBar">
+
+            <div id="myFiles0" onclick="filesClick(this.id, 0)">
+              <div id="imagePlaceholderDocument0" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP0"></p>
+              </div>
+            </div>
+
+            <div id="myFiles1" onclick="filesClick(this.id, 1)">
+              <div id="imagePlaceholderDocument1" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP1"></p>
+              </div>
+            </div>
+
+            <div id="myFiles2" onclick="filesClick(this.id,2)">
+              <div id="imagePlaceholderDocument2" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP2"></p>
+              </div>
+            </div>
+
+            <div id="myFiles3" onclick="filesClick(this.id, 3)">
+              <div id="imagePlaceholderDocument3" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP3"></p>
+              </div>
+            </div>
+
+            <div id="myFiles4" onclick="filesClick(this.id, 4)">
+              <div id="imagePlaceholderDocument4" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP4"></p>
+              </div>
+            </div>
+
+            <div id="myFiles5" onclick="filesClick(this.id, 5)">
+              <div id="imagePlaceholderDocument5" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP5"></p>
+              </div>
+            </div>
+
+            <div id="myFiles6" onclick="filesClick(this.id, 6)">
+              <div id="imagePlaceholderDocument6" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP6"></p>
+              </div>
+            </div>
+
+            <div id="myFiles7" onclick="filesClick(this.id, 7)">
+              <div id="imagePlaceholderDocument7" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP7"></p>
+              </div>
+            </div>
+
+            <div id="myFiles8" onclick="filesClick(this.id, 8)">
+              <div id="imagePlaceholderDocument8" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP8"></p>
+              </div>
+            </div>
+
+            <div id="myFiles9" onclick="filesClick(this.id, 9)">
+              <div id="imagePlaceholderDocument4" style="clear: both;">
+              </div>
+              <div id="filesDiv">
+                <p id="filesP9"></p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="finderDescriptionBar">
+            <div id="separator">
+              <div id="descReadmeTutorial">
+
+
+                <!-- <script src="node_modules2/chart.js/dist/Chart.bundle.js"></script>
+                <script src="node_modules2/chart.js/samples/utils.js"></script>
+                <script src="languageChart.js"></script> -->
+
+                <div id="descImage"></div>
+                <!--  My profile picture is in the above div-->
+
+                <div id="descDescription">
+                  <h1 id="fileTitle"></h1>
+                  <!-- This is the title of the file ex: Readme.txt -->
+                  <h2 id="fileSubTitle"></h2>
+                  <!--  Subtitle: Getting started-->
+                  <p id="fileDescription"></p>
+                  <!--  This is the description ex: Navigate through the bars under find tab-->
+                </div>
+                <div id="chartEnclosure">
+                  <dl id = "myChardId">
+                    <!-- <dt>Experience</dt>
+                    <dd class="percentage percentage-100"><span class="text">Swift</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">Javascript</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">C++</span></dd>
+                    <dd class="percentage percentage-100"><span class="text">Python</span></dd>
+                    <dd class="percentage percentage-90"><span class="text">Visual Basic</span></dd>
+                    <dd class="percentage percentage-90"><span class="text">React</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">Java</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">CSS</span></dd>
+                    <dd class="percentage percentage-80"><span class="text">HTML</span></dd>
+                    <dd class="percentage percentage-70"><span class="text">C#</span></dd>
+                    <dd class="percentage percentage-60"><span class="text">Objective-C</span></dd> -->
+                    <!-- <dd class="percentage percentage-3000"><span class="text">Coffee</span></dd> -->
+                    <!--  I consume coffee like a black hole-->
+                  </dl>
+                </div>
+
+                <div id="datesContainer">
+
+                  <div id="datesTitle">
+                    <p id="startTitle"> </p>
+                    <p id="untilTitle"> </p>
+                  </div>
+
+                  <div id="datesText">
+                    <p id="startDate"> </p>
+                    <p id="untilDate"> </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>
+
+
+
+
+
+          <script src="js/myInfo.js"></script>
+          <script src="js/setup.js"></script>
+          <script src="js/resetBarColor.js"></script>
+          <script src="js/sideBar.js"></script>
+          <script src="js/initialClick.js"></script>
+
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+  <div id="footer">
+    <div id="bottomText">
+      <p>Source code is availible <a href="https://github.com/EdwaRen/Me_Finder">here</a><br>© Edward Ren 2017</p>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,29 +1,28 @@
-
-body {
-
-background-image: url("../images/triangulated-image.png");
-/*background-size: cover;*/
-background-size: 100% 100%;
-background-attachment: fixed;
-}
-
-#bodyBackground {
-  height: 100%;
-  width: 100%;
-  /*background-color: #FFFFFF;*/
-  position:absolute;
-
-}
-
-@font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
-@font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
-@font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
-@font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
+@font-face { font-family: RalewayReg; src: url('Raleway/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayBld; src: url('Raleway/Raleway-Bold.ttf'); }
+@font-face { font-family: RalewayMed; src: url('Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('Raleway/Raleway-Italic.ttf'); }
 /*html {
   width: 100%;
   height: 100%;
 }*/
+ body {
+  /*background-color: #A3ACC2;*/
+  /*background-repeat: no-repeat;*/
+  background-image: url("../images/triangulated-image.png");
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+  background-attachment: fixed;
 
+    /*width: 100%;
+    height: 100%;*/
+
+
+  /*-webkit-background-origin:border;*/
+
+  /*zoom: 0.75;
+    -moz-transform: scale(0.75);*/
+}
 
 #backShadow{
   /*opacity: 0;*/
@@ -52,7 +51,7 @@ background-attachment: fixed;
 /*display: none;*/
  width: 600px;
   height: 450px;
-  background-color: #333333;
+  /*background-color: #333333;*/
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
