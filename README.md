@@ -6,7 +6,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, they can visit edwardren.me/alternate.html for a dynamically generated webpage with all the info on the main index page.
 
-![Readme Example](images/readMeDisplayGif.gif)
+![Readme Example](images/readmeDisplayGif.gif)
 <!--  To fix: This piece of s link that does not work-->
 
 # Links

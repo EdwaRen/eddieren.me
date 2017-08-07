@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import '../imageStyle.css';
+import '../css/HtmlStyle.css';
+import FinderDisplay from './FinderDisplay';
+
 class Background extends Component {
   constructor() {
     super();
@@ -7,7 +9,9 @@ class Background extends Component {
   render() {
 
     return (
-      <div id = "bodyBackground"></div>
+      <div id = "bodyBackground">
+        <FinderDisplay />
+      </div>
     )
   }
 

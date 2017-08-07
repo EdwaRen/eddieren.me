@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './imageStyle.css';
+import './css/HtmlStyle.css';
 import Background from './Components/Background'
 
 // class Background extends React.Component {
@@ -21,6 +21,8 @@ import Background from './Components/Background'
 // ========================================
 
 ReactDOM.render(
-  <Background />,
+  <Background
+    
+  />,
   document.getElementById('root')
 );
