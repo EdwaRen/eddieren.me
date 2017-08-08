@@ -7,6 +7,20 @@ import DescBar from './DescBar';
 
 import Profile from '../images/Profile.png';
 import Experience from '../images/Experience.png';
+import Projects from '../images/Projects.png';
+import Network from '../images/Network.png';
+import Languages from '../images/Languages.png';
+import Education from '../images/Education.png';
+import Other from '../images/Other.png';
+
+import Document from '../images/Document.png';
+
+import yummy from '../Info/DatabaseImage.jsx';
+
+
+
+
+
 
 
 
@@ -19,17 +33,28 @@ class FinderDisplay extends Component {
     this.state = {
       groupIndex: 0,
       fileIndex: 0,
-      groups: [ "1", "2", "3"],
-      groupsImage: ["1", "2", "3"],
+
     };
   }
 
   groupClick(i) {
+    console.log("Group clicked");
 
+    this.setState({
+      groupIndex: i,
+      fileIndex: 0,
+    })
+  }
+  fileClick(i) {
+    console.log("File clicked");
+    this.setState({
+      fileIndex: i,
+    })
   }
 
   render() {
-    console.log("Profile", Profile);
+    console.log("Yummy!", yummy);
+    console.log("Profile", Other);
     return(
       <div id="backShadow" className="draggable">
         <div className="bothWindows">
@@ -46,15 +71,20 @@ class FinderDisplay extends Component {
           <div className="bottomElemeents">
             <div className="finderSideBar">
               <GroupsBar
-                groupIndex= {0}
-                fileIndex= {0}
+                groupIndex= {this.state.groupIndex}
+                fileIndex= {this.state.fileIndex}
                 groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
-                groupsImage = {[Profile, Experience, "url('../images/Projects.png')", "url('../images/Network.png')", "url('../images/Languages.png')", "url('../images/Education.png')", "url('../images/Other.png')"]}
+                groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
                 onClick={i => this.groupClick(i)}
               />
             </div>
             <div className="finderFilesBar">
-              {/* <FilesBar /> */}
+              <FilesBar
+                fileIndex = {this.state.fileIndex}
+                filesText = {["Readme", "About FinderMe"]}
+                filesImage = {[Document, Document]}
+                onClick = {i => this.fileClick(i)}
+              />
             </div>
             <div className="finderDescriptionBar">
               {/* <DescBar /> */}

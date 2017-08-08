@@ -54,9 +54,9 @@ function Group(props) {
 class GroupsBar extends React.Component {
 
   renderGroup(i) {
-    var indexReturn = 1;
-    if (i != this.props.groupIndex) {
-      indexReturn = 0;
+    var indexReturn = 0;
+    if (i == this.props.groupIndex) {
+      indexReturn = 1;
     }
     // console.log("indexReturn", indexReturn);
     return (
@@ -64,7 +64,8 @@ class GroupsBar extends React.Component {
       indexed={indexReturn}
       value={this.props.groups[i]}
       image={this.props.groupsImage[i]}
-      onClick={() => this.props.onClick(i)}/>
+      onClick={() => this.props.onClick(i)}
+    />
     );
   }
 
