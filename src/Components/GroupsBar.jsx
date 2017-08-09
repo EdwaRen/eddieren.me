@@ -1,16 +1,24 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+import { fadeIn } from 'react-animations'
+import Radium from 'radium';
+// import { StyleSheet, css } from 'aphrodite';
+
 
 function Group(props) {
   var groupStyle = {};
   var imageStyle = {};
   console.log("Group image", props.image);
   if (props.indexed == 0) {
-    groupStyle = {
+    groupStyle = ({
       backgroundColor: "#eef2f2",
       height: "32px",
-      width: "198px"
-    }
+      width: "130px",
+      bounce: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn')
+ }
+    })
     imageStyle = {
       float: "left",
       margin: "0",
@@ -18,7 +26,7 @@ function Group(props) {
       padding: "12px",
       maxWidth: "24",
       backgroundSize: "cover",
-      opacity: "0.9",
+      opacity: "0.6",
       marginTop: "4px",
       backgroundImage:`url(${props.image})`,
     }
@@ -26,7 +34,7 @@ function Group(props) {
     groupStyle = {
       backgroundColor: "#CCCCCC",
       height: "32px",
-      width: "198px"
+      width: "130px"
     }
     imageStyle = {
       float: "left",
@@ -41,6 +49,7 @@ function Group(props) {
     }
   }
   return (
+
     <div style={groupStyle} id="myGroupId0" onClick={props.onClick}>
       <div style={imageStyle}></div>
       {/* <img src = {props.image}/> */}
@@ -48,17 +57,23 @@ function Group(props) {
         <p >{props.value}</p>
       </div>
     </div>
+
   );
 }
 
 class GroupsBar extends React.Component {
+
+  componentDidUpdate() {
+
+
+  }
 
   renderGroup(i) {
     var indexReturn = 0;
     if (i == this.props.groupIndex) {
       indexReturn = 1;
     }
-    // console.log("indexReturn", indexReturn);
+    console.log("groupImage", this.props.groupImage);
     return (
       <Group
       indexed={indexReturn}

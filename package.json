@@ -3,8 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aphrodite": "^1.2.3",
+    "inline-style-prefixer": "^3.0.7",
+    "radium": "^0.19.4",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-animations": "^0.1.0",
+    "react-dom": "^15.6.1",
+    "react-fade": "^1.1.1",
+    "react-fade-opacity": "^1.0.3",
+    "react-transition-group": "^1.2.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+
 import '../css/HtmlStyle.css';
 
 function Files(props) {
@@ -34,12 +36,17 @@ function Files(props) {
   }
   console.log(props.text);
     return (
-      <div style={fileStyle} onClick={props.onClick}>
+      <CSSTransitionGroup
+  transitionName="example"
+  transitionEnterTimeout={500}
+  transitionLeaveTimeout={300}>
+      <div style={fileStyle} onClick={props.onClick} key = {"1"}>
         <div style={imageStyle} ></div>
         <div id="filesDiv">
           <p>{props.text}</p>
         </div>
       </div>
+    </CSSTransitionGroup>
 
     );
 
@@ -53,11 +60,11 @@ class FilesBar extends Component {
     if (i == this.props.fileIndex) {
       indexReturn = 1;
     }
-    console.log(this.props.filesText[i]);
+    console.log("filesimage", this.props.filesImage[0]);
     return (
       <Files
       indexed={indexReturn}
-      text={this.props.filesText[i]}
+      text={this.props.filesText[i][0]}
       image={this.props.filesImage[i]}
       onClick= {() => this.props.onClick(i)}
     />);

@@ -1,5 +1,13 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+// import FadeIn from 'react-fade-in';
+import { CSSTransitionGroup } from 'react-transition-group' // ES6
+import Fade  from 'react-fade'
+
+
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
+
 
 import GroupsBar from './GroupsBar';
 import FilesBar from './FilesBar';
@@ -15,10 +23,17 @@ import Other from '../images/Other.png';
 
 import Document from '../images/Document.png';
 
-import yummy from '../Info/DatabaseImage.jsx';
+import myInfo from '../Info/DatabaseImage.js';
+
+var infoImages = [
+  //Profile
+    [Document, Document],
 
 
+  //Experience
+    [Document, Document],
 
+]
 
 
 
@@ -39,6 +54,8 @@ class FinderDisplay extends Component {
 
   groupClick(i) {
     console.log("Group clicked");
+    // document.getElementById("myGroupId0").children[0].className += " load";
+
 
     this.setState({
       groupIndex: i,
@@ -53,8 +70,8 @@ class FinderDisplay extends Component {
   }
 
   render() {
-    console.log("Yummy!", yummy);
-    console.log("Profile", Other);
+    console.log("Yummy!", myInfo.data);
+    console.log("filesImage", infoImages[0]);
     return(
       <div id="backShadow" className="draggable">
         <div className="bothWindows">
@@ -70,22 +87,29 @@ class FinderDisplay extends Component {
           </div>
           <div className="bottomElemeents">
             <div className="finderSideBar">
-              <GroupsBar
-                groupIndex= {this.state.groupIndex}
-                fileIndex= {this.state.fileIndex}
-                groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
-                groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
-                onClick={i => this.groupClick(i)}
-              />
+
+          {/* <Fade> */}
+                <GroupsBar
+                  groupIndex= {this.state.groupIndex}
+                  fileIndex= {this.state.fileIndex}
+                  groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
+                  groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
+                  onClick={i => this.groupClick(i)}
+                />
+
+            {/* </Fade> */}
+
             </div>
-            <div className="finderFilesBar">
+            {/* <Fade> */}
+            <div className="finderFilesBar" key = "1">
               <FilesBar
                 fileIndex = {this.state.fileIndex}
-                filesText = {["Readme", "About FinderMe"]}
-                filesImage = {[Document, Document]}
+                filesText = {myInfo.data[this.state.groupIndex]}
+                filesImage = {infoImages[this.state.groupIndex]}
                 onClick = {i => this.fileClick(i)}
               />
             </div>
+          {/* </Fade> */}
             <div className="finderDescriptionBar">
               {/* <DescBar /> */}
             </div>

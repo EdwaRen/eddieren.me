@@ -22,7 +22,7 @@ import Background from './Components/Background'
 
 ReactDOM.render(
   <Background
-    
+
   />,
   document.getElementById('root')
 );
