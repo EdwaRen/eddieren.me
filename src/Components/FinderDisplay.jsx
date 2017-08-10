@@ -154,5 +154,9 @@ class FinderDisplay extends Component {
 
 }
 
+window.onpopstate = function(event) {
+  window.location.reload()
+}
+
 
 export default FinderDisplay;
