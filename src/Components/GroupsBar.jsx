@@ -8,7 +8,6 @@ import Radium from 'radium';
 function Group(props) {
   var groupStyle = {};
   var imageStyle = {};
-  console.log("Group image", props.image);
   if (props.indexed == 0) {
     groupStyle = ({
       backgroundColor: "#eef2f2",
@@ -73,7 +72,6 @@ class GroupsBar extends React.Component {
     if (i == this.props.groupIndex) {
       indexReturn = 1;
     }
-    console.log("groupImage", this.props.groupImage);
     return (
       <Group
       indexed={indexReturn}

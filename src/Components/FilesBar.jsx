@@ -4,6 +4,19 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import '../css/HtmlStyle.css';
 
 function Files(props) {
+  const descImage = {
+    /*position: static;*/
+    display: "block",
+    margin: "auto",
+    width: "80px",
+    height: "80px",
+    marginTop: "20px",
+    backgroundSize: "cover",
+
+    opacity: "1.0",
+    /*background-color: #111111;*/
+    /*background-image: url("images/Edward_ProfilePic.png");*/
+  }
   var fileStyle = {};
   if (props.indexed == 0) {
     fileStyle = {
@@ -34,7 +47,6 @@ function Files(props) {
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${props.image})`
   }
-  console.log(props.text);
     return (
       <CSSTransitionGroup
   transitionName="example"
@@ -60,7 +72,6 @@ class FilesBar extends Component {
     if (i == this.props.fileIndex) {
       indexReturn = 1;
     }
-    console.log("filesimage", this.props.filesImage[0]);
     return (
       <Files
       indexed={indexReturn}
@@ -71,7 +82,6 @@ class FilesBar extends Component {
   }
 
   numberFilesToRender() {
-    console.log(this.props.filesText);
     var combinedRenders =[];
     for (var i = 0; i < (this.props.filesText).length; i++) {
       combinedRenders.push(this.renderFile(i));
@@ -87,7 +97,6 @@ class FilesBar extends Component {
   }
 
   render() {
-    console.log("num files filled");
     return (
       <div>
         {/* {this.renderFile(0)} */}

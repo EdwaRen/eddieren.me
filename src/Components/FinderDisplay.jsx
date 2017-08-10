@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+import '../css/styleGraph.css';
+
 // import FadeIn from 'react-fade-in';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import Fade  from 'react-fade'
@@ -22,17 +24,39 @@ import Education from '../images/Education.png';
 import Other from '../images/Other.png';
 
 import Document from '../images/Document.png';
+import Coding from '../images/coding.png';
+import ProjectsIcon from '../images/ProjectsIcon2.png';
+import LinkedIn from '../images/Network/linkedin2.png';
+import GitHub from '../images/Network/github2.png';
+import Facebook from '../images/Network/facebook2.png';
+import Email from '../images/Network/email2.png';
+import HTMLCoding from '../images/html-coding.png';
+import Chat from '../images/chat.png';
+import College from '../images/college.png';
+import School from '../images/open-book.png';
 
-import myInfo from '../Info/DatabaseImage.js';
+import ProfilePic from '../images/Edward_ProfilePic.png';
 
-var infoImages = [
-  //Profile
-    [Document, Document],
+import myInfo from '../Info/PersonalInfo.js';
 
+var infoIconImages = [
+    [Document, Document], //Profile
+    [Coding, Coding],  //Experience
+    [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
+    [LinkedIn, GitHub, Facebook, Email], //Network
+    [HTMLCoding, Chat], //Languages
+    [College, School], //Education
+    [Document, Document, Document, Document, Document], //Other
+]
 
-  //Experience
-    [Document, Document],
-
+var infoDescImages = [
+  [ProfilePic, ""], //Profile
+  ["", ""], //Experience
+  ["", "", ""], //Projects
+  [LinkedIn, GitHub, Facebook, Email], //Network
+  ["", ""], //Languages
+  ["", ""], //Education
+  ["", "", "", "", ""], //Other
 ]
 
 
@@ -53,7 +77,6 @@ class FinderDisplay extends Component {
   }
 
   groupClick(i) {
-    console.log("Group clicked");
     // document.getElementById("myGroupId0").children[0].className += " load";
 
 
@@ -70,8 +93,7 @@ class FinderDisplay extends Component {
   }
 
   render() {
-    console.log("Yummy!", myInfo.data);
-    console.log("filesImage", infoImages[0]);
+    // console.log("filesImage", infoImages[0]);
     return(
       <div id="backShadow" className="draggable">
         <div className="bothWindows">
@@ -105,17 +127,23 @@ class FinderDisplay extends Component {
               <FilesBar
                 fileIndex = {this.state.fileIndex}
                 filesText = {myInfo.data[this.state.groupIndex]}
-                filesImage = {infoImages[this.state.groupIndex]}
+                filesImage = {infoIconImages[this.state.groupIndex]}
                 onClick = {i => this.fileClick(i)}
               />
             </div>
           {/* </Fade> */}
             <div className="finderDescriptionBar">
-              {/* <DescBar /> */}
+              <DescBar
+                groupIndex = {this.state.groupIndex}
+                fileIndex = {this.state.fileIndex}
+                content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
+                contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                onClick = { i => this.descClick[i]}
+              />
             </div>
           </div>
         </div>
-      // </div>
+       </div>
 
     )
   }

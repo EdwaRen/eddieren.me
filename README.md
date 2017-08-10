@@ -6,7 +6,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 My personal website created primarily using Javascript in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, they can visit edwardren.me/alternate.html for a dynamically generated webpage with all the info on the main index page.
 
-![Readme Example](images/readmeDisplayGif.gif)
+![Readme Example](./src/images/readmeDisplayGif.gif)
 <!--  To fix: This piece of s link that does not work-->
 
 # Links
@@ -29,21 +29,21 @@ This website was purposefully built to emulate the look of the 'Finder' program 
 
 Using jQuery UI, a draggable main div was implemented so that the finder tab can be dragged around just like the real program itself. This drag is limited to the container of the visible section of the page and avoids the footer. Clicking and holding anywhere on the main finder tab will drag it along. Though quite fun to play with on desktop computers, this drag functionality is not yet supported on mobile.
 
-![Draggable Window](images/draggable.gif)
+![Draggable Window](src/images/draggable.gif)
 
 
 ## Modularity
 
 Different sets of information can be easily added in or swapped out, new groups or files can be added with ease into the program. Through this modular programming, this website can also be used as a template for other purposes.
 
-![Modularity](/images/modularity.png?raw=true "")
+![Modularity](src/images/modularity.png?raw=true "")
 
 
 ## Graphs
 
 There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js was unfortunately torpedoed by hosting issues with node modules.
 
-![Graphs](/images/graphs.png?raw=true "")
+![Graphs](/src/images/graphs.png?raw=true "")
 
 
 # Testing
@@ -73,7 +73,7 @@ Which correspond to the following graph labelled as such
 6 - Location <br />
 7 - Element Icon <br />
 
-![Instructions](/images/InstructionFilesLabelled.png?raw=true "")
+![Instructions](/src/images/InstructionFilesLabelled.png?raw=true "")
 
 ### Using Custom Charts
 While normally an information array (files variable) has a length of 7, extending the length will create a chart with the remaining values. With alternating values between label and value. For example, including charts, the new "files" variable will become the following:
@@ -90,7 +90,7 @@ While normally an information array (files variable) has a length of 7, extendin
 **9 - Bar Length** (out of 100) <br />
 **Last Entry - Chart name** <br />
 
-![Custom Chart](/images/chartDoc.png?raw=true "")
+![Custom Chart](/src/images/chartDoc.png?raw=true "")
 
 When the files array length is greater than 7, then the last value will be the title of the chart. In this version, only bar graphs are supported.
 <br />
