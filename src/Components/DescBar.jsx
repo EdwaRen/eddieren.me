@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import '../css/styleGraph.css';
 import '../css/styleGraph.scss';
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -78,6 +80,13 @@ function Desc(props) {
 
   }
 
+  var subtitle = <h1></h1>
+  if (props.subtitle == "alternate") {
+    subtitle = <Link to='/alternate'>Normal Page Here </Link>
+  } else {
+    subtitle = props.subtitle
+  }
+
 
 
   return (
@@ -88,7 +97,7 @@ function Desc(props) {
 
         <div id="descDescription">
           <h1 id="fileTitle">{props.title}</h1>
-          <h2 id="fileSubTitle">{props.subtitle}</h2>
+          <h2 id="fileSubTitle">{subtitle}</h2>
           {/* <p id="fileDescription">{props.text}</p> */}
           {description}
 

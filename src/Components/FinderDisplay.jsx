@@ -5,6 +5,8 @@ import '../css/styleGraph.css';
 // import FadeIn from 'react-fade-in';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import Fade  from 'react-fade'
+import { Link } from 'react-router-dom'
+
 
 
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
@@ -102,7 +104,7 @@ class FinderDisplay extends Component {
             <div className="headerDisplay">
               <div className="finderTopBarIcon"></div>
               <div className="finderTopBarText">
-                <p id="finderTopBarTextP">Edward</p>
+                <p id="finderTopBarTextP">Edward Ren</p>
               </div>
             </div>
 

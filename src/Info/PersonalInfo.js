@@ -23,7 +23,7 @@ var myUrl4 = str4.link("mailto:edward.ren.2013@gmail.com") + "<br > Edward.ren.2
 var Info = [
   //Profile
   [
-    [ "Readme","url('images/Edward_ProfilePic.png')", "Getting Started", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"alternate.html\">here</a> and my resume <a href=\"images/resume.pdf\" download=\"resume.pdf\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"],
+    [ "Readme","url('images/Edward_ProfilePic.png')", "alternate", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, a 'classic' page is provided above and my resume is <a href=\"images/resume.pdf\" download=\"resume.pdf\">here</a>. Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"],
 
       [ "About FinderMe","url('images/Edward_ProfilePic.png')", "Personal website coded with React", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, see <a href = \"alternate.html\">here</a> and my resume <a href=\"images/resume.pdf\" download=\"resume.pdf\">here</a>.<br /><br />Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"]
   ],

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
+import { Link } from 'react-router-dom'
 
 import '../css/HtmlStyle.css';
 
