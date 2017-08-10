@@ -4,19 +4,7 @@ import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import '../css/HtmlStyle.css';
 
 function Files(props) {
-  const descImage = {
-    /*position: static;*/
-    display: "block",
-    margin: "auto",
-    width: "80px",
-    height: "80px",
-    marginTop: "20px",
-    backgroundSize: "cover",
 
-    opacity: "1.0",
-    /*background-color: #111111;*/
-    /*background-image: url("images/Edward_ProfilePic.png");*/
-  }
   var fileStyle = {};
   if (props.indexed == 0) {
     fileStyle = {

@@ -257,19 +257,3 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-
-
-#descImage {
-  /*position: static;*/
-  display: block;
-  margin: auto;
-  width: 80px;
-  height: 80px;
-  margin-top: 20px;
-  background-size: cover;
-
-  opacity: 1.0;
-  /*background-color: #111111;*/
-  /*background-image: url("images/Edward_ProfilePic.png");*/
-}

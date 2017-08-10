@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom'
+import { Router, Route, browserHistory } from 'react-router';
+
 import './css/HtmlStyle.css';
-import Background from './Components/Background'
+import Background from './Components/Background';
+import Alternate from './Components/Alternate';
+
 
 // class Background extends React.Component {
 //   constructor() {
@@ -19,10 +24,15 @@ import Background from './Components/Background'
 
 // }
 // ========================================
+browserHistory.push("/index");
+
 
 ReactDOM.render(
-  <Background
+  <Router path = "/" history = {browserHistory}>
+    <Route path = "/index" component = {Background} />
+    <Route path = "/alternate" component = {Alternate} />
 
-  />,
-  document.getElementById('root')
+  </Router>,
+
+document.getElementById('root')
 );

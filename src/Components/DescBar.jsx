@@ -1,7 +1,46 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+import '../css/styleGraph.css';
+import '../css/styleGraph.scss';
 
 
+
+function renderBar(chart, i) {
+  console.log("Chart is rendering")
+  var classNameStr = "percentage percentage-" + (chart[i+1]+10);
+  console.log(classNameStr);
+  return(
+    <div>
+      <dd className= {classNameStr} ><span className="text" >{chart[i]}</span></dd>
+
+    </div>
+  );
+}
+
+function createChart(chart) {
+  console.log("Chart", chart);
+
+
+  var chartEnclose = [];
+  if (chart != "0") {
+    for (var i = 0; i < chart.length-1; i++) {
+      chartEnclose.push(renderBar(chart, i));
+      i++
+    }
+
+    return (
+      <div id="chartEnclosure">
+        <dl id = "myChardId">
+          <dt>{chart[chart.length-1]}</dt>
+
+
+          {chartEnclose}
+
+        </dl>
+      </div>
+    );
+  }
+}
 
 function Desc(props) {
 
@@ -15,14 +54,14 @@ function Desc(props) {
     backgroundSize: "cover",
 
     opacity: "1.0",
+    backgroundImage: `url(${props.image})`,
+    position:"static"
     /*background-color: #111111;*/
     /*background-image: url("images/Edward_ProfilePic.png");*/
   }
   var imageDiv = <div></div>
-  if props.image != "" {
-    imageDiv = <div id="descImage" style={{
-      backgroundImage: `url(${props.image})`
-    }}></div>
+  if (props.image != "") {
+    imageDiv = <div  style={descImage}></div>
   }
 
 
@@ -39,6 +78,8 @@ function Desc(props) {
 
   }
 
+
+
   return (
     <div id="separator">
       <div id="descReadmeTutorial">
@@ -52,29 +93,26 @@ function Desc(props) {
           {description}
 
         </div>
-        {/* <div id="chartEnclosure">
-        <dl id = "myChardId">
+        {createChart(props.chart)}
 
-      </dl>
-    </div> */}
 
-    <div id="datesContainer">
+        <div id="datesContainer">
 
-      <div id="datesTitle">
-        {startTitle}
-        {locationTitle}
+          <div id="datesTitle">
+            {startTitle}
+            {locationTitle}
+          </div>
+
+          <div id="datesText">
+            <p id="startDate">{props.duration}</p>
+            <p id="untilDate">{props.location}</p>
+
+          </div>
+
+        </div>
       </div>
-
-      <div id="datesText">
-        <p id="startDate">{props.duration}</p>
-        <p id="untilDate">{props.location}</p>
-
-      </div>
-
     </div>
-  </div>
-</div>
-);
+  );
 
 }
 
@@ -82,7 +120,7 @@ class DescBar extends Component {
 
   renderDisplay() {
     console.log("Image", this.props.contentImages);
-    if ((this.props.content).length > 6) {
+    if ((this.props.content).length > 7) {
       return (
         <Desc
           title={this.props.content[0]}
@@ -91,7 +129,7 @@ class DescBar extends Component {
           text={this.props.content[3]}
           duration={this.props.content[4]}
           location={this.props.content[5]}
-          chart={this.props.content[6]}
+          chart={this.props.content[7]}
         />
       );
     } else {

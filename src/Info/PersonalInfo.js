@@ -1,6 +1,15 @@
 //
 // var Info = [["Readme", "About FinderMe"], ["Ciena Corporation", "Noteblock"], ["Recycle Can", "Morsecret", "Team Goals"], ["My GitHub", "My Facebook", "My LinkedIn", "My Email"], ["Coding Languages", "Linguistics"], ["University of Waterloo", "Colonel By SS"],[ "CLS Assistant", "SHAD", "Debate", "Cross Country", "Interests"]];
 
+//Necessary for alternate.html
+var myName = "Edward Ren"
+
+var groups =[
+  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"
+]
+var groupsImages =[
+  "url('images/Profile.png')", "url('images/Experience.png')", "url('images/Projects.png')", "url('images/Network.png')", "url('images/Languages.png')", "url('images/Education.png')", "url('images/Other.png')"
+]
 
 var str = "My LinkedIn";
 var myUrl = str.link("https://www.linkedin.com/in/edwardren/") ;
@@ -45,7 +54,7 @@ var Info = [
 //Languages
 [
 
-  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", "Swift", 90, "Javascript",90, "C++", 90, "Python", 90, "Visual Basic",80, "React", 80, "Java" , 70 , "CSS", 70 , "HTML", 70, "C#", 60, "Objective-C", 50, "Proficiency"],
+  [ "Coding Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", ["Swift", 90, "Javascript",90, "C++", 90, "Python", 90, "Visual Basic",85, "React", 85, "Java" , 75 , "CSS", 75 , "HTML", 75, "C#", 65, "Objective-C", 55, "Proficiency"]],
   [ "Linguistics","","Language Skills", "Proficient: English, French.<br > <br > Experienced: Mandarin.", "N/A", "N/A", "url('images/chat.png')"],
 
 ],

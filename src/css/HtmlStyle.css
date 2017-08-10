@@ -429,9 +429,9 @@ background-attachment: fixed;
     -moz-transform: scale(1.0);*/
   /*height: 400px;
   width: 400px;*/
-  position: absolute;
+  position: static;
   z-index: -1;
-  opacity: 0;
+  opacity: 1;
 }
 
 #footer {

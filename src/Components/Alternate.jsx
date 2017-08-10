@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
-import FinderDisplay from './FinderDisplay';
 import {Link} from 'react-router';
 
 
-class Background extends Component {
+class Alternate extends Component {
   constructor() {
     super();
   }
   render() {
+    console.log("ALternate!")
 
     return (
       <div id = "bodyBackground">
-        <FinderDisplay />
+        Alternate
       </div>
     )
   }
@@ -21,4 +21,4 @@ class Background extends Component {
 
 }
 
-export default Background;
+export default Alternate;
