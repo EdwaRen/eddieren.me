@@ -35,7 +35,6 @@ function createChart(chart) {
         <dl id = "myChardId">
           <dt>{chart[chart.length-1]}</dt>
 
-
           {chartEnclose}
 
         </dl>
@@ -70,23 +69,25 @@ function Desc(props) {
   var description = <p id="fileDescription" dangerouslySetInnerHTML={{
     __html: props.text
   }}></p>
+
   var startTitle = <p></p>;
   if (props.duration != "") {
     startTitle = <p id="startTitle">Start</p>
   }
+
   var locationTitle = <p></p>
   if (props.location != "") {
     locationTitle = <p id="untilTitle">Location</p>
-
   }
 
   var subtitle = <h1></h1>
   if (props.subtitle == "alternate") {
-    subtitle = <Link to='/alternate'>Normal Page Here </Link>
+    subtitle = <h2 id = "fileSubTitle"><Link to='/alternate'>Normal Page Here </Link></h2>
   } else {
-    subtitle = props.subtitle
+    subtitle = <h2 id="fileSubTitle" dangerouslySetInnerHTML={{
+      __html: props.subtitle
+    }}></h2>
   }
-
 
 
   return (
@@ -97,13 +98,12 @@ function Desc(props) {
 
         <div id="descDescription">
           <h1 id="fileTitle">{props.title}</h1>
-          <h2 id="fileSubTitle">{subtitle}</h2>
+          {subtitle}
           {/* <p id="fileDescription">{props.text}</p> */}
           {description}
 
         </div>
         {createChart(props.chart)}
-
 
         <div id="datesContainer">
 
