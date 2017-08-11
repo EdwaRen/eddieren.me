@@ -1,13 +1,18 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import { Link } from 'react-router-dom'
+import { browserHistory } from 'react-router';
+
 import myInfo from '../Info/PersonalInfo.js';
 import groupsInfo from '../Info/Groups.js';
 
-// function refresh() {
-//   window.location.reload();
-//
-// }
+function refresh() {
+  // history.pushState(null, '/');
+  browserHistory.push('/');
+
+  window.location.reload();
+
+}
 
 function RenderFiles() {
   let files = myInfo.data;
@@ -84,7 +89,7 @@ function RenderFiles() {
 
   }
 
-  content.push(<p><Link to='/' >Back</Link></p>)
+  content.push(<p><Link to='/' onClick = {refresh}>Back</Link></p>)
 
 
   return (

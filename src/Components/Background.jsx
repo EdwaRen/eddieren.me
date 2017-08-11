@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import FinderDisplay from './FinderDisplay';
 import {Link} from 'react-router';
+import $ from 'jquery'
+import Draggable from 'react-draggable'; // The default
+
+
 
 
 class Background extends Component {
@@ -11,10 +15,19 @@ class Background extends Component {
   render() {
 
     return (
+      <Draggable>
+
       <div id = "bodyBackground">
-        <FinderDisplay />
+          <FinderDisplay />
+
       </div>
+    </Draggable>
+
     )
+  }
+
+  componentDidMount() {
+
   }
 
 

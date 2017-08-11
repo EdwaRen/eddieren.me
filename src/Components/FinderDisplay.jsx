@@ -97,6 +97,8 @@ class FinderDisplay extends Component {
   render() {
     // console.log("filesImage", infoImages[0]);
     return(
+      // <div id="containment-wrapper">
+
       <div id="backShadow" className="draggable">
         <div className="bothWindows">
           <div className="shadowWindow"></div>
@@ -146,6 +148,7 @@ class FinderDisplay extends Component {
           </div>
         </div>
        </div>
+    //  {/* </div> */}
 
     )
   }
