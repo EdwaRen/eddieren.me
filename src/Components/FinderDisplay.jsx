@@ -7,7 +7,19 @@ import { Link } from 'react-router-dom'
 import Draggable from 'react-draggable'; // The default
 import $ from 'jquery';
 import { fadeIn } from 'react-animations';
+import { fadeInUp } from 'react-animations';
+import { fadeInLeft } from 'react-animations';
+
+
 import { fadeOut } from 'react-animations';
+import { bounce } from 'react-animations';
+import { flipInX } from 'react-animations';
+import { flipInY } from 'react-animations';
+import { zoomIn } from 'react-animations';
+
+
+
+
 
 import { StyleSheet, css } from 'aphrodite/no-important';
 import Radium from 'radium';
@@ -110,13 +122,34 @@ class FinderDisplay extends Component {
 
   render() {
     const styles = StyleSheet.create({
-      fadeOut: {
-        animationName: fadeOut,
-        animationDuration: '0.1s'
+
+      fadeIn: {
+        animationName: fadeIn,
+        animationDuration: '0.4s'
+      },
+      fadeInUp: {
+        animationName: fadeInUp,
+        animationDuration: '0.3s'
+      },
+      fadeInLeft: {
+        animationName: fadeInLeft,
+        animationDuration: '0.3s'
+      },
+      flipInX: {
+        animationName: flipInX,
+        animationDuration: '0.3s'
+      },
+      flipInY: {
+        animationName: flipInY,
+        animationDuration: '0.3s'
+      },
+      zoomIn: {
+        animationName: zoomIn,
+        animationDuration: '0.3s'
       },
       bounce: {
-        animationName: fadeIn,
-        animationDuration: '0.5s'
+        animationName: bounce,
+        animationDuration: '0.3s'
       }
     })
 
@@ -151,7 +184,7 @@ class FinderDisplay extends Component {
               <div className="finderSideBar">
 
 
-                <div id = "groupBar" className={css(styles.bounce)} >
+                <div id = "groupBar" className={css(styles.fadeIn)} >
 
                   <GroupsBar
 
@@ -160,6 +193,7 @@ class FinderDisplay extends Component {
                     groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
                     groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
                     onClick={i => this.groupClick(i)}
+                    animate = {this.state.animate}
                   />
                 </div>
 
@@ -167,19 +201,18 @@ class FinderDisplay extends Component {
               {/* <Fade> */}
               <div className="finderFilesBar" key = "1">
 
-                <div key = {this.state.animate} id = "groupBar" className={css(styles.bounce)} >
 
                   <FilesBar
                     fileIndex = {this.state.fileIndex}
                     filesText = {myInfo.data[this.state.groupIndex]}
                     filesImage = {infoIconImages[this.state.groupIndex]}
                     onClick = {i => this.fileClick(i)}
+                    animate = {this.state.animate}
                   />
-                </div>
               </div>
               {/* </Fade> */}
               <div className="finderDescriptionBar">
-                <div key = {this.state.animate} id = "groupBar" className={css(styles.bounce)} >
+                <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
 
                   <DescBar
                     groupIndex = {this.state.groupIndex}
@@ -187,6 +220,7 @@ class FinderDisplay extends Component {
                     content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
                     contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
                     onClick = { i => this.descClick[i]}
+
                   />
                 </div>
               </div>

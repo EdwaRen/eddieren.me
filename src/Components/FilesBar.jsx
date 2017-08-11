@@ -10,23 +10,42 @@ import '../css/HtmlStyle.css';
 function Files(props) {
 
   var fileStyle = {};
+  var fileStyle2 = {};
+
   if (props.indexed == 0) {
     fileStyle = {
+      // zIndex:"0",
+      position: "absolute",
       height: "36px",
       width: "180px",
       color: "#333333",
       backgroundColor: "#FFFFFF",
-
+    }
+    fileStyle2 = {
+      height: "36px",
+      width: "180px",
+      color: "#333333",
     }
   } else {
     fileStyle = {
+      // zIndex:"0",
+
+      position: "absolute",
       height: "36px",
       width: "180px",
       color: "#FFFFFF",
       backgroundColor: "#116CD6",
     }
+    fileStyle2 = {
+      height: "36px",
+      width: "180px",
+      color: "#FFFFFF",
+    }
   }
+
   const imageStyle = {
+    zIndex:"200",
+    position: "absolute",
     float: "left",
     margin: "0",
     marginLeft: "6px",
@@ -39,18 +58,28 @@ function Files(props) {
     backgroundRepeat: "no-repeat",
     backgroundImage: `url(${props.image})`
   }
+  const styles = StyleSheet.create({
+
+    fadeIn: {
+      animationName: fadeIn,
+      animationDuration: '0.3s'
+    }
+  })
+  console.log("animate", props.animate);
+
   return (
-    <CSSTransitionGroup
-      transitionName="example"
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={300}>
-      <div style={fileStyle} onClick={props.onClick} key = {"1"}>
+
+      <div style = {fileStyle2} onClick={props.onClick} key = {"1"}>
         <div style={imageStyle} ></div>
+        <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
+
+          <div style = {fileStyle}></div>
+        </div>
+
         <div id="filesDiv">
           <p>{props.text}</p>
         </div>
       </div>
-    </CSSTransitionGroup>
 
   );
 
@@ -70,6 +99,7 @@ class FilesBar extends Component {
         text={this.props.filesText[i][0]}
         image={this.props.filesImage[i]}
         onClick= {() => this.props.onClick(i)}
+        animate = {this.props.animate}
       />);
     }
 
