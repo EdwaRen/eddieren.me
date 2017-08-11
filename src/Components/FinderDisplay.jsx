@@ -3,10 +3,18 @@ import '../css/HtmlStyle.css';
 import '../css/styleGraph.css';
 
 // import FadeIn from 'react-fade-in';
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
-import Fade  from 'react-fade'
 import { Link } from 'react-router-dom'
 import Draggable from 'react-draggable'; // The default
+import $ from 'jquery';
+import { fadeIn } from 'react-animations';
+import { fadeOut } from 'react-animations';
+
+import { StyleSheet, css } from 'aphrodite/no-important';
+import Radium from 'radium';
+
+
+
+
 
 
 
@@ -76,6 +84,7 @@ class FinderDisplay extends Component {
     this.state = {
       groupIndex: 0,
       fileIndex: 0,
+      animate: 0,
 
     };
   }
@@ -87,16 +96,38 @@ class FinderDisplay extends Component {
     this.setState({
       groupIndex: i,
       fileIndex: 0,
+      animate: this.state.animate+1,
     })
   }
   fileClick(i) {
     console.log("File clicked");
     this.setState({
       fileIndex: i,
+      animate: this.state.animate+1,
+
     })
   }
 
   render() {
+    const styles = StyleSheet.create({
+      fadeOut: {
+        animationName: fadeOut,
+        animationDuration: '0.1s'
+      },
+      bounce: {
+        animationName: fadeIn,
+        animationDuration: '0.5s'
+      }
+    })
+
+    // try {
+    //   console.log("Style textinput", this.myTextInput.style);
+    //   // this.myTextInput.style.opacity = "0.5";
+    // }
+    // catch(err) {
+    //   console.log( "style not working...", this.myTextInput);
+    // }
+
     // console.log("filesImage", infoImages[0]);
     return(
       <Draggable>
@@ -118,43 +149,46 @@ class FinderDisplay extends Component {
             <div className="bottomElemeents">
 
               <div className="finderSideBar">
-                <div className = "finderSideBarImage">
-                  <div id="findSideTopBar">
-                    <p>Find</p>
 
-                  </div>
+
+                <div id = "groupBar" className={css(styles.bounce)} >
+
+                  <GroupsBar
+
+                    groupIndex= {this.state.groupIndex}
+                    fileIndex= {this.state.fileIndex}
+                    groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
+                    groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
+                    onClick={i => this.groupClick(i)}
+                  />
                 </div>
-
-                {/* <Fade> */}
-                <GroupsBar
-                  groupIndex= {this.state.groupIndex}
-                  fileIndex= {this.state.fileIndex}
-                  groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
-                  groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
-                  onClick={i => this.groupClick(i)}
-                />
-
-                {/* </Fade> */}
 
               </div>
               {/* <Fade> */}
               <div className="finderFilesBar" key = "1">
-                <FilesBar
-                  fileIndex = {this.state.fileIndex}
-                  filesText = {myInfo.data[this.state.groupIndex]}
-                  filesImage = {infoIconImages[this.state.groupIndex]}
-                  onClick = {i => this.fileClick(i)}
-                />
+
+                <div key = {this.state.animate} id = "groupBar" className={css(styles.bounce)} >
+
+                  <FilesBar
+                    fileIndex = {this.state.fileIndex}
+                    filesText = {myInfo.data[this.state.groupIndex]}
+                    filesImage = {infoIconImages[this.state.groupIndex]}
+                    onClick = {i => this.fileClick(i)}
+                  />
+                </div>
               </div>
               {/* </Fade> */}
               <div className="finderDescriptionBar">
-                <DescBar
-                  groupIndex = {this.state.groupIndex}
-                  fileIndex = {this.state.fileIndex}
-                  content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
-                  contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                  onClick = { i => this.descClick[i]}
-                />
+                <div key = {this.state.animate} id = "groupBar" className={css(styles.bounce)} >
+
+                  <DescBar
+                    groupIndex = {this.state.groupIndex}
+                    fileIndex = {this.state.fileIndex}
+                    content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
+                    contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                    onClick = { i => this.descClick[i]}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -165,9 +199,15 @@ class FinderDisplay extends Component {
     )
   }
 
-
+  componentDidUpdate() {
+    $(function() {
+      // $( ".finderSideBar" ).load(window.location.href + " .finderSideBar" );
+    });
+  }
 
 }
+
+
 
 window.onpopstate = function(event) {
   window.location.reload()

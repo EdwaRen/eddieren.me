@@ -10,7 +10,7 @@ function refresh() {
   // history.pushState(null, '/');
   browserHistory.push('/');
 
-  window.location.reload();
+  // window.location.reload();
 
 }
 

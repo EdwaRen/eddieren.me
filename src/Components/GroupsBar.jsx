@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
-import { fadeIn } from 'react-animations'
-import Radium from 'radium';
-// import { StyleSheet, css } from 'aphrodite';
+import { fadeIn } from 'react-animations';
+import { fadeOut } from 'react-animations';
+
+import { StyleSheet, css } from 'aphrodite/no-important';
 
 
 function Group(props) {
@@ -15,10 +16,7 @@ function Group(props) {
 
       height: "32px",
       width: "130px",
-      bounce: {
-        animation: 'x 1s',
-        animationName: Radium.keyframes(fadeIn, 'fadeIn')
- }
+
     })
     imageStyle = {
       float: "left",
@@ -77,32 +75,44 @@ class GroupsBar extends React.Component {
     }
     return (
       <Group
-      indexed={indexReturn}
-      value={this.props.groups[i]}
-      image={this.props.groupsImage[i]}
-      onClick={() => this.props.onClick(i)}
-    />
+        indexed={indexReturn}
+        value={this.props.groups[i]}
+        image={this.props.groupsImage[i]}
+        onClick={() => this.props.onClick(i)}
+      />
     );
   }
 
   render() {
 
+    // const styles = StyleSheet.create({
+    //   fadeOut: {
+    //     animationName: fadeOut,
+    //     animationDuration: '0s'
+    //   },
+    //   bounce: {
+    //     animationName: fadeIn,
+    //     animationDuration: '1s'
+    //   }
+    // })
+
+
     return (
-      <div>
-        <div id="findSideTopBar">
-          <p>Find</p>
+      <div >
+        {/* <div id = "groupBar" className={css(styles.bounce)}> */}
+          <div id="findSideTopBar">
+            <p>Find</p>
+
+          </div>
+          {this.renderGroup(0)}
+          {this.renderGroup(1)}
+          {this.renderGroup(2)}
+          {this.renderGroup(3)}
+          {this.renderGroup(4)}
+          {this.renderGroup(5)}
+          {this.renderGroup(6)}
 
         </div>
-        {this.renderGroup(0)}
-        {this.renderGroup(1)}
-        {this.renderGroup(2)}
-        {this.renderGroup(3)}
-        {this.renderGroup(4)}
-        {this.renderGroup(5)}
-        {this.renderGroup(6)}
-
-
-      </div>
 
 
 
