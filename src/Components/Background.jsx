@@ -4,6 +4,7 @@ import FinderDisplay from './FinderDisplay';
 import {Link} from 'react-router';
 import $ from 'jquery'
 import Draggable from 'react-draggable'; // The default
+import FooterDisplay from './FooterDisplay';
 
 
 
@@ -15,13 +16,12 @@ class Background extends Component {
   render() {
 
     return (
-      <Draggable>
 
       <div id = "bodyBackground">
           <FinderDisplay />
+          <FooterDisplay />
 
       </div>
-    </Draggable>
 
     )
   }

@@ -6,6 +6,8 @@ import '../css/styleGraph.css';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 import Fade  from 'react-fade'
 import { Link } from 'react-router-dom'
+import Draggable from 'react-draggable'; // The default
+
 
 
 
@@ -42,13 +44,13 @@ import ProfilePic from '../images/Edward_ProfilePic.png';
 import myInfo from '../Info/PersonalInfo.js';
 
 var infoIconImages = [
-    [Document, Document], //Profile
-    [Coding, Coding],  //Experience
-    [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
-    [LinkedIn, GitHub, Facebook, Email], //Network
-    [HTMLCoding, Chat], //Languages
-    [College, School], //Education
-    [Document, Document, Document, Document, Document], //Other
+  [Document, Document], //Profile
+  [Coding, Coding],  //Experience
+  [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
+  [LinkedIn, GitHub, Facebook, Email], //Network
+  [HTMLCoding, Chat], //Languages
+  [College, School], //Education
+  [Document, Document, Document, Document, Document], //Other
 ]
 
 var infoDescImages = [
@@ -97,24 +99,33 @@ class FinderDisplay extends Component {
   render() {
     // console.log("filesImage", infoImages[0]);
     return(
-      // <div id="containment-wrapper">
+      <Draggable>
 
-      <div id="backShadow" className="draggable">
-        <div className="bothWindows">
-          <div className="shadowWindow"></div>
-          <div className="finderTopBar">
-            <div className="headerDisplay">
-              <div className="finderTopBarIcon"></div>
-              <div className="finderTopBarText">
-                <p id="finderTopBarTextP">Edward Ren</p>
+        {/* <div id="containment-wrapper"> */}
+
+        <div id="backShadow" className="draggable">
+          <div className="bothWindows">
+            <div className="shadowWindow"></div>
+            <div className="finderTopBar">
+              <div className="headerDisplay">
+                <div className="finderTopBarIcon"></div>
+                <div className="finderTopBarText">
+                  <p id="finderTopBarTextP">Edward Ren</p>
+                </div>
               </div>
+
             </div>
+            <div className="bottomElemeents">
 
-          </div>
-          <div className="bottomElemeents">
-            <div className="finderSideBar">
+              <div className="finderSideBar">
+                <div className = "finderSideBarImage">
+                  <div id="findSideTopBar">
+                    <p>Find</p>
 
-          {/* <Fade> */}
+                  </div>
+                </div>
+
+                {/* <Fade> */}
                 <GroupsBar
                   groupIndex= {this.state.groupIndex}
                   fileIndex= {this.state.fileIndex}
@@ -123,32 +134,33 @@ class FinderDisplay extends Component {
                   onClick={i => this.groupClick(i)}
                 />
 
-            {/* </Fade> */}
+                {/* </Fade> */}
 
-            </div>
-            {/* <Fade> */}
-            <div className="finderFilesBar" key = "1">
-              <FilesBar
-                fileIndex = {this.state.fileIndex}
-                filesText = {myInfo.data[this.state.groupIndex]}
-                filesImage = {infoIconImages[this.state.groupIndex]}
-                onClick = {i => this.fileClick(i)}
-              />
-            </div>
-          {/* </Fade> */}
-            <div className="finderDescriptionBar">
-              <DescBar
-                groupIndex = {this.state.groupIndex}
-                fileIndex = {this.state.fileIndex}
-                content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
-                contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                onClick = { i => this.descClick[i]}
-              />
+              </div>
+              {/* <Fade> */}
+              <div className="finderFilesBar" key = "1">
+                <FilesBar
+                  fileIndex = {this.state.fileIndex}
+                  filesText = {myInfo.data[this.state.groupIndex]}
+                  filesImage = {infoIconImages[this.state.groupIndex]}
+                  onClick = {i => this.fileClick(i)}
+                />
+              </div>
+              {/* </Fade> */}
+              <div className="finderDescriptionBar">
+                <DescBar
+                  groupIndex = {this.state.groupIndex}
+                  fileIndex = {this.state.fileIndex}
+                  content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
+                  contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                  onClick = { i => this.descClick[i]}
+                />
+              </div>
             </div>
           </div>
         </div>
-       </div>
-    //  {/* </div> */}
+      </Draggable>
+      //  {/* </div> */}
 
     )
   }

@@ -33,6 +33,9 @@ background-attachment: fixed;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  /*opacity: 0.95;*/
+  /*filter: blur(10px);*/
+
   /*background-color: #333333;*/
   /*background-image: url("images/finderWithShadow.png");*/
 /*background-size: contain;*/
@@ -55,13 +58,18 @@ background-attachment: fixed;
 /*display: none;*/
  width: 600px;
   height: 450px;
-  background-color: #333333;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  -webkit-filter: drop-shadow(0 0 30px rgba(0,0,0,.9));
+  		-moz-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  		-ms-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  		-o-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  		filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
   /*background-image: url("images/finderWithShadow.png");*/
 
 }
+
 .shadowWindow {
   top: 50%;
   left: 50%;
@@ -70,7 +78,9 @@ background-attachment: fixed;
    height: 550px;
    position: absolute;
    z-index: -2;
-   background-image: url("../images/finderWithShadow.png");
+   /*background-image: url("../images/finderWithShadow.png");*/
+   opacity: 0.0;
+
    /*background-size: contain;*/
 
 
@@ -155,7 +165,21 @@ background-attachment: fixed;
 
 
 .finderSideBar {
-  /*padding-top: 100px;*/
+  float: left;
+  width: 130px;
+  height: 380px;
+
+  background-size: cover;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+.finderSideBarImage {
+  position: absolute;
   float: left;
   width: 130px;
   height: 380px;
@@ -166,6 +190,9 @@ background-attachment: fixed;
   margin-left: auto;
   margin-right: auto;
   background-image: url("../images/finderSideBar.png");
+  opacity: 0.99;
+  /*mix-blend-mode: multiply;*/
+
 }
 
 .finderFilesBar {
@@ -331,9 +358,11 @@ background-attachment: fixed;
   overflow: hidden;
   padding-left: 48px;
   position: absolute;
+  opacity: 1.0;
 }
 
 #profileDiv p {
+  color: #000000;
   font-size: 13px;
   margin-top: 17px;
   line-height: 1px;

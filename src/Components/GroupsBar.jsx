@@ -10,7 +10,9 @@ function Group(props) {
   var imageStyle = {};
   if (props.indexed == 0) {
     groupStyle = ({
-      backgroundColor: "#eef2f2",
+      // backgroundColor: "#eef2f2",
+      backgroundColor: "",
+
       height: "32px",
       width: "130px",
       bounce: {
@@ -31,9 +33,10 @@ function Group(props) {
     }
   } else {
     groupStyle = {
-      backgroundColor: "#CCCCCC",
+      backgroundColor: "#BBBBBB",
       height: "32px",
-      width: "130px"
+      width: "130px",
+      opacity:"0.9",
     }
     imageStyle = {
       float: "left",
