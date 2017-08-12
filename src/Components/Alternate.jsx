@@ -71,6 +71,9 @@ function RenderFiles() {
           __html: files[i][j][0]
         }}></div>
       )
+      if (files[i][j][2] == "alternate") {
+        files[i][j][2] = "Getting Started";
+      }
       content.push(
         <div style = {subStyle} dangerouslySetInnerHTML = {{
           __html: files[i][j][2]

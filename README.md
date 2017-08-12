@@ -113,7 +113,7 @@ Icon(s) made by Pixel Buddha from www.flaticon.com, licensed by Creative Commons
 Icon(s) made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 Icon(s) made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 
-
+Special thanks to Tim Hortons, Starbucks, and my Keurig coffee machine for making this project possible.
 
 
 # Contact

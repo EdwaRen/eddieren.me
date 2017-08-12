@@ -72,7 +72,7 @@ function Desc(props) {
 
   var startTitle = <p></p>;
   if (props.duration != "") {
-    startTitle = <p id="startTitle">Start</p>
+    startTitle = <p id="startTitle">Duration</p>
   }
 
   var locationTitle = <p></p>

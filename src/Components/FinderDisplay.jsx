@@ -131,9 +131,16 @@ class FinderDisplay extends Component {
       }
 
     } else {
-      this.setState({
-        trash: 0,
-      })
+      if (this.state.trash == 1) {
+        this.setState({
+          trash: 0,
+        })
+      } else if (this.state.trash == 0) {
+        this.setState({
+          trash: 1,
+        })
+      }
+
     }
 
   }

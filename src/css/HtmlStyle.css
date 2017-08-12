@@ -6,6 +6,8 @@ body {
   background-image: url("../images/triangulated-image.png");
   background-size: 100% 100%;
   background-attachment: fixed;
+  overflow: hidden;
+
 }
 
 #bodyBackground {
@@ -23,10 +25,10 @@ body {
 
 .backIcons {
   width: 160px;
-  height: 50px;
+  height: 45px;
   margin: auto;
   position: absolute;
-  left: 35px; bottom: 10px;
+  left: 35px; bottom: 20px;
   z-index: 2;
 }
 
@@ -322,7 +324,7 @@ body {
 #footer {
   width: 100%;
   height: 50px;
-  margin-top: -80px;
+  margin-top: -70px;
   text-align: center;
 }
 
