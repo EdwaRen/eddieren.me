@@ -26,18 +26,12 @@ import Radium from 'radium';
 
 
 
-
-
-
-
-
-// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
-
-
 import GroupsBar from './GroupsBar';
 import FilesBar from './FilesBar';
 import DescBar from './DescBar';
+import IconBar from './IconBar';
+import CloseButton from './CloseButton';
+
 
 import Profile from '../images/Profile.png';
 import Experience from '../images/Experience.png';
@@ -97,7 +91,9 @@ class FinderDisplay extends Component {
       groupIndex: 0,
       fileIndex: 0,
       animate: 0,
-
+      trash: 0,
+      reload: 0,
+      visible: 1,
     };
   }
 
@@ -120,6 +116,22 @@ class FinderDisplay extends Component {
     })
   }
 
+  iconClick(i) {
+    // console.log("File clicked");
+    if (i == 1) {
+      this.setState({
+        reload: this.state.reload+1,
+      })
+    } else {
+
+    }
+
+  }
+
+  closeWindow() {
+
+  }
+
   render() {
     const styles = StyleSheet.create({
 
@@ -127,30 +139,7 @@ class FinderDisplay extends Component {
         animationName: fadeIn,
         animationDuration: '0.4s'
       },
-      fadeInUp: {
-        animationName: fadeInUp,
-        animationDuration: '0.3s'
-      },
-      fadeInLeft: {
-        animationName: fadeInLeft,
-        animationDuration: '0.3s'
-      },
-      flipInX: {
-        animationName: flipInX,
-        animationDuration: '0.3s'
-      },
-      flipInY: {
-        animationName: flipInY,
-        animationDuration: '0.3s'
-      },
-      zoomIn: {
-        animationName: zoomIn,
-        animationDuration: '0.3s'
-      },
-      bounce: {
-        animationName: bounce,
-        animationDuration: '0.3s'
-      }
+
     })
 
     // try {
@@ -162,8 +151,22 @@ class FinderDisplay extends Component {
     // }
 
     // console.log("filesImage", infoImages[0]);
+
+    var opacityStyle;
+    if (this.state.trash == 0) {
+      opacityStyle = {
+        opacity: "1.0",
+      }
+    } else {
+      opacityStyle = {
+        opacity: "0.0",
+      }
+    }
+
+
     return(
-      <Draggable>
+      <div>
+      <Draggable key = {this.state.reload} style = {opacityStyle}>
 
         {/* <div id="containment-wrapper"> */}
 
@@ -172,6 +175,9 @@ class FinderDisplay extends Component {
             <div className="shadowWindow"></div>
             <div className="finderTopBar">
               <div className="headerDisplay">
+                <CloseButton
+                  onClick={this.closeWindow()}
+                />
                 <div className="finderTopBarIcon"></div>
                 <div className="finderTopBarText">
                   <p id="finderTopBarTextP">Edward Ren</p>
@@ -213,7 +219,8 @@ class FinderDisplay extends Component {
               {/* </Fade> */}
               <div className="finderDescriptionBar">
                 <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
-
+                  {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
+                  }
                   <DescBar
                     groupIndex = {this.state.groupIndex}
                     fileIndex = {this.state.fileIndex}
@@ -224,10 +231,22 @@ class FinderDisplay extends Component {
                   />
                 </div>
               </div>
+
+
+
             </div>
           </div>
         </div>
       </Draggable>
+      <div className = "backIcons">
+        <IconBar
+          trash = {this.state.trash}
+          onClick= {i => this.iconClick(i)}
+
+        />
+
+      </div>
+    </div>
       //  {/* </div> */}
 
     )

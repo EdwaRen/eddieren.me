@@ -1,10 +1,12 @@
 
+
+
 body {
 
-background-image: url("../images/triangulated-image.png");
-/*background-size: cover;*/
-background-size: 100% 100%;
-background-attachment: fixed;
+  background-image: url("../images/triangulated-image.png");
+  /*background-size: cover;*/
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 #bodyBackground {
@@ -20,12 +22,30 @@ background-attachment: fixed;
 @font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
 @font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
 /*html {
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 }*/
 
+.backIcons {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  left: 35px; bottom: 10px;
+  /*background-color: #111111;*/
+  z-index: 2;
+  /*opacity: 1.0;*/
+}
+
+#finderReturnIcon {
+  height: 70px;
+  width: 70px;
+  float: left;
+  background-image: url();
+}
 
 #backShadow{
+
   /*opacity: 0;*/
   /*position: absolute;*/
   width: 600px;
@@ -38,7 +58,7 @@ background-attachment: fixed;
 
   /*background-color: #333333;*/
   /*background-image: url("images/finderWithShadow.png");*/
-/*background-size: contain;*/
+  /*background-size: contain;*/
 
   /*display: block;
   margin: auto;
@@ -46,8 +66,8 @@ background-attachment: fixed;
   /*top: -50%;
   left: -50%;*/
   /*display: table-cell;
-      vertical-align: middle;
-      text-align:center*/
+  vertical-align: middle;
+  text-align:center*/
   /*transform: translate(-50%, -50%);*/
   /*margin-top: 0px;*/
   /*top: 0; left: 0; bottom: 0; right: 0;*/
@@ -55,30 +75,30 @@ background-attachment: fixed;
 }
 
 .bothWindows{
-/*display: none;*/
- width: 600px;
+  /*display: none;*/
+  width: 600px;
   height: 450px;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   -webkit-filter: drop-shadow(0 0 30px rgba(0,0,0,.9));
-  		-moz-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  		-ms-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  		-o-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  		filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  -moz-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  -ms-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  -o-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
+  filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
   /*background-image: url("images/finderWithShadow.png");*/
 
 }
 
 /*.shadowWindow {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-   height: 550px;
-   position: absolute;
-   z-index: -2;
-   opacity: 0.0;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 700px;
+height: 550px;
+position: absolute;
+z-index: -2;
+opacity: 0.0;
 
 
 
@@ -137,18 +157,18 @@ background-attachment: fixed;
 }
 
 /*#profileDiv {
-  height: 35px;
-  width: 100px;
-  overflow: hidden;
-  padding-left: 69px;
-  position: absolute;
+height: 35px;
+width: 100px;
+overflow: hidden;
+padding-left: 69px;
+position: absolute;
 }
 
 #profileDiv p {
-  font-size: 18px;
-  margin-top: 20px;
-  line-height: 1px;
-  font-family: RalewayMed, sans-serif;
+font-size: 18px;
+margin-top: 20px;
+line-height: 1px;
+font-family: RalewayMed, sans-serif;
 
 }*/
 
@@ -429,7 +449,7 @@ background-attachment: fixed;
   width: 250px;
   height: 230px;
   /*zoom: 1.0;
-    -moz-transform: scale(1.0);*/
+  -moz-transform: scale(1.0);*/
   /*height: 400px;
   width: 400px;*/
   position: static;
@@ -471,7 +491,7 @@ background-attachment: fixed;
 .draggable {
 
 
- }
+}
 
 #containment-wrapper {
 
@@ -484,20 +504,20 @@ background-attachment: fixed;
 #widespace {
   width: 1000px;
 }
-.example-enter {
-  opacity: 0.01;
-}
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
 
-.example-leave {
-  opacity: 1;
-}
+.Icon1 {
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-size: cover;
 
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+}
+.Icon1:hover {
+  -webkit-filter: drop-shadow(0 0 10px rgba(255,255,255,.7));
+  -moz-filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
+  -ms-filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
+  -o-filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
+  filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
 }
