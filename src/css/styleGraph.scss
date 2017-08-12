@@ -15,17 +15,14 @@ dl {
 dt {
   align-self: flex-start;
   width: 100%;
-  // font-weight: 700;
   display: block;
   text-align: center;
   font-size: 1.2em;
-  // font-weight: 700;
   margin-bottom: 20px;
   margin-left: 130px;
 }
 
 .text {
-  // font-weight: 600;
   display: flex;
   align-items: center;
   height: 40px;
@@ -83,6 +80,5 @@ dt {
 
 html, body {
   height: 250px;
-  // font-family: "fira-sans-2",sans-serif;
   color: #333;
 }

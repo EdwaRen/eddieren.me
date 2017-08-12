@@ -174,7 +174,7 @@ class FinderDisplay extends Component {
 
         },
         fadeOut: {
-          animationName: zoomInUp,
+          animationName: fadeIn,
           animationDuration: '0.4s'
 
         }

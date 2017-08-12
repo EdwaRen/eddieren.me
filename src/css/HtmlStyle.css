@@ -4,7 +4,6 @@
 body {
 
   background-image: url("../images/triangulated-image.png");
-  /*background-size: cover;*/
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -12,7 +11,6 @@ body {
 #bodyBackground {
   height: 100%;
   width: 100%;
-  /*background-color: #FFFFFF;*/
   position:absolute;
 
 }
@@ -21,10 +19,7 @@ body {
 @font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
 @font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
 @font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
-/*html {
-width: 100%;
-height: 100%;
-}*/
+
 
 .backIcons {
   width: 160px;
@@ -32,9 +27,7 @@ height: 100%;
   margin: auto;
   position: absolute;
   left: 35px; bottom: 10px;
-  /*background-color: #111111;*/
   z-index: 2;
-  /*opacity: 1.0;*/
 }
 
 #finderReturnIcon {
@@ -46,67 +39,31 @@ height: 100%;
 
 #backShadow{
 
-  /*opacity: 0;*/
-  /*position: absolute;*/
   width: 600px;
   height: 450px;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  /*opacity: 0.95;*/
-  /*filter: blur(10px);*/
 
-  /*background-color: #333333;*/
-  /*background-image: url("images/finderWithShadow.png");*/
-  /*background-size: contain;*/
-
-  /*display: block;
-  margin: auto;
-  position: absolute;*/
-  /*top: -50%;
-  left: -50%;*/
-  /*display: table-cell;
-  vertical-align: middle;
-  text-align:center*/
-  /*transform: translate(-50%, -50%);*/
-  /*margin-top: 0px;*/
-  /*top: 0; left: 0; bottom: 0; right: 0;*/
-  /*font-size: 70px;*/
 }
 
 .bothWindows{
-  /*display: none;*/
   width: 600px;
   height: 450px;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  -webkit-filter: drop-shadow(0 0 30px rgba(0,0,0,.9));
-  -moz-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  -ms-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  -o-filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  filter: drop-shadow(0 0px 30px  rgba(0,0,0,.9));
-  /*background-image: url("images/finderWithShadow.png");*/
+  -webkit-filter: drop-shadow(0 0 20px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 0px 20px  rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 0px 20px  rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 0px 20px  rgba(0,0,0,.5));
+  filter: drop-shadow(0 0px 20px  rgba(0,0,0,.5));
 
 }
 
-/*.shadowWindow {
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 700px;
-height: 550px;
-position: absolute;
-z-index: -2;
-opacity: 0.0;
-
-
-
-}*/
 
 .finderTopBar {
   position: absolute;
-  /*opacity: 0;*/
   width:600px;
   height: 70px;
   background-image: url("../images/finderTopBar.png");
@@ -123,7 +80,6 @@ opacity: 0.0;
   margin-left: 9px;
   padding: 12px;
   max-width: 10px;
-  /*height: 20px;*/
   background-size: contain;
   opacity: 1.0;
   margin-top: 8px;
@@ -147,33 +103,15 @@ opacity: 0.0;
 }
 
 .finderTopBarText p {
-  /*text-align: center;*/
   font-size: 20px;
   text-align: center;
   vertical-align: middle;
   line-height: 1px;
-  /*margin-top: 5px;*/
   font-family: RalewayReg, sans-serif;
 }
 
-/*#profileDiv {
-height: 35px;
-width: 100px;
-overflow: hidden;
-padding-left: 69px;
-position: absolute;
-}
-
-#profileDiv p {
-font-size: 18px;
-margin-top: 20px;
-line-height: 1px;
-font-family: RalewayMed, sans-serif;
-
-}*/
 
 .bottomElemeents {
-  /*background-color: #555555;*/
   padding-top: 0;
   margin-top: 70px;
   width: 700px;
@@ -210,12 +148,10 @@ font-family: RalewayMed, sans-serif;
   margin-right: auto;
   background-image: url("../images/finderSideBar.png");
   opacity: 0.99;
-  /*mix-blend-mode: multiply;*/
 
 }
 
 .finderFilesBar {
-  /*padding-top: 100px;*/
   float: left;
   width: 180px;
   height: 380px;
@@ -228,29 +164,18 @@ font-family: RalewayMed, sans-serif;
 }
 
 .finderDescriptionBar {
-  /*padding-top: 100px;*/
   float: left;
   width: 290px;
   height: 380px;
-  /*background-size: cover;*/
 
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;*/
   background-image: url("../images/finderDescriptionBar.png");
-  /*border-style: solid;
-  border-left-width: 2px;
-  border-right-width: 0;
-  border-top-width: 0;
-  border-bottom-width: 0;
-  border-left-color: #CCCCCC;*/
+
 }
 
 #findSideTopBar {
   height: 25px;
   width: 100px;
   margin-left: 12px;
-  /*margin-top: -15px;*/
 
   font-family: RalewayBld, sans-serif;
   font-size: 13px;
@@ -263,56 +188,12 @@ font-family: RalewayMed, sans-serif;
 }
 
 #myGroup0 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
+
   background-color: #eef2f2;
   height: 32px;
   width: 198px;
 }
 
-#myGroup1 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-#myGroup2 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-#myGroup3 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-
-#myGroup4 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-#myGroup5 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-#myGroup6 {
-  /*margin: 0 auto;*/
-  /*position: relative;*/
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
 
 #myFiles0 {
   height: 36px;
@@ -322,17 +203,13 @@ font-family: RalewayMed, sans-serif;
 }
 
 #descReadmeTutorial {
-
-  /*background-color: #FFFFFF;*/
   height: 380px;
   width: 290px;
   bottom: 0;
 }
 
 #descDescription {
-
   margin-top: 0px;
-  /*padding-top: -30px;*/
 }
 
 #descDescription p{
@@ -381,7 +258,6 @@ font-family: RalewayMed, sans-serif;
 }
 
 #profileDiv p {
-  /*color: #000000;*/
   font-size: 13px;
   margin-top: 17px;
   line-height: 1px;
@@ -395,9 +271,6 @@ font-family: RalewayMed, sans-serif;
   overflow: hidden;
   padding-left: 35px;
   position: absolute;
-  /*color: #111111;*/
-  /*background-color: #CCCCCC;*/
-  /*opacity: 0.3;*/
 }
 
 #filesDiv p {
@@ -405,31 +278,26 @@ font-family: RalewayMed, sans-serif;
   margin-top: 18.5px;
   line-height: 0px;
   font-family: RalewayMed, sans-serif;
-  /*color: #333333;*/
-  /*color: #333333;*/
-
 }
 
 #datesContainer {
   margin: 0px auto;
-  /*bottom: 0;*/
   height: 72px;
   width: 300px;
-  /*background-color: #111111;*/
 }
+
 #datesTitle {
   line-height:  3px;
-
   float: left;
   height: 72px;
   text-align: right;
   font-family: RalewayMed, sans-serif;
   color: #888888;
   font-size: 12px;
-
   width: 90px;
 
 }
+
 #datesText {
   line-height:  3px;
   margin-left: 10px;
@@ -439,19 +307,13 @@ font-family: RalewayMed, sans-serif;
   text-align: left;
   color: #333333;
   font-size: 12px;
-
   font-family: RalewayMed, sans-serif;
-
 }
 
 #chartEnclosure {
   margin-left: 20px;
   width: 250px;
   height: 230px;
-  /*zoom: 1.0;
-  -moz-transform: scale(1.0);*/
-  /*height: 400px;
-  width: 400px;*/
   position: static;
   z-index: -1;
   opacity: 1;
@@ -462,8 +324,8 @@ font-family: RalewayMed, sans-serif;
   height: 50px;
   margin-top: -80px;
   text-align: center;
-  /*display: table;*/
 }
+
 #bottomText {
   display: inline-block;
   position:fixed;
@@ -471,27 +333,19 @@ font-family: RalewayMed, sans-serif;
   width: 300px;
   margin-left: -150px;
   margin-top: -15px;
-
-  /*padding-top: 15px;*/
   height: 60px;
   background-color: #DDDDDD;
   opacity: 0.9;
-  /*background-color: #111111;*/
 }
 
 #bottomText p {
-  /*padding-top: -15px;*/
-  /*padding-left: 15px;*/
-
   text-align: center;
   font-size: 15px;
   color: #333333;
-
   font-family: RalewayMed, sans-serif;
 }
+
 .draggable {
-
-
 }
 
 #containment-wrapper {
