@@ -3,6 +3,8 @@ import '../css/HtmlStyle.css';
 import { StyleSheet, css } from 'aphrodite';
 import FinderIcon from '../images/finderReturnIcon.png';
 import TrashIconEmpty from '../images/trashIconEmpty.png';
+import TrashIconFilled from '../images/trashIconFilled.png';
+
 
 function Icon1(props) {
 
@@ -24,7 +26,7 @@ function Icon2(props) {
   } else {
     return(
 
-      <div className="Icon1" style ={{backgroundImage: `url(${FinderIcon})`}} onClick={props.onClick}> </div>
+      <div className="Icon1" style ={{backgroundImage: `url(${TrashIconFilled})`}} onClick={props.onClick}> </div>
 
   );
 

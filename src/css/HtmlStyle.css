@@ -481,6 +481,7 @@ font-family: RalewayMed, sans-serif;
 
 #bottomText p {
   /*padding-top: -15px;*/
+  /*padding-left: 15px;*/
 
   text-align: center;
   font-size: 15px;
@@ -512,6 +513,7 @@ font-family: RalewayMed, sans-serif;
   width: 40px;
   float: left;
   background-size: cover;
+
 
 }
 .Icon1:hover {

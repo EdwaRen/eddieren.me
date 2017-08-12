@@ -6,7 +6,7 @@ import '../css/styleGraph.css';
 import { Link } from 'react-router-dom'
 import Draggable from 'react-draggable'; // The default
 import $ from 'jquery';
-import { fadeIn } from 'react-animations';
+import { fadeIn, fadeInRight } from 'react-animations';
 import { fadeInUp } from 'react-animations';
 import { fadeInLeft } from 'react-animations';
 
@@ -16,6 +16,9 @@ import { bounce } from 'react-animations';
 import { flipInX } from 'react-animations';
 import { flipInY } from 'react-animations';
 import { zoomIn } from 'react-animations';
+// import {merge} from 'react-animations';
+import {fadeOutLeft} from 'react-animations';
+import {fadeOutDown, fadeOutUp, zoomOutLeft, zoomOutDown, zoomOutUp, zoomInDown, zoomInUp} from 'react-animations';
 
 
 
@@ -85,8 +88,8 @@ var infoDescImages = [
 
 
 class FinderDisplay extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       groupIndex: 0,
       fileIndex: 0,
@@ -95,6 +98,8 @@ class FinderDisplay extends Component {
       reload: 0,
       visible: 1,
     };
+    this.closeWindow = this.closeWindow.bind(this);
+
   }
 
   groupClick(i) {
@@ -119,28 +124,65 @@ class FinderDisplay extends Component {
   iconClick(i) {
     // console.log("File clicked");
     if (i == 1) {
-      this.setState({
-        reload: this.state.reload+1,
-      })
-    } else {
+      if (this.state.trash == 0) {
+        this.setState({
+          reload: this.state.reload+1,
+        })
+      }
 
+    } else {
+      this.setState({
+        trash: 0,
+      })
     }
 
   }
 
   closeWindow() {
+    console.log("Close Window clicked");
 
+    this.setState({
+      trash: 1,
+
+    })
   }
 
   render() {
-    const styles = StyleSheet.create({
+    var styles;
 
-      fadeIn: {
-        animationName: fadeIn,
-        animationDuration: '0.4s'
-      },
+    if (this.state.trash == 1) {
+      styles = StyleSheet.create({
+        fadeIn: {
+          animationName: fadeIn,
+          animationDuration: '0.4s'
 
-    })
+        },
+        fadeOut: {
+          // animationName: merge(fadeOutDown, zoomOutDown),
+          animationName: zoomOutDown,
+
+          animationDuration: '0.4s'
+
+        }
+
+      })
+    } else {
+      styles = StyleSheet.create({
+        fadeIn: {
+          animationName: fadeIn,
+          animationDuration: '0.4s'
+
+        },
+        fadeOut: {
+          animationName: zoomInUp,
+          animationDuration: '0.4s'
+
+        }
+
+      })
+    }
+
+
 
     // try {
     //   console.log("Style textinput", this.myTextInput.style);
@@ -166,87 +208,91 @@ class FinderDisplay extends Component {
 
     return(
       <div>
-      <Draggable key = {this.state.reload} style = {opacityStyle}>
+        <div style = {opacityStyle} className={css(styles.fadeOut)} >
+          <Draggable key = {this.state.reload} >
+            {/* <div style = {opacityStyle} key = {this.state.trash}> */}
+            {/* <div id="containment-wrapper"> */}
 
-        {/* <div id="containment-wrapper"> */}
+            <div id="backShadow" className="draggable">
+              <div className="bothWindows">
+                <div className="shadowWindow"></div>
+                <div className="finderTopBar">
+                  <CloseButton
+                    trash = {this.state.trash}
+                    onClick={this.closeWindow}
+                  />
+                  <div className="headerDisplay">
 
-        <div id="backShadow" className="draggable">
-          <div className="bothWindows">
-            <div className="shadowWindow"></div>
-            <div className="finderTopBar">
-              <div className="headerDisplay">
-                <CloseButton
-                  onClick={this.closeWindow()}
-                />
-                <div className="finderTopBarIcon"></div>
-                <div className="finderTopBarText">
-                  <p id="finderTopBarTextP">Edward Ren</p>
+                    <div className="finderTopBarIcon"></div>
+                    <div className="finderTopBarText">
+                      <p id="finderTopBarTextP">Edward Ren</p>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="bottomElemeents">
+
+                  <div className="finderSideBar">
+
+
+                    <div id = "groupBar" className={css(styles.fadeIn)} >
+
+                      <GroupsBar
+
+                        groupIndex= {this.state.groupIndex}
+                        fileIndex= {this.state.fileIndex}
+                        groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
+                        groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
+                        onClick={i => this.groupClick(i)}
+                        animate = {this.state.animate}
+                      />
+                    </div>
+
+                  </div>
+                  {/* <Fade> */}
+                  <div className="finderFilesBar" key = "1">
+
+
+                    <FilesBar
+                      fileIndex = {this.state.fileIndex}
+                      filesText = {myInfo.data[this.state.groupIndex]}
+                      filesImage = {infoIconImages[this.state.groupIndex]}
+                      onClick = {i => this.fileClick(i)}
+                      animate = {this.state.animate}
+                    />
+                  </div>
+                  {/* </Fade> */}
+                  <div className="finderDescriptionBar">
+                    <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
+                      {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
+                      }
+                      <DescBar
+                        groupIndex = {this.state.groupIndex}
+                        fileIndex = {this.state.fileIndex}
+                        content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
+                        contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                        onClick = { i => this.descClick[i]}
+
+                      />
+                    </div>
+                  </div>
+
+
+
                 </div>
               </div>
-
             </div>
-            <div className="bottomElemeents">
-
-              <div className="finderSideBar">
-
-
-                <div id = "groupBar" className={css(styles.fadeIn)} >
-
-                  <GroupsBar
-
-                    groupIndex= {this.state.groupIndex}
-                    fileIndex= {this.state.fileIndex}
-                    groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
-                    groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
-                    onClick={i => this.groupClick(i)}
-                    animate = {this.state.animate}
-                  />
-                </div>
-
-              </div>
-              {/* <Fade> */}
-              <div className="finderFilesBar" key = "1">
-
-
-                  <FilesBar
-                    fileIndex = {this.state.fileIndex}
-                    filesText = {myInfo.data[this.state.groupIndex]}
-                    filesImage = {infoIconImages[this.state.groupIndex]}
-                    onClick = {i => this.fileClick(i)}
-                    animate = {this.state.animate}
-                  />
-              </div>
-              {/* </Fade> */}
-              <div className="finderDescriptionBar">
-                <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
-                  {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
-                  }
-                  <DescBar
-                    groupIndex = {this.state.groupIndex}
-                    fileIndex = {this.state.fileIndex}
-                    content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
-                    contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                    onClick = { i => this.descClick[i]}
-
-                  />
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>
+          </Draggable>
         </div>
-      </Draggable>
-      <div className = "backIcons">
-        <IconBar
-          trash = {this.state.trash}
-          onClick= {i => this.iconClick(i)}
+        <div className = "backIcons">
+          <IconBar
+            trash = {this.state.trash}
+            onClick= {i => this.iconClick(i)}
 
-        />
+          />
 
+        </div>
       </div>
-    </div>
       //  {/* </div> */}
 
     )
