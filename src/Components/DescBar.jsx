@@ -65,6 +65,9 @@ function Desc(props) {
     imageDiv = <div  style={descImage}></div>
   }
 
+  var title = <p style = {{fontSize: "19px", textAlign: "center", paddingLeft: "15px", paddingRight: "15px", marginTop: ""}} dangerouslySetInnerHTML={{
+    __html: props.title
+  }} ></p>
 
   var description = <p id="fileDescription" dangerouslySetInnerHTML={{
     __html: props.text
@@ -82,11 +85,11 @@ function Desc(props) {
 
   var subtitle = <h1></h1>
   if (props.subtitle == "alternate") {
-    subtitle = <h2 id = "fileSubTitle"><Link to='/alternate'>Normal Page Here </Link></h2>
+    subtitle = <p id = "fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta",color: "#0000EE", marginTop: "-17px", textAlign: "center"}} onClick={props.onClick}  ><u>Basic Page Here</u></p>
   } else {
-    subtitle = <h2 id="fileSubTitle" dangerouslySetInnerHTML={{
+    subtitle = <p id="fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta", marginTop: "-17px", textAlign: "center"}} dangerouslySetInnerHTML={{
       __html: props.subtitle
-    }}></h2>
+    }}></p>
   }
 
 
@@ -97,7 +100,7 @@ function Desc(props) {
         {imageDiv}
 
         <div id="descDescription">
-          <h1 id="fileTitle">{props.title}</h1>
+          {title}
           {subtitle}
           {/* <p id="fileDescription">{props.text}</p> */}
           {description}
@@ -139,6 +142,8 @@ class DescBar extends Component {
           duration={this.props.content[4]}
           location={this.props.content[5]}
           chart={this.props.content[7]}
+          onClick= {() => this.props.onClick(1)}
+
         />
       );
     } else {
@@ -150,6 +155,8 @@ class DescBar extends Component {
           text={this.props.content[3]}
           duration={this.props.content[4]}
           location={this.props.content[5]}
+          onClick= {() => this.props.onClick(1)}
+
           chart={"0"}
         />
       );

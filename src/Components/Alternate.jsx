@@ -14,7 +14,7 @@ function refresh() {
 
 }
 
-function RenderFiles() {
+function RenderFiles(props) {
   let files = myInfo.data;
   let groups = groupsInfo.data;
   const groupStyle = {
@@ -66,24 +66,38 @@ function RenderFiles() {
     // This creates the groups, the next nested for loops creates the files before the next group creation
 
     for (var j = 0; j < files[i].length; j++) {
+
+      //Title Text
       content.push(
         <div style = {titleStyle} dangerouslySetInnerHTML = {{
           __html: files[i][j][0]
         }}></div>
       )
-      if (files[i][j][2] == "alternate") {
-        files[i][j][2] = "Getting Started";
-      }
+
+
+      //Subtitle Text
       content.push(
         <div style = {subStyle} dangerouslySetInnerHTML = {{
-          __html: files[i][j][2]
+          __html: "Getting Started"
         }}></div>
       );
-      content.push(
-        <div style = {descStyle} dangerouslySetInnerHTML = {{
-          __html: files[i][j][3]
-        }}></div>
-      );
+
+      //Description Paragraph Text
+      if (files[i][j][2] == "alternate") {
+        content.push(
+          <div style = {descStyle} dangerouslySetInnerHTML = {{
+            __html: files[i][j][1]
+          }}></div>
+        );
+      } else {
+        content.push(
+          <div style = {descStyle} dangerouslySetInnerHTML = {{
+            __html: files[i][j][3]
+          }}></div>
+        );
+      }
+
+      //Duration and Location Text
       content.push(
         <div style = {descStyle} > Duration: {files[i][j][4]} | Location: {files[i][j][5]}</div>
       );
@@ -92,7 +106,9 @@ function RenderFiles() {
 
   }
 
-  content.push(<p><Link to='/' onClick = {refresh}>Back</Link></p>)
+  // content.push(<p><Link to='/' onClick = {refresh}>Back</Link></p>)
+    content.push(<p onClick = {props.onClick}>Back</p>)
+
 
 
   return (
@@ -138,6 +154,7 @@ class Alternate extends Component {
         <div style = {backId}>
 
           <RenderFiles
+            onClick= {() => this.props.onClick(1)}
 
           />
 

@@ -278,7 +278,7 @@ class FinderDisplay extends Component {
                         fileIndex = {this.state.fileIndex}
                         content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
                         contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                        onClick = { i => this.descClick[i]}
+                        onClick = { i => this.props.onClick(i)}
 
                       />
                     </div>
