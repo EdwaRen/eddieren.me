@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
-import { Link } from 'react-router-dom'
 
 import { fadeIn } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite/no-important';

@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
-import { Link } from 'react-router-dom'
-import { hashHistory } from 'react-router';
 
 import myInfo from '../Info/PersonalInfo.js';
 import groupsInfo from '../Info/Groups.js';
 
 function refresh() {
   // history.pushState(null, '/');
-  hashHistory.push('/');
 
   // window.location.reload();
 

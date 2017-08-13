@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import '../css/styleGraph.css';
 import '../css/styleGraph.scss';
-import { Link } from 'react-router-dom'
 
 
 

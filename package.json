@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "aphrodite": "^1.2.3",
+    "gh-pages": "^1.0.0",
     "inline-style-prefixer": "^3.0.7",
     "jquery": "^3.2.1",
     "radium": "^0.19.4",

@@ -1,12 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom'
-import { Router, Route } from 'react-router';
 
-import './css/HtmlStyle.css';
-import Background from './Components/Background';
-import Alternate from './Components/Alternate';
-import { BrowserRouter } from 'react-router-dom';
 import App from './Components/App';
 
 
@@ -30,9 +24,7 @@ import App from './Components/App';
 
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+    <App />,
 
 document.getElementById('root')
 );

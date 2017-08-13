@@ -3,7 +3,6 @@ import '../css/HtmlStyle.css';
 import '../css/styleGraph.css';
 
 // import FadeIn from 'react-fade-in';
-import { Link } from 'react-router-dom'
 import Draggable from 'react-draggable'; // The default
 import $ from 'jquery';
 import { fadeIn, fadeInRight } from 'react-animations';
@@ -96,7 +95,7 @@ class FinderDisplay extends Component {
       animate: 0,
       trash: 0,
       reload: 0,
-      visible: 1,
+      visible: 0,
     };
     this.closeWindow = this.closeWindow.bind(this);
 
@@ -127,6 +126,7 @@ class FinderDisplay extends Component {
       if (this.state.trash == 0) {
         this.setState({
           reload: this.state.reload+1,
+          visible: -(this.state.visible),
         })
       }
 
