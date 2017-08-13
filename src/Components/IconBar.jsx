@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import { StyleSheet, css } from 'aphrodite';
 import FinderIcon from '../images/finderReturnIcon.png';
-import TrashIconEmpty from '../images/trashIconEmpty.png';
-import TrashIconFilled from '../images/trashIconFilled.png';
+import TrashIconEmpty from '../images/trashIconEmptySmall.png';
+import TrashIconFilled from '../images/trashIconFilledSmall.png';
 
 
 function Icon1(props) {
