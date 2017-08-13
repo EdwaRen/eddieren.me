@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.eea41674.css",
-  "main.css.map": "static/css/main.eea41674.css.map",
-  "main.js": "static/js/main.20c349aa.js",
-  "main.js.map": "static/js/main.20c349aa.js.map",
+  "main.css": "static/css/main.8ef0e16c.css",
+  "main.css.map": "static/css/main.8ef0e16c.css.map",
+  "main.js": "static/js/main.a2d5e9e1.js",
+  "main.js.map": "static/js/main.a2d5e9e1.js.map",
   "static/media/Education.png": "static/media/Education.cb9f8525.png",
   "static/media/Edward_ProfilePic.png": "static/media/Edward_ProfilePic.772b386c.png",
   "static/media/Experience.png": "static/media/Experience.ccc48890.png",
@@ -25,7 +25,7 @@
   "static/media/linkedin2.png": "static/media/linkedin2.6a1d852f.png",
   "static/media/open-book.png": "static/media/open-book.b7dfa06f.png",
   "static/media/styleGraph.scss": "static/media/styleGraph.64d03ac2.scss",
-  "static/media/trashIconEmpty.png": "static/media/trashIconEmpty.d0c36e90.png",
-  "static/media/trashIconFilled.png": "static/media/trashIconFilled.1d706ae8.png",
-  "static/media/triangulated-image.png": "static/media/triangulated-image.9fd7e3ed.png"
+  "static/media/trashIconEmptySmall.png": "static/media/trashIconEmptySmall.1ed3c272.png",
+  "static/media/trashIconFilledSmall.png": "static/media/trashIconFilledSmall.5bb35bb5.png",
+  "static/media/triangulated-image.jpg": "static/media/triangulated-image.de66bda9.jpg"
 }
