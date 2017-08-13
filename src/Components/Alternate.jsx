@@ -74,12 +74,12 @@ function RenderFiles(props) {
 
       //Subtitle Text
       if (files[i][j][2] == "alternate") {
-      content.push(
-        <div style = {subStyle} dangerouslySetInnerHTML = {{
-          __html: "Getting Started"
-        }}></div>
-      );
-      else {
+        content.push(
+          <div style = {subStyle} dangerouslySetInnerHTML = {{
+            __html: "Getting Started"
+          }}></div>
+        );
+      } else {
         content.push(
           <div style = {subStyle} dangerouslySetInnerHTML = {{
             __html: files[i][j][2]
@@ -112,7 +112,7 @@ function RenderFiles(props) {
   }
 
   // content.push(<p><Link to='/' onClick = {refresh}>Back</Link></p>)
-    content.push(<p onClick = {props.onClick}>Back</p>)
+  content.push(<p onClick = {props.onClick}>Back</p>)
 
 
 
