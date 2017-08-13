@@ -73,11 +73,19 @@ function RenderFiles(props) {
 
 
       //Subtitle Text
+      if (files[i][j][2] == "alternate") {
       content.push(
         <div style = {subStyle} dangerouslySetInnerHTML = {{
           __html: "Getting Started"
         }}></div>
       );
+      else {
+        content.push(
+          <div style = {subStyle} dangerouslySetInnerHTML = {{
+            __html: files[i][j][2]
+          }}></div>
+        );
+      }
 
       //Description Paragraph Text
       if (files[i][j][2] == "alternate") {
