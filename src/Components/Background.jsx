@@ -6,7 +6,13 @@ import $ from 'jquery';
 import Draggable from 'react-draggable'; // The default
 import FooterDisplay from './FooterDisplay';
 
-
+function detectmob() {
+  if(window.innerWidth <= 600 && window.innerHeight <= 800) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
 class Background extends Component {
@@ -46,6 +52,7 @@ class Background extends Component {
             onClick={this.alternateDisplay}
           />
           <FooterDisplay />
+
         </div>
 
       );
@@ -55,6 +62,7 @@ class Background extends Component {
 
         <div id = "bodyBackground">
           <Alternate
+            mobile = {0}
             onClick={this.alternateDisplay}
           />
         </div>
@@ -64,24 +72,41 @@ class Background extends Component {
     }
   }
 
+
+
   render() {
 
 
+    if (detectmob()) {
+      console.log("Mobile my dude")
+      return(
+        <div id = "bodyBackground">
+          <Alternate
+            mobile = {1}
+            onClick={this.alternateDisplay}
+          />
+        </div>      )
 
-    return (
-      <div>
-        {this.chooseDisplays()}
-      </div>
+      } else  {
+        console.log("DEsktop my dude")
 
-    );
+
+
+        return (
+          <div>
+            {this.chooseDisplays()}
+          </div>
+
+        );
+      }
+    }
+
+    componentDidMount() {
+
+    }
+
+
+
   }
 
-  componentDidMount() {
-
-  }
-
-
-
-}
-
-export default Background;
+  export default Background;

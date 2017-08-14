@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
+import { StyleSheet, css } from 'aphrodite/no-important';
 
 import myInfo from '../Info/PersonalInfo.js';
-import groupsInfo from '../Info/Groups.js';
 
 function refresh() {
   // history.pushState(null, '/');
@@ -12,8 +12,8 @@ function refresh() {
 }
 
 function RenderFiles(props) {
-  let files = myInfo.data;
-  let groups = groupsInfo.data;
+  let files = myInfo.info;
+  let groups = myInfo.groupNames;
   const groupStyle = {
     margin: "30px",
     marginLeft:"10px",
@@ -132,31 +132,46 @@ class Alternate extends Component {
     super();
   }
   render() {
-    const altDisplay = {
-      width: "800px",
-      height: "90%",
-      background: "white",
-      opacity: "0.9",
-      color: "#333333",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translateX(-50%) translateY(-50%)",
-      overflowY: "scroll"
-    }
-    const backId = {
-      textAlign: "center",
-      margin: "10px",
-      fontFamily: "RalewayReg",
-      fontSize: "20px",
 
+    // var altDisplay;
+    // var backId
+    var altWidth = "800px";
+    if (this.props.mobile == 1) {
+      altWidth = "400px";
     }
+    const styles = StyleSheet.create({
+
+      altDisplay: {
+        width: "70%",
+        height: "90%",
+        background: "white",
+        opacity: "0.9",
+        color: "#333333",
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translateX(-50%) translateY(-50%)",
+        overflowY: "scroll",
+        marginLeft:"-5px",
+      },
+      backId: {
+        textAlign: "center",
+        margin: "10px",
+        fontFamily: "RalewayReg",
+        fontSize: "20px",
+
+      }
+    })
+
+
+
+
 
     console.log("Alternate!")
 
     return (
-      <div style = {altDisplay}>
-        <div style = {backId}>
+      <div className={css(styles.altDisplay)}>
+        <div className={css(styles.backId)}>
 
           <RenderFiles
             onClick= {() => this.props.onClick(1)}

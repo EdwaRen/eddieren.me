@@ -112,7 +112,7 @@ class GroupsBar extends React.Component {
       <Group
         groupIndex = {this.props.groupIndex}
         indexed={indexReturn}
-        value={this.props.groups[i]}
+        value={this.props.groups[i+1]}
         image={this.props.groupsImage[i]}
         onClick={() => this.props.onClick(i)}
         animate = {this.props.animate}

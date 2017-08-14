@@ -4,6 +4,8 @@ import '../css/styleGraph.css';
 
 // import FadeIn from 'react-fade-in';
 import Draggable from 'react-draggable'; // The default
+import {DraggableCore} from 'react-draggable'; // <DraggableCore>
+
 import $ from 'jquery';
 import { fadeIn, fadeInRight } from 'react-animations';
 import { fadeInUp } from 'react-animations';
@@ -87,6 +89,9 @@ var infoDescImages = [
 
 
 class FinderDisplay extends Component {
+
+
+
   constructor(props) {
     super(props);
     this.state = {
@@ -126,7 +131,7 @@ class FinderDisplay extends Component {
       if (this.state.trash == 0) {
         this.setState({
           reload: this.state.reload+1,
-          visible: -(this.state.visible),
+          visible: this.state.visible+1,
         })
       }
 
@@ -182,7 +187,7 @@ class FinderDisplay extends Component {
         },
         fadeOut: {
           animationName: fadeIn,
-          animationDuration: '0.4s'
+          animationDuration: '0.5s'
 
         }
 
@@ -213,9 +218,10 @@ class FinderDisplay extends Component {
     }
 
 
+
     return(
       <div>
-        <div style = {opacityStyle} className={css(styles.fadeOut)} >
+        <div style = {opacityStyle} className={css(styles.fadeOut)} key = {this.state.visible}>
           <Draggable key = {this.state.reload} >
             {/* <div style = {opacityStyle} key = {this.state.trash}> */}
             {/* <div id="containment-wrapper"> */}
@@ -248,7 +254,7 @@ class FinderDisplay extends Component {
 
                         groupIndex= {this.state.groupIndex}
                         fileIndex= {this.state.fileIndex}
-                        groups ={[  "Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"]}
+                        groups ={myInfo.groupNames}
                         groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
                         onClick={i => this.groupClick(i)}
                         animate = {this.state.animate}
@@ -262,7 +268,7 @@ class FinderDisplay extends Component {
 
                     <FilesBar
                       fileIndex = {this.state.fileIndex}
-                      filesText = {myInfo.data[this.state.groupIndex]}
+                      filesText = {myInfo.info[this.state.groupIndex]}
                       filesImage = {infoIconImages[this.state.groupIndex]}
                       onClick = {i => this.fileClick(i)}
                       animate = {this.state.animate}
@@ -276,7 +282,7 @@ class FinderDisplay extends Component {
                       <DescBar
                         groupIndex = {this.state.groupIndex}
                         fileIndex = {this.state.fileIndex}
-                        content = {myInfo.data[this.state.groupIndex][this.state.fileIndex]}
+                        content = {myInfo.info[this.state.groupIndex][this.state.fileIndex]}
                         contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
                         onClick = { i => this.props.onClick(i)}
 
