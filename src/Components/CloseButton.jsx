@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     position:"absolute",
-    marginLeft: "2.5px",
-    marginTop:"-3.5px",
+    marginLeft: "2.75px",
+    marginTop:"-3.25px",
     cursor: "pointer",
 
 

@@ -1,7 +1,7 @@
 //
 // var Info = [["Readme", "About FinderMe"], ["Ciena Corporation", "Noteblock"], ["Recycle Can", "Morsecret", "Team Goals"], ["My GitHub", "My Facebook", "My LinkedIn", "My Email"], ["Coding Languages", "Linguistics"], ["University of Waterloo", "Colonel By SS"],[ "CLS Assistant", "SHAD", "Debate", "Cross Country", "Interests"]];
 
-
+//These string variables were used for the 'Network' tab to link text to my facebook, github, linkedin, etc
 var str = "My LinkedIn";
 var myUrl = str.link("https://www.linkedin.com/in/edwardren/") ;
 var str2 = "My GitHub";
@@ -11,12 +11,18 @@ var myUrl3 = str3.link("https://www.facebook.com/eddie.ren.1") ;
 var str4 = "My Email";
 var myUrl4 = str4.link("mailto:edward.ren.2013@gmail.com") + "<br > Edward.ren.2013@gmail.com";
 
+
+var groupsInfo =[ "Edward Ren",
+"Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"
+]
+
 var Info = [
   //Profile
   [
+
     [ "Readme","Hi I'm Edward! I love architecting interactive web designs. I love especially coding in Javascript, Python, and C++. Welcome to my online portfolio!<br /><br /> My resume can be found <a href=\"./resume.pdf\" download=\"resume.pdf\">here</a>.", "alternate", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, a 'basic' page is provided above and my resume is <a href=\"./resume.pdf\" download=\"resume.pdf\">here</a>. Also, try dragging this window tab around.", "Summer 2017", "University of Waterloo", "url('images/Document.png')"],
 
-    [ "About FinderMe","url('images/Edward_ProfilePic.png')", "Personal website coded with React", "FinderMe is a website originally created with pure Javascript but recently completely rehauled with React. <br /> <br />This interactive website was inspired by Apple's Finder program and was stylized using React-CSS tools such as Aphrodite.<br /><br /> Coded with a 'bit' of coffee.","Summer 2017", "University of Waterloo", "url('images/Document.png')"]
+    [ "About FinderMe","", "Personal website coded with React", "FinderMe is a website originally created with pure Javascript but recently completely rehauled with React. <br /> <br />This interactive website was inspired by Apple's Finder program and was stylized using React-CSS tools such as Aphrodite. The mobile version links to the 'basic' page as some features are not compatible on mobile.<br /><br /> Coded with a bit too much of coffee.","Summer 2017", "University of Waterloo", ""]
   ],
   //Experience
   [
@@ -72,9 +78,6 @@ var Info = [
 
 
 
-]
-var groupsInfo =[ "Edward Ren",
-"Profile", "Work", "Projects", "Network", "Languages", "Education", "Other"
 ]
 
 

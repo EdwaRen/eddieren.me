@@ -1,42 +1,32 @@
+
+
+
+//Importing necessary elements for React
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import '../css/styleGraph.css';
+import myInfo from '../Info/PersonalInfo.js';
 
-// import FadeIn from 'react-fade-in';
-import Draggable from 'react-draggable'; // The default
-import {DraggableCore} from 'react-draggable'; // <DraggableCore>
+//Drag main finder screen around
+import Draggable from 'react-draggable';
 
+//Animations (most are unused);
 import $ from 'jquery';
-import { fadeIn, fadeInRight } from 'react-animations';
-import { fadeInUp } from 'react-animations';
-import { fadeInLeft } from 'react-animations';
-
-
+import { fadeIn } from 'react-animations';
 import { fadeOut } from 'react-animations';
-import { bounce } from 'react-animations';
-import { flipInX } from 'react-animations';
-import { flipInY } from 'react-animations';
-import { zoomIn } from 'react-animations';
-// import {merge} from 'react-animations';
-import {fadeOutLeft} from 'react-animations';
-import {fadeOutDown, fadeOutUp, zoomOutLeft, zoomOutDown, zoomOutUp, zoomInDown, zoomInUp} from 'react-animations';
+import { zoomOutDown} from 'react-animations';
 
-
-
-
-
+//Aphrodite for CSS styling
 import { StyleSheet, css } from 'aphrodite/no-important';
-import Radium from 'radium';
 
-
-
+//React Components
 import GroupsBar from './GroupsBar';
 import FilesBar from './FilesBar';
 import DescBar from './DescBar';
 import IconBar from './IconBar';
 import CloseButton from './CloseButton';
 
-
+//Custom images done here
 import Profile from '../images/Profile.png';
 import Experience from '../images/Experience.png';
 import Projects from '../images/Projects.png';
@@ -56,12 +46,15 @@ import HTMLCoding from '../images/html-coding.png';
 import Chat from '../images/chat.png';
 import College from '../images/college.png';
 import School from '../images/open-book.png';
-
 import ProfilePic from '../images/Edward_ProfilePic.png';
 
-import myInfo from '../Info/PersonalInfo.js';
+//Image icons to be displayed in left-most "groupsBar" (All images are displayed at once)
+var groupIconImages = [
+    Profile, Experience, Projects, Network, Languages, Education, Other,
+]
 
-var infoIconImages = [
+//Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
+var fileIconImages = [
   [Document, Document], //Profile
   [Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
@@ -70,7 +63,7 @@ var infoIconImages = [
   [College, School], //Education
   [Document, Document, Document, Document, Document], //Other
 ]
-
+//Images to be displayed in right-most "descBar" (Only 1 image is displayed at once)
 var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
@@ -80,13 +73,7 @@ var infoDescImages = [
   ["", ""], //Education
   ["", "", "", "", ""], //Other
 ]
-
-
-
-
-
-
-
+//Custom images ends
 
 class FinderDisplay extends Component {
 
@@ -255,7 +242,7 @@ class FinderDisplay extends Component {
                         groupIndex= {this.state.groupIndex}
                         fileIndex= {this.state.fileIndex}
                         groups ={myInfo.groupNames}
-                        groupsImage = {[Profile, Experience, Projects, Network, Languages, Education, Other]}
+                        groupsImage = {groupIconImages}
                         onClick={i => this.groupClick(i)}
                         animate = {this.state.animate}
                       />
@@ -269,7 +256,7 @@ class FinderDisplay extends Component {
                     <FilesBar
                       fileIndex = {this.state.fileIndex}
                       filesText = {myInfo.info[this.state.groupIndex]}
-                      filesImage = {infoIconImages[this.state.groupIndex]}
+                      filesImage = {fileIconImages[this.state.groupIndex]}
                       onClick = {i => this.fileClick(i)}
                       animate = {this.state.animate}
                     />

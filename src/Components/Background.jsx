@@ -62,6 +62,7 @@ class Background extends Component {
 
         <div id = "bodyBackground">
           <Alternate
+            key = {this.state.display}
             mobile = {0}
             onClick={this.alternateDisplay}
           />
@@ -82,6 +83,8 @@ class Background extends Component {
       return(
         <div id = "bodyBackground">
           <Alternate
+            key = {this.state.display}
+
             mobile = {1}
             onClick={this.alternateDisplay}
           />

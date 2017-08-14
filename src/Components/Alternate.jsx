@@ -51,17 +51,18 @@ function RenderFiles(props) {
   }
 
 
-
+  //Contains groups and files, ordered by group, file file, group, file, file etc
   var content = [];
 
+  //Iterate and create the groups
   for (var i = 0; i < files.length; i++) {
     content.push(
       <div style = {groupStyle} dangerouslySetInnerHTML={{
         __html: groups[i+1]
       }}></div>
     )
-    // This creates the groups, the next nested for loops creates the files before the next group creation
 
+    //Iterate and create the files
     for (var j = 0; j < files[i].length; j++) {
 
       //Title Text
@@ -111,7 +112,7 @@ function RenderFiles(props) {
 
   }
 
-  // content.push(<p><Link to='/' onClick = {refresh}>Back</Link></p>)
+  //Back Button
   content.push(<p onClick = {props.onClick}>Back</p>)
 
 
@@ -133,16 +134,14 @@ class Alternate extends Component {
   }
   render() {
 
-    // var altDisplay;
-    // var backId
-    var altWidth = "800px";
+    var altWidth = "70%"; //altWidth > altRight
     if (this.props.mobile == 1) {
-      altWidth = "400px";
+      altWidth = "90%";
     }
     const styles = StyleSheet.create({
 
       altDisplay: {
-        width: "70%",
+        width: altWidth,
         height: "90%",
         background: "white",
         opacity: "0.9",
