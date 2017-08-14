@@ -1,6 +1,14 @@
 <!--
 Copyright (c) 2017 by Edward Ren. All Rights Reserved.
  -->
+[![Bintray](https://img.shields.io/badge/build-passing-brightgreen.svg)](http://Edwardren.me)
+[![Bintray](https://img.shields.io/npm/v/npm.svg)](https://github.com/EdwaRen/FinderMe/releases/tag/v1.3.0)
+[![Bintray]( https://img.shields.io/badge/aphrodite-v1.2.3-blue.svg
+)](https://github.com/Khan/aphrodite)
+[![Bintray]( https://img.shields.io/badge/license-GNU%20GPL%20v3-blue.svg
+)](https://github.com/EdwaRen/FinderMe/blob/master/LICENSE.txt)
+
+
 
 # FinderMe
 
@@ -65,10 +73,19 @@ In the later stages of this project, it became apparent that GitHub Pages only s
 
 # Using FinderMe As A Template
 
+#### Clone
 Simply go on terminal and clone this repository by typing in:
 ```
-git clone https://github.com/EdwaRen/Edwaren.github.io
+$ git clone https://github.com/EdwaRen/FinderMe
 ```
+
+#### Installation
+```
+$ cd FinderMe
+$ npm install
+$ npm start
+```
+
 
 There, you can edit the information this program displays in the "src/Info/PersonalInfo.js" folder. The important place to look are the "groupsInfo" variable and "info" variables. The "groups" array is one dimensional and is responsible for the left-most tabs which are by default "Profile, Work, Projects, Network etc...". The first element in this array is the title shown at the very top of the finder display. Changing this variable will change the name of the groups on the groupBar (left-most) side of the finder display.
 
@@ -110,30 +127,30 @@ Due to the nature of displaying images through React over traditional JavaScript
 
 
 ### Using Custom Charts
-While normally an information array (files variable) has a length of 7, extending the length will create a chart with the remaining values. With alternating values between label and value. For example, including charts, the new "files" variable will become the following:
+While normally an information array (files variable) has a length of 6, extending the length will create a chart with the remaining values. These values must be placed in a SINGLE array on Info[i][j][6]. With alternating values between label and value. The last value will be the name of the chart. For example, including charts, the new "Info" variable will become the following:
 
-["1", "2", "3", "4", "5", "6", "7", **"8"**, **"9"**, ... **"files.length-1"**] <br />
+["1", "2", "3", "4", "5", "6", **"7"**]<br />
 1 - Element Name <br />
-2 - Image link <br />
+2 - Alternate text <br />
 3 - Subtitle <br />
 4 - Description <br />
 5 - Duration <br />
 6 - Location <br />
-7 - Element Icon <br />
-**8 - Bar Name** <br />
-**9 - Bar Length** (out of 100) <br />
-**Last Entry - Chart name** <br />
+**7 - [Bar Name, Bar Length (out of 100), Bar Name 2, Bar Length 2, ... Chart Name]** <br />
 
-![Custom Chart](/images/chartDoc.png?raw=true "")
+
+![Custom Chart](/images/chartDiagram.jpg?raw=true "")
 
 When the files array length is greater than 7, then the last value will be the title of the chart. In this version, only bar graphs are supported.
 <br />
 
-For more customizable chart options, you can mess with /css/styleGraph.css and #chartEnclosure in /css/styles.css.
+For more customizable chart options, you can mess with /css/styleGraph.css and #chartEnclosure in /css/HtmlStyles.css.
 
-As a reminder, charts are only accessible when the "files" array length is greater than 7, otherwise no chart will be made. Having the array length greater than 7 but filled with null values is not recommended as it is known to have caused issues.
+As a reminder, charts are only accessible when the "Info[i][j]" value is an array of strings, rather than a single string variable, otherwise no chart will be made.
 
 # License
+Copyright (c) 2017 Edward Ren
+
 This project and its use as a template is licensed under the GNU General Public License v3.0 (GNU GPL v3.0). Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. For more specific information see [LICENSE](../blob/master/LICENSE)
 
 Constituent icons used in this project are licensed through Creative Commons BY 3.0. Some authors are responsible for multiple icons.
@@ -147,11 +164,11 @@ Icon(s) made by Pixel Buddha from www.flaticon.com, licensed by Creative Commons
 Icon(s) made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 Icon(s) made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 
-Special thanks to Tim Hortons, Starbucks, and my Keurig coffee machine for making this project possible.
+Special thanks to Tim Hortons and my Keurig coffee machine for making this project possible.
 
 
 # Contact
 
-If you have any questions or inquiries concerning this project or suggestions for future releases, send an email to Edward.ren.2013@gmail.com
+If you have any questions or inquiries concerning FinderMe or suggestions for future releases, send an email to Edward.ren.2013@gmail.com
 
 -"Let's do this!"
