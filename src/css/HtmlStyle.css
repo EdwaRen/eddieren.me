@@ -492,27 +492,11 @@ dl {
     to {width: var(--totalWidth); height: var(--totalHeight);}
 }
 
-@keyframes topTransform {
-    from {width: 600px; height: 70px;}
-    to {width: var(--totalWidth); height: var(--topHeight);}
-}
-
-@keyframes groupTransform {
-    from {width: 130px; height: 380px;}
-    to {width: var(--groupWidth); height: var(--groupHeight);}
-}
-@keyframes fileTransform {
-    from {width: 180px; height: 380px;}
-    to {width: var(--fileWidth); height: var(--fileHeight);}
-}
-@keyframes descTransform {
-    from {width: 289px; height: 380px;}
-    to {width: var(--descWidth); height: var(--descHeight);}
-}
-@keyframes chartTransform {
-    from {width: 150px; }
-    to {width: var(--chartWidth); }
-}
+@keyframes topTransform {from {width: 600px; height: 70px;} to {width: var(--totalWidth); height: var(--topHeight);}}
+@keyframes groupTransform {from {width: 130px; height: 380px;} to {width: var(--groupWidth); height: var(--groupHeight);}}
+@keyframes fileTransform {from {width: 180px; height: 380px;} to {width: var(--fileWidth); height: var(--fileHeight);}}
+@keyframes descTransform {from {width: 289px; height: 380px;} to {width: var(--descWidth); height: var(--descHeight);}}
+@keyframes chartTransform {from {width: 150px; } to {width: var(--chartWidth); }}
 
 @keyframes bottomTransform {
     from {padding-top: 70px; width: 600px; height: 370px; }
@@ -560,20 +544,41 @@ dl {
 
 }
 
+@keyframes totalTransformRev {
+    from {width: 75vw; height: 90vh;}
+    to {width: var(--totalWidth); height: var(--totalHeight);}
+}
 
-/*html {
+@keyframes topTransformRev {from {width: 75vw; height: 10vh;} to {width: var(--totalWidth); height: var(--topHeight);}}
+@keyframes groupTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--groupWidth); height: var(--groupHeight);}}
+@keyframes fileTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--fileWidth); height: var(--fileHeight);}}
+@keyframes descTransformRev {from {width: 45vw; height: 80vh;} to {width: var(--descWidth); height: var(--descHeight);}}
+@keyframes chartTransformRev {from {width: 55vh; } to {width: var(--chartWidth); }}
 
-  --totalWidth: 600px;
-  --totalHeight: 450px;
-  --topWidth: 600px;
-  --topHeight: 70px;
-  --groupWidth: 130px;
-  --groupHeight:380px;
-  --fileWidth:  180px;
-  --fileHeight: 380px;
-  --descWidth: 290px;
-  --descHeight: 380px;
-  --chartWidth: 150px;
+@keyframes bottomTransformRev {
+    from {padding-top: 10vh; width: 100vw; height: 80vh; }
+    to {padding-top: var(--topHeight);
+    width: var(--totalWidth);
+    height: var(--groupHeight); }
+}
+@keyframes fileStyleTransformRev {
+    from {width: 20vw; }
+    to {width: var(--fileWidth); }
+}
+@keyframes groupStyleTransformRev {
+    from {width: 15vw; }
+    to {width: var(--fileWidth); }
+}
 
-  --fullwidth: 100%;
-}*/
+
+/*html.style.setProperty("--totalWidth", "100vw");
+html.style.setProperty("--totalHeight", "100%");
+html.style.setProperty("--topWidth", "100%");
+html.style.setProperty("--topHeight", "10vh");
+html.style.setProperty("--groupWidth", "15vw");
+html.style.setProperty("--groupHeight", "80vh");
+html.style.setProperty("--fileWidth", "20vw");
+html.style.setProperty("--fileHeight", "80vh");
+html.style.setProperty("--descWidth", "65vw");
+html.style.setProperty("--descHeight", "80vh");
+html.style.setProperty("--chartWidth", "55vh");*/

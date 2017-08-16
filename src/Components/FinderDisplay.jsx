@@ -173,6 +173,7 @@ class FinderDisplay extends Component {
   }
 
   navClick(i) {
+
     if (i == 0 ){
       console.log("Close Window clicked");
       setTimeout(this.changeState, 500);
@@ -193,26 +194,30 @@ class FinderDisplay extends Component {
       })
 
     }  else if (i == 2) {
-      console.log("expand window clicked")
+      console.log("expand window clicked");
       var html = document.getElementsByTagName('html')[0];
 
       if (this.state.expandFull == 0) {
+
+        console.log("expanding");
+        // this.iconClick(1)
+
         this.setState({
           expandFull: 1,
+          // visible: this.state.visible+1,
         })
-        //My sincere apologies for the spagetti code
-        setTimeout(this.resetAnimation, 150);
-
-
-
         document.getElementById("backShadow").style.webkitAnimationName = "totalTransform";
         document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
+        document.getElementById("backShadow").style.webkitAnimationDirection = "";
 
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "totalTransform";
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDuration = "0.15s";
+        document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDirection = "";
+
 
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "topTransform";
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDuration = "0.15s";
+        document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDirection = "";
 
 
         document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationName = "bottomTransform";
@@ -236,27 +241,25 @@ class FinderDisplay extends Component {
 
         for (var i = 0; i < myInfo.info.length;i++) {
           document.getElementsByClassName("groupStyle")[i].style.webkitAnimationName = "groupStyleTransform";
-          document.getElementsByClassName("groupStyle")[i].style.webkitAnimationDuration = "0.1s";
+          document.getElementsByClassName("groupStyle")[i].style.webkitAnimationDuration = "0.15s";
           document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationName = "groupStyleTransform";
-          document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationDuration = "0.1s";
+          document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationDuration = "0.15s";
         }
 
-        html.style.setProperty("--totalWidth", "100vw");
-        html.style.setProperty("--totalHeight", "100%");
-        html.style.setProperty("--topWidth", "100%");
+        html.style.setProperty("--totalWidth", "75vw");
+        html.style.setProperty("--totalHeight", "90vh");
+        html.style.setProperty("--topWidth",  "75vw");
         html.style.setProperty("--topHeight", "10vh");
         html.style.setProperty("--groupWidth", "15vw");
-        html.style.setProperty("--groupHeight", "80vh");
-        html.style.setProperty("--fileWidth", "20vw");
-        html.style.setProperty("--fileHeight", "80vh");
-        html.style.setProperty("--descWidth", "65vw");
-        html.style.setProperty("--descHeight", "80vh");
+        html.style.setProperty("--groupHeight", "75vh");
+        html.style.setProperty("--fileWidth", "15vw");
+        html.style.setProperty("--fileHeight", "75vh");
+        html.style.setProperty("--descWidth", "45vw");
+        html.style.setProperty("--descHeight", "75vh");
         html.style.setProperty("--chartWidth", "55vh");
+        setTimeout(this.resetAnimation, 150);
 
       } else {
-        this.setState({
-          expandFull: 0,
-        })
         html.style.setProperty("--totalWidth", "600px");
         html.style.setProperty("--totalHeight", "450px");
         html.style.setProperty("--topWidth", "600px");
@@ -268,6 +271,52 @@ class FinderDisplay extends Component {
         html.style.setProperty("--descWidth", "290px");
         html.style.setProperty("--descHeight", "380px");
         html.style.setProperty("--chartWidth", "140px");
+        setTimeout(this.resetAnimation, 150);
+        console.log("minimizng");
+
+        this.setState({
+          expandFull: 0,
+
+        })
+        document.getElementById("backShadow").style.webkitAnimationName = "totalTransformRev";
+        document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
+
+        document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "totalTransformRev";
+        document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDuration = "0.15s";
+
+
+        document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "topTransformRev";
+        document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDuration = "0.15s";
+
+
+
+        document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationName = "bottomTransformRev";
+        document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationDuration = "0.15s";
+
+        document.getElementsByClassName("finderSideBar")[0].style.webkitAnimationName = "groupTransformRev";
+        document.getElementsByClassName("finderSideBar")[0].style.webkitAnimationDuration = "0.15s";
+
+        document.getElementsByClassName("finderFilesBar")[0].style.webkitAnimationName = "fileTransformRev";
+        document.getElementsByClassName("finderFilesBar")[0].style.webkitAnimationDuration = "0.15s";
+
+        document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationName = "descTransformRev";
+        document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationDuration = "0.15s";
+
+        for (var i = 0; i < myInfo.info[this.state.groupIndex].length;i++) {
+          document.getElementsByClassName("fileStyle")[i].style.webkitAnimationName = "fileStyleTransformRev";
+          document.getElementsByClassName("fileStyle")[i].style.webkitAnimationDuration = "0.15s";
+          document.getElementsByClassName("fileStyle2")[i].style.webkitAnimationName = "fileStyleTransformRev";
+          document.getElementsByClassName("fileStyle2")[i].style.webkitAnimationDuration = "0.15s";
+        }
+
+        for (var i = 0; i < myInfo.info.length;i++) {
+          document.getElementsByClassName("groupStyle")[i].style.webkitAnimationName = "groupStyleTransformRev";
+          document.getElementsByClassName("groupStyle")[i].style.webkitAnimationDuration = "0.15s";
+          document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationName = "groupStyleTransformRev";
+          document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationDuration = "0.15s";
+        }
+
+
 
       }
     }
@@ -297,6 +346,9 @@ class FinderDisplay extends Component {
         animationName: fadeOutUp,
 
         animationDuration: '0.2s'
+      },
+
+      doNothing: {
 
       }
 
@@ -320,82 +372,83 @@ class FinderDisplay extends Component {
 
     return(
       <div>
-        <div style = {opacityStyle} className={fadeAnimate} key = {this.state.visible}>
+        <div style = {opacityStyle} className={fadeAnimate} >
+          <div >
+            <Draggable key = {this.state.visible}  defaultPosition={{x: 0, y: 0}}>
 
-          <Draggable key = {this.state.reload} >
+              {/* <div style = {opacityStyle} key = {this.state.trash}> */}
+              {/* <div id="containment-wrapper"> */}
 
-            {/* <div style = {opacityStyle} key = {this.state.trash}> */}
-            {/* <div id="containment-wrapper"> */}
+              <div id="backShadow" className="draggable">
+                <div className="bothWindows">
+                  {/* <div className="shadowWindow"></div> */}
+                  <div className="finderTopBar">
+                    <CloseButton
+                      trash = {this.state.trash}
+                      onClick={i => this.navClick(i)}
+                    />
+                    <div className="headerDisplay">
 
-            <div id="backShadow" className="draggable">
-              <div className="bothWindows">
-                {/* <div className="shadowWindow"></div> */}
-                <div className="finderTopBar">
-                  <CloseButton
-                    trash = {this.state.trash}
-                    onClick={i => this.navClick(i)}
-                  />
-                  <div className="headerDisplay">
-
-                    <div className="finderTopBarIcon"></div>
-                    <div className="finderTopBarText">
-                      <p id="finderTopBarTextP">Edward Ren</p>
+                      <div className="finderTopBarIcon"></div>
+                      <div className="finderTopBarText">
+                        <p id="finderTopBarTextP">Edward Ren</p>
+                      </div>
                     </div>
-                  </div>
-
-                </div>
-                <div className="bottomElemeents">
-
-                  <div className="finderSideBar">
-
-
-
-                    <GroupsBar
-
-                      groupIndex= {this.state.groupIndex}
-                      fileIndex= {this.state.fileIndex}
-                      groups ={myInfo.groupNames}
-                      groupsImage = {groupIconImages}
-                      onClick={i => this.groupClick(i)}
-                      animate = {this.state.animate}
-                    />
 
                   </div>
-                  {/* <Fade> */}
-                  <div className="finderFilesBar" key = "1">
+                  <div className="bottomElemeents">
+
+                    <div className="finderSideBar">
 
 
-                    <FilesBar
-                      fileIndex = {this.state.fileIndex}
-                      filesText = {myInfo.info[this.state.groupIndex]}
-                      filesImage = {fileIconImages[this.state.groupIndex]}
-                      onClick = {i => this.fileClick(i)}
-                      animate = {this.state.animate}
-                    />
-                  </div>
-                  {/* </Fade> */}
-                  <div className="finderDescriptionBar">
-                    <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
-                      {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
-                      }
-                      <DescBar
-                        groupIndex = {this.state.groupIndex}
+
+                      <GroupsBar
+
+                        groupIndex= {this.state.groupIndex}
+                        fileIndex= {this.state.fileIndex}
+                        groups ={myInfo.groupNames}
+                        groupsImage = {groupIconImages}
+                        onClick={i => this.groupClick(i)}
+                        animate = {this.state.animate}
+                      />
+
+                    </div>
+                    {/* <Fade> */}
+                    <div className="finderFilesBar" key = "1">
+
+
+                      <FilesBar
                         fileIndex = {this.state.fileIndex}
-                        content = {myInfo.info[this.state.groupIndex][this.state.fileIndex]}
-                        contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                        onClick = { i => this.props.onClick(i)}
-
+                        filesText = {myInfo.info[this.state.groupIndex]}
+                        filesImage = {fileIconImages[this.state.groupIndex]}
+                        onClick = {i => this.fileClick(i)}
+                        animate = {this.state.animate}
                       />
                     </div>
+                    {/* </Fade> */}
+                    <div className="finderDescriptionBar">
+                      <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
+                        {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
+                        }
+                        <DescBar
+                          groupIndex = {this.state.groupIndex}
+                          fileIndex = {this.state.fileIndex}
+                          content = {myInfo.info[this.state.groupIndex][this.state.fileIndex]}
+                          contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                          onClick = { i => this.props.onClick(i)}
+
+                        />
+                      </div>
+                    </div>
+
+
+
                   </div>
-
-
-
                 </div>
               </div>
-            </div>
 
-          </Draggable>
+            </Draggable>
+          </div>
         </div>
 
         <div className = "backIcons">
