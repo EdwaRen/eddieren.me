@@ -7,28 +7,10 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 
 
 function Group(props) {
-  var groupStyle = {};
-  var groupStyle2 = {};
 
   var imageStyle = {};
   if (props.indexed == 0) {
-    groupStyle = ({
-      position: "absolute",
 
-      // backgroundColor: "#eef2f2",
-      backgroundColor: "",
-      height: "32px",
-      width: "var(--groupWidth)",
-
-    })
-    groupStyle2 = ({
-      // backgroundColor: "#eef2f2",
-      height: "32px",
-      width: "var(--groupWidth)",
-      color: "#333333",
-
-
-    })
     imageStyle = {
       position: "absolute",
 
@@ -43,19 +25,7 @@ function Group(props) {
       backgroundImage:`url(${props.image})`,
     }
   } else {
-    groupStyle = {
-      position: "absolute",
-      backgroundColor: "#BBBBBB",
-      height: "32px",
-      width: "var(--groupWidth)",
-      opacity:"0.9",
-    }
-    groupStyle2 = {
-      height: "32px",
-      width: "var(--groupWidth)",
-      opacity: "1.0",
-      color:"#000000",
-    }
+
     imageStyle = {
       zIndex: "2",
       position: "absolute",
@@ -79,21 +49,40 @@ function Group(props) {
       animationDuration: '0.3s'
     }
   })
-  return (
+  if (props.indexed == 0) {
+    return (
 
-    <div style={groupStyle2} id="myGroupId0" onClick={props.onClick}>
-      <div style={imageStyle}></div>
-      <div key = {props.groupIndex} className={css(styles.fadeIn)} >
+      <div className = "groupStyle2" style={{color: "#333333",}}  onClick={props.onClick}>
+        <div style={imageStyle}></div>
+        <div key = {props.groupIndex} className={css(styles.fadeIn)} >
 
-        <div style = {groupStyle}></div>
+          <div className = "groupStyle" style = {{backgroundColor: "", opacity: "1.0",}}></div>
+        </div>
+        {/* <img src = {props.image}/> */}
+        <div id="profileDiv">
+          <p >{props.value}</p>
+        </div>
       </div>
-      {/* <img src = {props.image}/> */}
-      <div id="profileDiv">
-        <p >{props.value}</p>
-      </div>
-    </div>
 
-  );
+    );
+  } else {
+    return (
+
+      <div className = "groupStyle2"  onClick={props.onClick}>
+        <div style={imageStyle}></div>
+        <div key = {props.groupIndex} className={css(styles.fadeIn)} >
+
+          <div  className = "groupStyle" style = {{backgroundColor: "#BBBBBB", color: "#000000", opacity: "1.0"}}></div>
+        </div>
+        {/* <img src = {props.image}/> */}
+        <div id="profileDiv">
+          <p >{props.value}</p>
+        </div>
+      </div>
+
+    );
+  }
+
 }
 
 class GroupsBar extends React.Component {

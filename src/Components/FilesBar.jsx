@@ -8,40 +8,6 @@ import '../css/HtmlStyle.css';
 
 function Files(props) {
 
-  var fileStyle = {};
-  var fileStyle2 = {};
-
-  if (props.indexed == 0) {
-    fileStyle = {
-      // zIndex:"0",
-      position: "absolute",
-      height: "36px",
-      width: "var(--fileWidth)",
-      color: "#333333",
-      backgroundColor: "#FFFFFF",
-    }
-    fileStyle2 = {
-      height: "36px",
-      width: "var(--fileWidth)",
-      color: "#333333",
-    }
-  } else {
-    fileStyle = {
-      // zIndex:"0",
-
-      position: "absolute",
-      height: "36px",
-      width: "var(--fileWidth)",
-      color: "#FFFFFF",
-      backgroundColor: "#116CD6",
-    }
-    fileStyle2 = {
-      height: "36px",
-      width: "var(--fileWidth)",
-      color: "#FFFFFF",
-    }
-  }
-
   const imageStyle = {
     zIndex:"200",
     position: "absolute",
@@ -66,21 +32,54 @@ function Files(props) {
   })
   console.log("animate", props.animate);
 
-  return (
+  if (props.indexed == 0) {
+    return (
 
-      <div style = {fileStyle2} onClick={props.onClick} key = {"1"}>
-        <div style={imageStyle} ></div>
-        <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
+      <div className  = "fileStyle2" style = {{color:"#333333",}} onClick={props.onClick} key = {"1"}>
+          <div style={imageStyle} ></div>
+          <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
 
-          <div style = {fileStyle}></div>
+            <div className= "fileStyle" style = {{color:"#333333",backgroundColor: "#FFFFFF"}} ></div>
+          </div>
+
+          <div id="filesDiv">
+            <p>{props.text}</p>
+          </div>
         </div>
 
-        <div id="filesDiv">
-          <p>{props.text}</p>
-        </div>
-      </div>
+    );
+  } else {
+    return (
 
-  );
+        <div className = "fileStyle2" style = {{color:"#FFFFFF",}} onClick={props.onClick} key = {"1"}>
+          <div style={imageStyle} ></div>
+          <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
+
+            <div className = "fileStyle" style = {{color:"#FFFFFF",backgroundColor: "#116CD6"}} ></div>
+          </div>
+
+          <div id="filesDiv">
+            <p>{props.text}</p>
+          </div>
+        </div>
+
+    );
+
+    // fileStyle = {
+    //   // zIndex:"0",
+    //
+    //   position: "absolute",
+    //   height: "36px",
+    //   width: "auto",
+    //   color: "#FFFFFF",
+    //   backgroundColor: "#116CD6",
+    // }
+    // fileStyle2 = {
+    //   height: "36px",
+    //   width: "auto",
+    //   color: "#FFFFFF",
+    // }
+  }
 
 
 }

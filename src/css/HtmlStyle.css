@@ -103,6 +103,8 @@ body {
 
   width: var(--totalWidth);
   height: var(--totalHeight);
+  animation-timing-function: linear; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -113,6 +115,7 @@ body {
 .bothWindows{
   width: var(--totalWidth);
   height: var(--totalHeight);
+  animation-timing-function: linear;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -131,6 +134,7 @@ body {
 
   width:var(--topWidth);
   height: var(--topHeight);
+  animation-timing-function: linear;
   /*background-image: url("../images/finderTopBar.png");*/
   background: #edebed; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#edebed, #d8d6d8); /* For Safari 5.1 to 6.0 */
@@ -196,6 +200,7 @@ body {
   padding-top: var(--topHeight);
   width: var(--totalWidth);
   height: var(--groupHeight);
+  animation-timing-function: linear;
   height: 430px;
 
 }
@@ -206,6 +211,7 @@ body {
   float: left;
   width: var(--groupWidth);
   height: var(--groupHeight);
+  animation-timing-function: linear;
 
   background-size: cover;
 
@@ -238,6 +244,7 @@ body {
   float: left;
   width: var(--fileWidth);
   height: var(--fileHeight);
+  animation-timing-function: linear;
   background-size: cover;
 
   display: block;
@@ -250,6 +257,7 @@ body {
   float: left;
   width: var(--descWidth);
   height: var(--descHeight);
+  animation-timing-function: linear;
 
   background-color: #FFFFFF;
   border-radius: 0px 0px 10px 0px;
@@ -276,8 +284,8 @@ body {
 
 
 #descReadmeTutorial {
-  height: var(--descHeight);
-  width: var(--descWidth);
+  /*height: var(--descHeight);
+  width: var(--descWidth);*/
   bottom: 0;
 }
 
@@ -323,7 +331,7 @@ body {
 
 #profileDiv {
   height: 35px;
-  width: 100px;
+  width: auto;
   overflow: hidden;
   padding-left: 48px;
   position: absolute;
@@ -340,7 +348,7 @@ body {
 
 #filesDiv {
   height: 32px;
-  width: var(-fileWidth);
+  /*width: var(-fileWidth);*/
   overflow: hidden;
   padding-left: 35px;
   position: absolute;
@@ -469,13 +477,103 @@ dl {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: var(--chartWidth);
+  /*width: var(--chartWidth);*/
   max-width: var(--chartWidth);
+  animation-timing-function: linear;
   position: relative;
   margin-left: -70px;
   /*margin-right: 10%;*/
   /*background-color: #000000;*/
 
+}
+
+@keyframes totalTransform {
+    from {width: 600px; height: 450px;}
+    to {width: var(--totalWidth); height: var(--totalHeight);}
+}
+
+@keyframes topTransform {
+    from {width: 600px; height: 70px;}
+    to {width: var(--totalWidth); height: var(--topHeight);}
+}
+
+@keyframes groupTransform {
+    from {width: 130px; height: 380px;}
+    to {width: var(--groupWidth); height: var(--groupHeight);}
+}
+@keyframes fileTransform {
+    from {width: 180px; height: 380px;}
+    to {width: var(--fileWidth); height: var(--fileHeight);}
+}
+@keyframes descTransform {
+    from {width: 289px; height: 380px;}
+    to {width: var(--descWidth); height: var(--descHeight);}
+}
+@keyframes chartTransform {
+    from {width: 150px; }
+    to {width: var(--chartWidth); }
+}
+
+@keyframes bottomTransform {
+    from {padding-top: 70px; width: 600px; height: 370px; }
+    to {padding-top: var(--topHeight);
+    width: var(--totalWidth);
+    height: var(--groupHeight); }
+}
+@keyframes fileStyleTransform {
+    from {width: 180px; }
+    to {width: var(--fileWidth); }
+}
+@keyframes groupStyleTransform {
+    from {width: 130px; }
+    to {width: var(--fileWidth); }
+}
+
+.fileStyle {
+  position: absolute;
+  height: 36px;
+  width: var(--fileWidth);
+  animation-timing-function: linear;
+
+}
+.fileStyle2 {
+  height: 36px;
+  width: var(--fileWidth);
+  animation-timing-function: linear;
+
+}
+
+.groupStyle {
+  position: absolute;
+  height: 32px;
+  width: var(--groupWidth);
+  animation-timing-function: linear;
+  /*background-color: #000000;*/
+
+}
+.groupStyle2 {
+  height: 32px;
+  width: var(--groupWidth);
+  animation-timing-function: linear;
+
 
 
 }
+
+
+/*html {
+
+  --totalWidth: 600px;
+  --totalHeight: 450px;
+  --topWidth: 600px;
+  --topHeight: 70px;
+  --groupWidth: 130px;
+  --groupHeight:380px;
+  --fileWidth:  180px;
+  --fileHeight: 380px;
+  --descWidth: 290px;
+  --descHeight: 380px;
+  --chartWidth: 150px;
+
+  --fullwidth: 100%;
+}*/
