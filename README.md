@@ -1,11 +1,11 @@
 <!--
 Copyright (c) 2017 by Edward Ren. All Rights Reserved.
  -->
-[![Bintray](https://img.shields.io/badge/build-passing-brightgreen.svg)](http://Edwardren.me)
-[![Bintray](https://img.shields.io/npm/v/npm.svg)](https://github.com/EdwaRen/FinderMe/releases/tag/v1.3.0)
-[![Bintray]( https://img.shields.io/badge/aphrodite-v1.2.3-blue.svg
+[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](http://Edwardren.me)
+[![Npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/EdwaRen/FinderMe/releases/tag/v1.3.0)
+[![Aphrodite]( https://img.shields.io/badge/aphrodite-v1.2.3-blue.svg
 )](https://github.com/Khan/aphrodite)
-[![Bintray]( https://img.shields.io/badge/license-GNU%20GPL%20v3-blue.svg
+[![License]( https://img.shields.io/badge/license-GNU%20GPL%20v3-blue.svg
 )](https://github.com/EdwaRen/FinderMe/blob/master/LICENSE.txt)
 
 
@@ -26,8 +26,8 @@ My personal website created primarily using React in conjunction with HTML/CSS. 
    * [Icon Controls](#icon-controls)<br />
 2. [Testing](#testing)
 3. [Documentation](#template)
-   * [Charts](#using-custom-charts)
-   * [Importing Images](#importing-images)<br />
+   * [Importing Images](#importing-images)
+   * [Charts](#using-custom-charts)<br />
 4. [License](#license)
 5. [Contact](#contact)
 

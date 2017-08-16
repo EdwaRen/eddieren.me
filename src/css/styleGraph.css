@@ -1,24 +1,14 @@
 /*
 Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 */
+
 @font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
 @font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
 @font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
 @font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
 
-dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  max-width: 150px;
-  position: relative;
-  margin-left: -20px;
-}
+
+
 
 dt {
   -ms-flex-item-align: start;

@@ -1,8 +1,45 @@
 
 
+html {
+
+  --totalWidth: 100%;
+  --totalHeight: 100%;
+
+  --topWidth: 100%;
+  --topHeight: 10vh;
+
+  --groupWidth: 150px;
+  --groupHeight:80vh;
+
+  --fileWidth:  200px;
+  --fileHeight:80vh;
+
+  --descWidth: 649px;
+  --descHeight: 80vh;
+
+  --chartWidth: 499px;
+
+  --fullwidth: 100%;
+}
+
+/*html {
+
+  --totalWidth: 600px;
+  --totalHeight: 450px;
+  --topWidth: 600px;
+  --topHeight: 70px;
+  --groupWidth: 130px;
+  --groupHeight:380px;
+  --fileWidth:  180px;
+  --fileHeight:380px;
+  --descWidth: 289px;
+  --descHeight: 380px;
+
+  --fullwidth: 100%;
+}*/
 
 body {
-
+  margin: 0;
   background-image: url("../images/triangulated-image.jpg");
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -41,17 +78,18 @@ body {
 
 #backShadow{
 
-  width: 600px;
-  height: 450px;
+  width: var(--totalWidth);
+  height: var(--totalHeight);
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+  /*margin-left:-5px;*/
 
 }
 
 .bothWindows{
-  width: 600px;
-  height: 450px;
+  width: var(--totalWidth);
+  height: var(--totalHeight);
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -66,9 +104,15 @@ body {
 
 .finderTopBar {
   position: absolute;
-  width:600px;
-  height: 70px;
-  background-image: url("../images/finderTopBar.png");
+  width:var(--topWidth);
+  height: var(--topHeight);
+  /*background-image: url("../images/finderTopBar.png");*/
+  background: #edebed; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#edebed, #d8d6d8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#edebed, #d8d6d8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#edebed, #d8d6d8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#edebed, #d8d6d8); /* Standard syntax */
+  border-radius: 10px 10px 0px 0px;
   background-size: cover;
 
   display: block;
@@ -114,9 +158,10 @@ body {
 
 
 .bottomElemeents {
-  padding-top: 0;
-  margin-top: 70px;
-  width: 700px;
+  /*padding-top: 0;*/
+  padding-top: var(--topHeight);
+  width: var(--totalWidth);
+  height: var(--groupHeight);
   height: 430px;
 }
 
@@ -124,16 +169,17 @@ body {
 
 .finderSideBar {
   float: left;
-  width: 130px;
-  height: 380px;
+  width: var(--groupWidth);
+  height: var(--groupHeight);
 
   background-size: cover;
 
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/finderSideBar.png");
+  background-color: #eef2f2;
 
+  border-radius: 0px 0px 0px 10px;
 
 
 }
@@ -155,22 +201,26 @@ body {
 
 .finderFilesBar {
   float: left;
-  width: 180px;
-  height: 380px;
+  width: var(--fileWidth);
+  height: var(--fileHeight);
   background-size: cover;
 
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/finderFilesBar.png");
+  background-color: #FFFFFF;
 }
 
 .finderDescriptionBar {
   float: left;
-  width: 290px;
-  height: 380px;
+  width: var(--descWidth);
+  height: var(--descHeight);
 
-  background-image: url("../images/finderDescriptionBar.png");
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 10px 0px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #CCCCCC;
 
 }
 
@@ -189,24 +239,10 @@ body {
 
 }
 
-#myGroup0 {
-
-  background-color: #eef2f2;
-  height: 32px;
-  width: 198px;
-}
-
-
-#myFiles0 {
-  height: 36px;
-  width: 198px;
-  color: #333333;
-
-}
 
 #descReadmeTutorial {
-  height: 380px;
-  width: 290px;
+  height: var(--descHeight);
+  width: var(--descWidth);
   bottom: 0;
 }
 
@@ -269,7 +305,7 @@ body {
 
 #filesDiv {
   height: 32px;
-  width: 178;
+  width: var(-fileWidth);
   overflow: hidden;
   padding-left: 35px;
   position: absolute;
@@ -314,7 +350,7 @@ body {
 
 #chartEnclosure {
   margin-left: 20px;
-  width: 250px;
+  width: var(--descWidth);
   height: 230px;
   position: static;
   z-index: -1;
@@ -382,4 +418,18 @@ body {
   -ms-filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
   -o-filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
   filter: drop-shadow(0 0px 10px  rgba(255,255,255,.7));
+}
+
+dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: var(--chartWidth);
+  position: relative;
+  margin-left: -20px;
 }

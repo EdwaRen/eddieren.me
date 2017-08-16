@@ -16,13 +16,13 @@ function Files(props) {
       // zIndex:"0",
       position: "absolute",
       height: "36px",
-      width: "180px",
+      width: "var(--fileWidth)",
       color: "#333333",
       backgroundColor: "#FFFFFF",
     }
     fileStyle2 = {
       height: "36px",
-      width: "180px",
+      width: "var(--fileWidth)",
       color: "#333333",
     }
   } else {
@@ -31,13 +31,13 @@ function Files(props) {
 
       position: "absolute",
       height: "36px",
-      width: "180px",
+      width: "var(--fileWidth)",
       color: "#FFFFFF",
       backgroundColor: "#116CD6",
     }
     fileStyle2 = {
       height: "36px",
-      width: "180px",
+      width: "var(--fileWidth)",
       color: "#FFFFFF",
     }
   }

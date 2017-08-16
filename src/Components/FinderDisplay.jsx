@@ -13,7 +13,7 @@ import Draggable from 'react-draggable';
 //Animations (most are unused);
 import $ from 'jquery';
 import { fadeIn } from 'react-animations';
-import { fadeOut } from 'react-animations';
+import { fadeOut, fadeOutUp, zoomOut, slideOutLeft } from 'react-animations';
 import { zoomOutDown} from 'react-animations';
 
 //Aphrodite for CSS styling
@@ -50,7 +50,7 @@ import ProfilePic from '../images/Edward_ProfilePic.png';
 
 //Image icons to be displayed in left-most "groupsBar" (All images are displayed at once)
 var groupIconImages = [
-    Profile, Experience, Projects, Network, Languages, Education, Other,
+  Profile, Experience, Projects, Network, Languages, Education, Other,
 ]
 
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
@@ -88,8 +88,9 @@ class FinderDisplay extends Component {
       trash: 0,
       reload: 0,
       visible: 0,
+      size: 0,
     };
-    this.closeWindow = this.closeWindow.bind(this);
+    // this.closeWindow = this.closeWindow.bind(this);
 
   }
 
@@ -115,14 +116,16 @@ class FinderDisplay extends Component {
   iconClick(i) {
     // console.log("File clicked");
     if (i == 1) {
-      if (this.state.trash == 0) {
-        this.setState({
-          reload: this.state.reload+1,
-          visible: this.state.visible+1,
-        })
-      }
+      this.setState({
+        reload: this.state.reload+1,
+        visible: this.state.visible+1,
+        trash : 0
+      })
 
-    } else {
+
+
+
+    } else if (i == 2) {
       if (this.state.trash == 1) {
         this.setState({
           trash: 0,
@@ -137,14 +140,32 @@ class FinderDisplay extends Component {
 
   }
 
-  closeWindow() {
-    console.log("Close Window clicked");
+  navClick(i) {
+    if (i == 0 ){
+      console.log("Close Window clicked");
+      this.setState({
+        trash: 1,
+        reload: this.state.reload+1,
 
-    this.setState({
-      trash: 1,
+      })
 
-    })
+    } else if (i == 1) {
+      console.log("Minimize Window clicked");
+      this.setState({
+        trash: 1,
+      })
+
+    } else if (i == 2) {
+      if (this.state.size == 0) {
+        var html = document.getElementsByTagName('html')[0];
+        html.style.cssText = "--main-background-color: red";
+      }
+
+    }
+
   }
+
+
 
   render() {
     var styles;
@@ -158,7 +179,7 @@ class FinderDisplay extends Component {
         },
         fadeOut: {
           // animationName: merge(fadeOutDown, zoomOutDown),
-          animationName: zoomOutDown,
+          animationName: fadeOutUp,
 
           animationDuration: '0.4s'
 
@@ -209,17 +230,19 @@ class FinderDisplay extends Component {
     return(
       <div>
         <div style = {opacityStyle} className={css(styles.fadeOut)} key = {this.state.visible}>
+
           <Draggable key = {this.state.reload} >
+
             {/* <div style = {opacityStyle} key = {this.state.trash}> */}
             {/* <div id="containment-wrapper"> */}
 
             <div id="backShadow" className="draggable">
               <div className="bothWindows">
-                <div className="shadowWindow"></div>
+                {/* <div className="shadowWindow"></div> */}
                 <div className="finderTopBar">
                   <CloseButton
                     trash = {this.state.trash}
-                    onClick={this.closeWindow}
+                    onClick={i => this.navClick(i)}
                   />
                   <div className="headerDisplay">
 
@@ -282,8 +305,10 @@ class FinderDisplay extends Component {
                 </div>
               </div>
             </div>
+
           </Draggable>
         </div>
+
         <div className = "backIcons">
           <IconBar
             trash = {this.state.trash}

@@ -18,13 +18,13 @@ function Group(props) {
       // backgroundColor: "#eef2f2",
       backgroundColor: "",
       height: "32px",
-      width: "130px",
+      width: "var(--groupWidth)",
 
     })
     groupStyle2 = ({
       // backgroundColor: "#eef2f2",
       height: "32px",
-      width: "130px",
+      width: "var(--groupWidth)",
       color: "#333333",
 
 
@@ -47,12 +47,12 @@ function Group(props) {
       position: "absolute",
       backgroundColor: "#BBBBBB",
       height: "32px",
-      width: "130px",
+      width: "var(--groupWidth)",
       opacity:"0.9",
     }
     groupStyle2 = {
       height: "32px",
-      width: "130px",
+      width: "var(--groupWidth)",
       opacity: "1.0",
       color:"#000000",
     }
