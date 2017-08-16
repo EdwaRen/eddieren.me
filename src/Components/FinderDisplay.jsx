@@ -89,8 +89,10 @@ class FinderDisplay extends Component {
       reload: 0,
       visible: 0,
       size: 0,
+      minimize: 0,
+      expandFull: 0,
     };
-    // this.closeWindow = this.closeWindow.bind(this);
+    this.changeState = this.changeState.bind(this);
 
   }
 
@@ -140,194 +142,246 @@ class FinderDisplay extends Component {
 
   }
 
+  changeState() {
+    this.setState({
+      groupIndex: 0,
+      fileIndex: 0,
+      minimize: 0,
+      reload: this.state.reload+1,
+
+    })
+  }
+
   navClick(i) {
     if (i == 0 ){
       console.log("Close Window clicked");
+      setTimeout(this.changeState, 500);
       this.setState({
         trash: 1,
-        reload: this.state.reload+1,
+        minimize: 0,
 
       })
+
+
+
 
     } else if (i == 1) {
       console.log("Minimize Window clicked");
       this.setState({
         trash: 1,
+        minimize: 1,
       })
 
-    } else if (i == 2) {
-      if (this.state.size == 0) {
-        var html = document.getElementsByTagName('html')[0];
-        html.style.cssText = "--main-background-color: red";
+    }  else if (i == 2) {
+      console.log("expand window clicked")
+      var html = document.getElementsByTagName('html')[0];
+
+      if (this.state.expandFull == 0) {
+        this.setState({
+          expandFull: 1,
+        })
+        html.style.setProperty("--totalWidth", "100%");
+        html.style.setProperty("--totalHeight", "100%");
+        html.style.setProperty("--topWidth", "100%");
+        html.style.setProperty("--topHeight", "10vh");
+        html.style.setProperty("--groupWidth", "15vw");
+        html.style.setProperty("--groupHeight", "80vh");
+        html.style.setProperty("--fileWidth", "20vw");
+        html.style.setProperty("--fileHeight", "80vh");
+        html.style.setProperty("--descWidth", "65vw");
+        html.style.setProperty("--descHeight", "80vh");
+        html.style.setProperty("--chartWidth", "55vh");
+      } else {
+        this.setState({
+          expandFull: 0,
+        })
+        // --totalWidth: 600px;
+        // --totalHeight: 450px;
+        // --topWidth: 600px;
+        // --topHeight: 70px;
+        // --groupWidth: 130px;
+        // --groupHeight:380px;
+        // --fileWidth:  180px;
+        // --fileHeight:380px;
+        // --descWidth: 289px;
+        // --descHeight: 380px;
+        // --chartWidth: 139px;
+        //
+        // --fullwidth: 100%;
+        html.style.setProperty("--totalWidth", "600px");
+        html.style.setProperty("--totalHeight", "450px");
+        html.style.setProperty("--topWidth", "600px");
+        html.style.setProperty("--topHeight", "70px");
+        html.style.setProperty("--groupWidth", "130px");
+        html.style.setProperty("--groupHeight", "380px");
+        html.style.setProperty("--fileWidth", "180px");
+        html.style.setProperty("--fileHeight", "380px");
+        html.style.setProperty("--descWidth", "290px");
+        html.style.setProperty("--descHeight", "380px");
+        html.style.setProperty("--chartWidth", "140px");
+
       }
-
     }
-
   }
 
 
 
-  render() {
-    var styles;
 
-    if (this.state.trash == 1) {
-      styles = StyleSheet.create({
-        fadeIn: {
-          animationName: fadeIn,
-          animationDuration: '0.4s'
 
-        },
-        fadeOut: {
-          // animationName: merge(fadeOutDown, zoomOutDown),
-          animationName: fadeOutUp,
+render() {
+  var styles = StyleSheet.create({
+    fadeIn: {
+      animationName: fadeIn,
+      animationDuration: '0.4s'
 
-          animationDuration: '0.4s'
+    },
+    fadeOut: {
+      // animationName: merge(fadeOutDown, zoomOutDown),
+      animationName: fadeOut,
 
-        }
+      animationDuration: '0.2s'
 
-      })
-    } else {
-      styles = StyleSheet.create({
-        fadeIn: {
-          animationName: fadeIn,
-          animationDuration: '0.4s'
+    },
 
-        },
-        fadeOut: {
-          animationName: fadeIn,
-          animationDuration: '0.5s'
+    fadeOutUp: {
+      // animationName: merge(fadeOutDown, zoomOutDown),
+      animationName: fadeOutUp,
 
-        }
+      animationDuration: '0.2s'
 
-      })
     }
 
+  })
 
 
-    // try {
-    //   console.log("Style textinput", this.myTextInput.style);
-    //   // this.myTextInput.style.opacity = "0.5";
-    // }
-    // catch(err) {
-    //   console.log( "style not working...", this.myTextInput);
-    // }
 
-    // console.log("filesImage", infoImages[0]);
 
-    var opacityStyle;
-    if (this.state.trash == 0) {
-      opacityStyle = {
-        opacity: "1.0",
-      }
-    } else {
-      opacityStyle = {
-        opacity: "0.0",
-      }
+
+  // try {
+  //   console.log("Style textinput", this.myTextInput.style);
+  //   // this.myTextInput.style.opacity = "0.5";
+  // }
+  // catch(err) {
+  //   console.log( "style not working...", this.myTextInput);
+  // }
+
+  // console.log("filesImage", infoImages[0]);
+
+  var opacityStyle;
+  if (this.state.trash == 0) {
+    opacityStyle = {
+      opacity: "1.0",
     }
+  } else {
+    opacityStyle = {
+      opacity: "0.0",
+    }
+  }
 
+  const fadeAnimate = css(
+    this.state.trash ? (this.state.minimize? styles.fadeOutUp : styles.fadeOut) : styles.fadeIn,
+    // this.state.minimize? styles.fadeOutUp : styles.fadeOut
+  )
 
+  return(
+    <div>
+      <div style = {opacityStyle} className={fadeAnimate} key = {this.state.visible}>
 
-    return(
-      <div>
-        <div style = {opacityStyle} className={css(styles.fadeOut)} key = {this.state.visible}>
+        <Draggable key = {this.state.reload} >
 
-          <Draggable key = {this.state.reload} >
+          {/* <div style = {opacityStyle} key = {this.state.trash}> */}
+          {/* <div id="containment-wrapper"> */}
 
-            {/* <div style = {opacityStyle} key = {this.state.trash}> */}
-            {/* <div id="containment-wrapper"> */}
+          <div id="backShadow" className="draggable">
+            <div className="bothWindows">
+              {/* <div className="shadowWindow"></div> */}
+              <div className="finderTopBar">
+                <CloseButton
+                  trash = {this.state.trash}
+                  onClick={i => this.navClick(i)}
+                />
+                <div className="headerDisplay">
 
-            <div id="backShadow" className="draggable">
-              <div className="bothWindows">
-                {/* <div className="shadowWindow"></div> */}
-                <div className="finderTopBar">
-                  <CloseButton
-                    trash = {this.state.trash}
-                    onClick={i => this.navClick(i)}
-                  />
-                  <div className="headerDisplay">
-
-                    <div className="finderTopBarIcon"></div>
-                    <div className="finderTopBarText">
-                      <p id="finderTopBarTextP">Edward Ren</p>
-                    </div>
+                  <div className="finderTopBarIcon"></div>
+                  <div className="finderTopBarText">
+                    <p id="finderTopBarTextP">Edward Ren</p>
                   </div>
+                </div>
+
+              </div>
+              <div className="bottomElemeents">
+
+                <div className="finderSideBar">
+
+
+
+                  <GroupsBar
+
+                    groupIndex= {this.state.groupIndex}
+                    fileIndex= {this.state.fileIndex}
+                    groups ={myInfo.groupNames}
+                    groupsImage = {groupIconImages}
+                    onClick={i => this.groupClick(i)}
+                    animate = {this.state.animate}
+                  />
 
                 </div>
-                <div className="bottomElemeents">
-
-                  <div className="finderSideBar">
-
-
-                    <div id = "groupBar" className={css(styles.fadeIn)} >
-
-                      <GroupsBar
-
-                        groupIndex= {this.state.groupIndex}
-                        fileIndex= {this.state.fileIndex}
-                        groups ={myInfo.groupNames}
-                        groupsImage = {groupIconImages}
-                        onClick={i => this.groupClick(i)}
-                        animate = {this.state.animate}
-                      />
-                    </div>
-
-                  </div>
-                  {/* <Fade> */}
-                  <div className="finderFilesBar" key = "1">
+                {/* <Fade> */}
+                <div className="finderFilesBar" key = "1">
 
 
-                    <FilesBar
+                  <FilesBar
+                    fileIndex = {this.state.fileIndex}
+                    filesText = {myInfo.info[this.state.groupIndex]}
+                    filesImage = {fileIconImages[this.state.groupIndex]}
+                    onClick = {i => this.fileClick(i)}
+                    animate = {this.state.animate}
+                  />
+                </div>
+                {/* </Fade> */}
+                <div className="finderDescriptionBar">
+                  <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
+                    {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
+                    }
+                    <DescBar
+                      groupIndex = {this.state.groupIndex}
                       fileIndex = {this.state.fileIndex}
-                      filesText = {myInfo.info[this.state.groupIndex]}
-                      filesImage = {fileIconImages[this.state.groupIndex]}
-                      onClick = {i => this.fileClick(i)}
-                      animate = {this.state.animate}
+                      content = {myInfo.info[this.state.groupIndex][this.state.fileIndex]}
+                      contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
+                      onClick = { i => this.props.onClick(i)}
+
                     />
                   </div>
-                  {/* </Fade> */}
-                  <div className="finderDescriptionBar">
-                    <div key = {this.state.animate} id = "groupBar" className={css(styles.fadeIn)} >
-                      {//This fade in animation will only trigger if state within the enclosing div is changed, that is why we set the key to this.state.animate to trigger a re-render. Other functions ensure this.state.animate will always be unique and changed on click
-                      }
-                      <DescBar
-                        groupIndex = {this.state.groupIndex}
-                        fileIndex = {this.state.fileIndex}
-                        content = {myInfo.info[this.state.groupIndex][this.state.fileIndex]}
-                        contentImages = {infoDescImages[this.state.groupIndex][this.state.fileIndex]}
-                        onClick = { i => this.props.onClick(i)}
-
-                      />
-                    </div>
-                  </div>
-
-
-
                 </div>
+
+
+
               </div>
             </div>
+          </div>
 
-          </Draggable>
-        </div>
-
-        <div className = "backIcons">
-          <IconBar
-            trash = {this.state.trash}
-            onClick= {i => this.iconClick(i)}
-
-          />
-
-        </div>
+        </Draggable>
       </div>
-      //  {/* </div> */}
 
-    )
-  }
+      <div className = "backIcons">
+        <IconBar
+          trash = {this.state.trash}
+          onClick= {i => this.iconClick(i)}
 
-  componentDidUpdate() {
-    $(function() {
-      // $( ".finderSideBar" ).load(window.location.href + " .finderSideBar" );
-    });
-  }
+        />
+
+      </div>
+    </div>
+    //  {/* </div> */}
+
+  )
+}
+
+componentDidUpdate() {
+  $(function() {
+    // $( ".finderSideBar" ).load(window.location.href + " .finderSideBar" );
+  });
+}
 
 }
 

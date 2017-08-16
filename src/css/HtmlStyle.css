@@ -1,28 +1,50 @@
 
-
+/*
 html {
 
-  --totalWidth: 100%;
-  --totalHeight: 100%;
+--totalWidth: 575px;
+--totalHeight: 470px;
 
-  --topWidth: 100%;
-  --topHeight: 10vh;
+--topWidth: 575px;
+--topHeight: 70px;
 
-  --groupWidth: 150px;
-  --groupHeight:80vh;
+--groupWidth: 125px;
+--groupHeight:400px;
 
-  --fileWidth:  200px;
-  --fileHeight:80vh;
+--fileWidth:  175px;
+--fileHeight:400px;
 
-  --descWidth: 649px;
-  --descHeight: 80vh;
+--descWidth: 275px;
+--descHeight: 400px;
 
-  --chartWidth: 499px;
+--chartWidth: 100px;
 
-  --fullwidth: 100%;
-}
+--fullwidth: 100%;
+}*/
 
 /*html {
+
+--totalWidth: 100%;
+--totalHeight: 100%;
+
+--topWidth: 100%;
+--topHeight: 10vh;
+
+--groupWidth: 15vw;
+--groupHeight:80vh;
+
+--fileWidth:  20vw;
+--fileHeight:80vh;
+
+--descWidth: 65vw;
+--descHeight: 80vh;
+
+--chartWidth: 499px;
+
+--fullwidth: 100%;
+}*/
+
+html {
 
   --totalWidth: 600px;
   --totalHeight: 450px;
@@ -31,12 +53,13 @@ html {
   --groupWidth: 130px;
   --groupHeight:380px;
   --fileWidth:  180px;
-  --fileHeight:380px;
-  --descWidth: 289px;
+  --fileHeight: 380px;
+  --descWidth: 290px;
   --descHeight: 380px;
+  --chartWidth: 150px;
 
   --fullwidth: 100%;
-}*/
+}
 
 body {
   margin: 0;
@@ -104,6 +127,8 @@ body {
 
 .finderTopBar {
   position: absolute;
+  min-width:  150px;
+
   width:var(--topWidth);
   height: var(--topHeight);
   /*background-image: url("../images/finderTopBar.png");*/
@@ -115,9 +140,18 @@ body {
   border-radius: 10px 10px 0px 0px;
   background-size: cover;
 
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
+
+  -webkit-box-shadow:inset 3px 3px 2px -2px #333;
+  -moz-box-shadow:inset 3px 3px 2px -2px #333;
+  box-shadow:inset 0px 2px 1px -2px #333 ;
+
+  -webkit-box-shadow:inset 0px -2px 1px -2px #333;
+  -moz-box-shadow:inset 0px -2px 1px -2px #333;
+  box-shadow:inset 0px -2px 1px -2px #333 ;
+
 
 }
 .finderTopBarIcon {
@@ -163,6 +197,7 @@ body {
   width: var(--totalWidth);
   height: var(--groupHeight);
   height: 430px;
+
 }
 
 
@@ -218,9 +253,9 @@ body {
 
   background-color: #FFFFFF;
   border-radius: 0px 0px 10px 0px;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-left-color: #CCCCCC;
+  -webkit-box-shadow:inset 2px 0px 0.1px -2px #333;
+  -moz-box-shadow:inset 2px 0px 0.1px -2px #333;
+  box-shadow:inset 2px 0px 0.1px -2px #333 ;
 
 }
 
@@ -251,8 +286,8 @@ body {
 }
 
 #descDescription p{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 8%;
+  padding-right: 8%;
   margin-top: 15px;
   text-align: left;
   font-size: 14px;
@@ -349,12 +384,18 @@ body {
 }
 
 #chartEnclosure {
-  margin-left: 20px;
-  width: var(--descWidth);
+  /*margin-left: 20px;*/
+  /*width: 70%;*/
+  overflow: auto;
   height: 230px;
   position: static;
   z-index: -1;
   opacity: 1;
+  display: table;
+  /*background-color: #000000;*/
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 #footer {
@@ -426,10 +467,15 @@ dl {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: var(--chartWidth);
   max-width: var(--chartWidth);
   position: relative;
-  margin-left: -20px;
+  margin-left: -70px;
+  /*margin-right: 10%;*/
+  /*background-color: #000000;*/
+
+
+
 }
