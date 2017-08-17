@@ -235,7 +235,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/finderSideBar.png");
+  /*background-image: url("../images/finderSideBar.png");*/
   opacity: 0.99;
 
 }
@@ -486,32 +486,17 @@ dl {
   /*background-color: #000000;*/
 
 }
+/*SPAGEHTTI CODE!!*/
 
-@keyframes totalTransform {
-    from {width: 600px; height: 450px;}
-    to {width: var(--totalWidth); height: var(--totalHeight);}
-}
-
+@keyframes totalTransform { from {width: 600px; height: 450px;} to {width: var(--totalWidth); height: var(--totalHeight);}}
 @keyframes topTransform {from {width: 600px; height: 70px;} to {width: var(--totalWidth); height: var(--topHeight);}}
 @keyframes groupTransform {from {width: 130px; height: 380px;} to {width: var(--groupWidth); height: var(--groupHeight);}}
 @keyframes fileTransform {from {width: 180px; height: 380px;} to {width: var(--fileWidth); height: var(--fileHeight);}}
 @keyframes descTransform {from {width: 289px; height: 380px;} to {width: var(--descWidth); height: var(--descHeight);}}
 @keyframes chartTransform {from {width: 150px; } to {width: var(--chartWidth); }}
-
-@keyframes bottomTransform {
-    from {padding-top: 70px; width: 600px; height: 370px; }
-    to {padding-top: var(--topHeight);
-    width: var(--totalWidth);
-    height: var(--groupHeight); }
-}
-@keyframes fileStyleTransform {
-    from {width: 180px; }
-    to {width: var(--fileWidth); }
-}
-@keyframes groupStyleTransform {
-    from {width: 130px; }
-    to {width: var(--fileWidth); }
-}
+@keyframes bottomTransform { from {padding-top: 70px; width: 600px; height: 370px; } to {padding-top: var(--topHeight); width: var(--totalWidth); height: var(--groupHeight); }}
+@keyframes fileStyleTransform {from {width: 180px; } to {width: var(--fileWidth); }}
+@keyframes groupStyleTransform { from {width: 130px; } to {width: var(--fileWidth); }}
 
 .fileStyle {
   position: absolute;
@@ -543,42 +528,13 @@ dl {
 
 
 }
-
-@keyframes totalTransformRev {
-    from {width: 75vw; height: 90vh;}
-    to {width: var(--totalWidth); height: var(--totalHeight);}
-}
-
+/*More SPAGEHTTI CODE!!*/
+@keyframes totalTransformRev { from {width: 75vw; height: 90vh;} to {width: var(--totalWidth); height: var(--totalHeight);}}
 @keyframes topTransformRev {from {width: 75vw; height: 10vh;} to {width: var(--totalWidth); height: var(--topHeight);}}
 @keyframes groupTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--groupWidth); height: var(--groupHeight);}}
 @keyframes fileTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--fileWidth); height: var(--fileHeight);}}
 @keyframes descTransformRev {from {width: 45vw; height: 80vh;} to {width: var(--descWidth); height: var(--descHeight);}}
 @keyframes chartTransformRev {from {width: 55vh; } to {width: var(--chartWidth); }}
-
-@keyframes bottomTransformRev {
-    from {padding-top: 10vh; width: 100vw; height: 80vh; }
-    to {padding-top: var(--topHeight);
-    width: var(--totalWidth);
-    height: var(--groupHeight); }
-}
-@keyframes fileStyleTransformRev {
-    from {width: 20vw; }
-    to {width: var(--fileWidth); }
-}
-@keyframes groupStyleTransformRev {
-    from {width: 15vw; }
-    to {width: var(--fileWidth); }
-}
-
-
-/*html.style.setProperty("--totalWidth", "100vw");
-html.style.setProperty("--totalHeight", "100%");
-html.style.setProperty("--topWidth", "100%");
-html.style.setProperty("--topHeight", "10vh");
-html.style.setProperty("--groupWidth", "15vw");
-html.style.setProperty("--groupHeight", "80vh");
-html.style.setProperty("--fileWidth", "20vw");
-html.style.setProperty("--fileHeight", "80vh");
-html.style.setProperty("--descWidth", "65vw");
-html.style.setProperty("--descHeight", "80vh");
-html.style.setProperty("--chartWidth", "55vh");*/
+@keyframes bottomTransformRev { from {padding-top: 10vh; width: 100vw; height: 80vh; } to {padding-top: var(--topHeight); width: var(--totalWidth); height: var(--groupHeight); }}
+@keyframes fileStyleTransformRev {from {width: 15vw; } to {width: var(--fileWidth); }}
+@keyframes groupStyleTransformRev { from {width: 15vw; } to {width: var(--fileWidth); }}
