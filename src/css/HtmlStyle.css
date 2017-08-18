@@ -477,8 +477,8 @@ dl {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  /*width: var(--chartWidth);*/
-  max-width: var(--chartWidth);
+  width: var(--chartWidth);
+  /*max-width: var(--chartWidth);*/
   animation-timing-function: linear;
   position: relative;
   margin-left: -70px;
@@ -534,7 +534,7 @@ dl {
 @keyframes groupTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--groupWidth); height: var(--groupHeight);}}
 @keyframes fileTransformRev {from {width: 15vw; height: 80vh;} to {width: var(--fileWidth); height: var(--fileHeight);}}
 @keyframes descTransformRev {from {width: 45vw; height: 80vh;} to {width: var(--descWidth); height: var(--descHeight);}}
-@keyframes chartTransformRev {from {width: 55vh; } to {width: var(--chartWidth); }}
+@keyframes chartTransformRev {from {width: 35vw; } to {width: var(--chartWidth); }}
 @keyframes bottomTransformRev { from {padding-top: 10vh; width: 100vw; height: 80vh; } to {padding-top: var(--topHeight); width: var(--totalWidth); height: var(--groupHeight); }}
 @keyframes fileStyleTransformRev {from {width: 15vw; } to {width: var(--fileWidth); }}
 @keyframes groupStyleTransformRev { from {width: 15vw; } to {width: var(--fileWidth); }}

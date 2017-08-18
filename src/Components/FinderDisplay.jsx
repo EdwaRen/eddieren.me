@@ -198,13 +198,9 @@ class FinderDisplay extends Component {
       var html = document.getElementsByTagName('html')[0];
 
       if (this.state.expandFull == 0) {
-
-        console.log("expanding");
-        // this.iconClick(1)
-
+        //SPAGHETTI CODE!!!
         this.setState({
           expandFull: 1,
-          // visible: this.state.visible+1,
         })
         document.getElementById("backShadow").style.webkitAnimationName = "totalTransform";
         document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
@@ -232,20 +228,21 @@ class FinderDisplay extends Component {
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationName = "descTransform";
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationDuration = "0.15s";
 
+        document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransform";
+        document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
+
         for (var i = 0; i < myInfo.info[this.state.groupIndex].length;i++) {
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationName = "fileStyleTransform";
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationDuration = "0.15s";
           document.getElementsByClassName("fileStyle2")[i].style.webkitAnimationName = "fileStyleTransform";
           document.getElementsByClassName("fileStyle2")[i].style.webkitAnimationDuration = "0.15s";
         }
-
         for (var i = 0; i < myInfo.info.length;i++) {
           document.getElementsByClassName("groupStyle")[i].style.webkitAnimationName = "groupStyleTransform";
           document.getElementsByClassName("groupStyle")[i].style.webkitAnimationDuration = "0.15s";
           document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationName = "groupStyleTransform";
           document.getElementsByClassName("groupStyle2")[i].style.webkitAnimationDuration = "0.15s";
         }
-
         html.style.setProperty("--totalWidth", "75vw");
         html.style.setProperty("--totalHeight", "90vh");
         html.style.setProperty("--topWidth",  "75vw");
@@ -256,10 +253,11 @@ class FinderDisplay extends Component {
         html.style.setProperty("--fileHeight", "75vh");
         html.style.setProperty("--descWidth", "45vw");
         html.style.setProperty("--descHeight", "75vh");
-        html.style.setProperty("--chartWidth", "55vh");
+        html.style.setProperty("--chartWidth", "35vw");
         setTimeout(this.resetAnimation, 150);
 
       } else {
+        //EVEN MORE SPAGHETTI CODE!!!!
         html.style.setProperty("--totalWidth", "600px");
         html.style.setProperty("--totalHeight", "450px");
         html.style.setProperty("--topWidth", "600px");
@@ -273,10 +271,8 @@ class FinderDisplay extends Component {
         html.style.setProperty("--chartWidth", "140px");
         setTimeout(this.resetAnimation, 150);
         console.log("minimizng");
-
         this.setState({
           expandFull: 0,
-
         })
         document.getElementById("backShadow").style.webkitAnimationName = "totalTransformRev";
         document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
@@ -284,11 +280,8 @@ class FinderDisplay extends Component {
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "totalTransformRev";
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDuration = "0.15s";
 
-
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "topTransformRev";
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDuration = "0.15s";
-
-
 
         document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationName = "bottomTransformRev";
         document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationDuration = "0.15s";
@@ -302,6 +295,8 @@ class FinderDisplay extends Component {
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationName = "descTransformRev";
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationDuration = "0.15s";
 
+        document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransformRev";
+        document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
         for (var i = 0; i < myInfo.info[this.state.groupIndex].length;i++) {
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationName = "fileStyleTransformRev";
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationDuration = "0.15s";

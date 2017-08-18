@@ -8,7 +8,7 @@ import '../css/styleGraph.scss';
 
 function renderBar(chart, i) {
   console.log("Chart is rendering")
-  var classNameStr = "percentage percentage-" + (chart[i+1]+10);
+  var classNameStr = "percentage percentage-" + (chart[i+1]);
   console.log(classNameStr);
   return(
     <div>
