@@ -204,17 +204,11 @@ class FinderDisplay extends Component {
         })
         document.getElementById("backShadow").style.webkitAnimationName = "totalTransform";
         document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
-        document.getElementById("backShadow").style.webkitAnimationDirection = "";
-
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "totalTransform";
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDuration = "0.15s";
-        document.getElementsByClassName("bothWindows")[0].style.webkitAnimationDirection = "";
-
 
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "topTransform";
         document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDuration = "0.15s";
-        document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationDirection = "";
-
 
         document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationName = "bottomTransform";
         document.getElementsByClassName("bottomElemeents")[0].style.webkitAnimationDuration = "0.15s";
@@ -228,8 +222,12 @@ class FinderDisplay extends Component {
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationName = "descTransform";
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationDuration = "0.15s";
 
-        document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransform";
-        document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
+        //The code below transforms the chart. However, it crashes if there is a page without a chart so the conditional statement avoids this crash.
+        if (myInfo.info[this.state.groupIndex][this.state.fileIndex].length > 7) {
+          document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransform";
+          document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
+        }
+
 
         for (var i = 0; i < myInfo.info[this.state.groupIndex].length;i++) {
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationName = "fileStyleTransform";
@@ -295,8 +293,11 @@ class FinderDisplay extends Component {
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationName = "descTransformRev";
         document.getElementsByClassName("finderDescriptionBar")[0].style.webkitAnimationDuration = "0.15s";
 
-        document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransformRev";
-        document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
+        //The code below transforms the chart. However, it crashes if there is a page without a chart so the conditional statement avoids this crash.
+        if (myInfo.info[this.state.groupIndex][this.state.fileIndex].length > 7) {
+          document.getElementsByTagName("dl")[0].style.webkitAnimationName = "chartTransformRev";
+          document.getElementsByTagName("dl")[0].style.webkitAnimationDuration = "0.15s";
+        }
         for (var i = 0; i < myInfo.info[this.state.groupIndex].length;i++) {
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationName = "fileStyleTransformRev";
           document.getElementsByClassName("fileStyle")[i].style.webkitAnimationDuration = "0.15s";
@@ -395,8 +396,6 @@ class FinderDisplay extends Component {
 
                     <div className="finderSideBar">
 
-
-
                       <GroupsBar
 
                         groupIndex= {this.state.groupIndex}
@@ -460,19 +459,10 @@ class FinderDisplay extends Component {
     )
   }
 
-  componentDidUpdate() {
-    $(function() {
-      // $( ".finderSideBar" ).load(window.location.href + " .finderSideBar" );
-    });
-  }
 
 }
 
 
-
-window.onpopstate = function(event) {
-  window.location.reload()
-}
 
 
 export default FinderDisplay;

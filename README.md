@@ -15,7 +15,6 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 My personal website created primarily using React in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, there is an alternate 'basic' page for a dynamically generated webpage with all the info on the main index page. A mobile page for this site is available, however due to the lack of many features, it is rather minimalist and is virtually the same as the 'basic' page for desktops.
 
 ![Readme Example](./images/readmeDisplayGif.gif)
-<!--  To fix: This piece of s link that does not work-->
 
 # Links
 
@@ -52,6 +51,7 @@ Different sets of information can be easily added in or swapped out, new groups 
 ## Graphs
 
 There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js unfortunately came upon numerous setbacks.
+<!--  In hindsight, I was just horrible at using npm :P-->
 
 ![Graphs](/images/graphs.png?raw=true "")
 
@@ -59,17 +59,22 @@ There was considerable thought put into the decision to either code the language
 
 The bottom left corner has two icons for controlling the main display. The first icon is to return the display to its starting position when clicked. This is necessary if the user has accidentally dragged the display out of page and reloads the main display without reloading the entire page.
 
-The second icon is a garbage bin that can hide and re-appear the main display. Clicking it will only change the visibility of the main display, and its position will not change. When the main display is hidden, the first button cannot be clicked to reload the display.
+The second icon is a garbage bin that can hide and re-appear the main display. Clicking it will only change the visibility of the main display, and its position will not change. When the main display is hidden, the first button can be clicked to reload the display.
 
-The red circle on the top-left of the main display can also be clicked to hide itself.
+![Icon Bar](/images/iconControlDiagram.jpg?raw=true "")
 
-![Icon Bar](/images/iconBarDiagram.jpg?raw=true "")
+The red circle on the top-left of the main display can also be clicked to close itself. This will reset any group or file state to default. The finder display can be retrieved by clicking the finder icon or trash icon in the lower left corner.
 
+The yellow circle can be clicked to minimize the tab. This also closes the display and does the same things as the red 'close' button but it saves the group and file state.
+
+The green circle, or expand button, can be clicked to expand the finder display. This expands the display to fill 75% of the screen width and 90% of the screen height. Clicking this button again will shrink the display to its default size.Needless to say, this is not available on mobile and an alternative has been provided.
+
+![Expanding](/images/Expanding.gif?raw=true "")
 
 
 # Testing
 
-In the later stages of this project, it became apparent that GitHub Pages only supports static websites which led to some issues in testing. The main issue was that a fully functional website tested locally would have missing features when hosted by GitHub Pages (Also why there are ridiculous amount of commits on certain days). One critical issue was the use of react-router which required a manual workaround.
+In the later stages of this project, it became apparent that GitHub Pages only supports static websites which led to some issues in testing. The main issue was that a fully functional website tested locally would have missing features when hosted by GitHub Pages (Also why there are ridiculous amount of commits on certain days). One critical issue was the use of react-router that caused issues with GitHub pages and which required a manual workaround.
 
 # Using FinderMe As A Template
 
@@ -164,8 +169,17 @@ Icon(s) made by Pixel Buddha from www.flaticon.com, licensed by Creative Commons
 Icon(s) made by Icon Pond from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 Icon(s) made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.0. <br >
 
-Special thanks to Tim Hortons and my Keurig coffee machine for making this project possible.
+Special thanks to my Keurig coffee machine for making this project possible.
 
+# Other Versions
+
+The current website is actually complete re-code of an almost identical website that can be found in the 'old-javascript-website' branch. The old version was done in basic JavaScript, it was deprecated due to its indiscriminate use of spaghetti code on innocent HTML pages. The current React supported webpage is much slimmer, faster, and efficient than it's predecessor. There is also a gh-pages branch that contains the static web page build of the master branch.
+
+The gh-pages branch is regularly updated using the following.
+```
+$ npm run build
+$ npm run deploy
+```
 
 # Contact
 

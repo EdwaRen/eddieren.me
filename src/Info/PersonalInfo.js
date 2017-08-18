@@ -44,7 +44,7 @@ var Info = [
   [
 
     [ "LinkedIn","url('images/Network/linkedin.png')", myUrl,"", "N/A", "N/A",  "" ],
-    
+
     [ "GitHub","url('images/Network/github2.png')", myUrl2, "", "N/A", "N/A", "" ],
 
     [ "Facebook","url('images/Network/facebook2.png')",  myUrl3, "", "N/A", "N/A",  "" ],
