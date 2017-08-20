@@ -27,8 +27,14 @@ My personal website created primarily using React in conjunction with HTML/CSS. 
 3. [Documentation](#template)
    * [Importing Images](#importing-images)
    * [Charts](#using-custom-charts)<br />
-4. [License](#license)
-5. [Contact](#contact)
+4. [Other Versions](#other-versions)
+5. [Browser Compatibility](#browser-compatibility)
+   * [Google Chrome](#google-chrome)
+   * [Safari](#safari)
+   * [Firefox](#firefox)
+   * [Internet Explorer](#internet-explorer)
+6. [License](#license)
+7. [Contact](#contact)
 
 # Features
 
@@ -153,6 +159,35 @@ For more customizable chart options, you can mess with /css/styleGraph.css and #
 
 As a reminder, charts are only accessible when the "Info[i][j]" value is an array of strings, rather than a single string variable, otherwise no chart will be made.
 
+# Other Versions
+
+The current website is actually complete re-code of an almost identical website that can be found in the 'old-javascript-website' branch. The old version was done in basic JavaScript, it was deprecated due to its indiscriminate use of spaghetti code on innocent HTML pages. The current React supported webpage is much slimmer, faster, and efficient than it's predecessor. There is also a gh-pages branch that contains the static web page build of the master branch.
+
+The gh-pages branch is regularly updated using the following.
+```
+$ npm run build
+$ npm run deploy
+```
+
+# Browser Compatibility
+
+FinderMe uses HTML 5 and CSS 3 so the latest version of your favorite browser is recommended.
+
+### Google Chrome
+
+The project is optimized for Google Chrome where most of the testing during development was done.
+
+### Firefox
+Fully functional on Firefox and in certain areas, the website works even smoother than Chrome. There are minor issues concerning slightly slower react-animations but these have an unperceptible effect on the actual website.
+
+### Safari
+Using Safari has a known issue with displaying box-shadows of non-rectangular divs. Otherwise, Safari works flawlessly with FinderMe.
+
+### Internet Explorer?
+
+Here is a link to download Chrome:
+https://www.google.com/chrome/index.html
+
 # License
 Copyright (c) 2017 Edward Ren
 
@@ -171,18 +206,7 @@ Icon(s) made by Heydon from www.flaticon.com, licensed by Creative Commons BY 3.
 
 Special thanks to my Keurig coffee machine for making this project possible.
 
-# Other Versions
-
-The current website is actually complete re-code of an almost identical website that can be found in the 'old-javascript-website' branch. The old version was done in basic JavaScript, it was deprecated due to its indiscriminate use of spaghetti code on innocent HTML pages. The current React supported webpage is much slimmer, faster, and efficient than it's predecessor. There is also a gh-pages branch that contains the static web page build of the master branch.
-
-The gh-pages branch is regularly updated using the following.
-```
-$ npm run build
-$ npm run deploy
-```
 
 # Contact
 
 If you have any questions or inquiries concerning FinderMe or suggestions for future releases, send an email to Edward.ren.2013@gmail.com
-
--"Let's do this!"

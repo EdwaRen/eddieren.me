@@ -11,7 +11,7 @@ import myInfo from '../Info/PersonalInfo.js';
 import Draggable from 'react-draggable';
 
 //Animations (most are unused);
-import $ from 'jquery';
+// import $ from 'jquery';
 import { fadeIn } from 'react-animations';
 import { fadeOut, fadeOutUp, zoomOut, slideOutLeft } from 'react-animations';
 import { zoomOutDown} from 'react-animations';
@@ -409,7 +409,6 @@ class FinderDisplay extends Component {
                     </div>
                     {/* <Fade> */}
                     <div className="finderFilesBar" key = "1">
-
 
                       <FilesBar
                         fileIndex = {this.state.fileIndex}

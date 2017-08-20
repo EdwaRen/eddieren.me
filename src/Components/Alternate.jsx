@@ -151,7 +151,7 @@ class Alternate extends Component {
         left: "50%",
         transform: "translateX(-50%) translateY(-50%)",
         overflowY: "scroll",
-        marginLeft:"-5px",
+        marginLeft:"0px",
       },
       backId: {
         textAlign: "center",

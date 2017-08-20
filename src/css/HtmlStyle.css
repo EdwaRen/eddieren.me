@@ -266,6 +266,12 @@ body {
   -moz-box-shadow:inset 2px 0px 0.1px -2px #333;
   box-shadow:inset 2px 0px 0.1px -2px #333 ;
 
+  -webkit-box-shadow:inset 2px 0px 1px -2px #333;
+  -moz-box-shadow:inset 2px 0px 1px -2px #333;
+  box-shadow:inset 2px 0px 1px -2px #333;
+
+
+
 }
 
 #findSideTopBar {
@@ -288,12 +294,12 @@ body {
   /*height: var(--descHeight);
   width: var(--descWidth);*/
   bottom: 0;
-  overflow-y:scroll;
+  /*overflow:auto;*/
 
 }
 
 #descDescription {
-  overflow-y:scroll;
+  /*overflow-y:scroll;*/
 
   margin-top: 0px;
 }

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import FinderDisplay from './FinderDisplay';
 import Alternate from './Alternate';
-import $ from 'jquery';
+// import $ from 'jquery';
 import Draggable from 'react-draggable'; // The default
 import FooterDisplay from './FooterDisplay';
 

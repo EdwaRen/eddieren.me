@@ -67,16 +67,18 @@ function Group(props) {
     );
   } else {
     return (
+      <div key = {props.groupIndex} className={css(styles.fadeIn)} >
+        <div className = "groupStyle2"  onClick={props.onClick}>
+          <div style={imageStyle}></div>
+          <div > 
+            {/*  Normally the fadein animation goes above, but that causes issues with firefox*/}
 
-      <div className = "groupStyle2"  onClick={props.onClick}>
-        <div style={imageStyle}></div>
-        <div key = {props.groupIndex} className={css(styles.fadeIn)} >
-
-          <div  className = "groupStyle" style = {{backgroundColor: "#BBBBBB", color: "#000000", opacity: "1.0"}}></div>
-        </div>
-        {/* <img src = {props.image}/> */}
-        <div id="profileDiv">
-          <p >{props.value}</p>
+            <div  className = "groupStyle" style = {{backgroundColor: "#BBBBBB", color: "#000000", opacity: "1.0"}}></div>
+          </div>
+          {/* <img src = {props.image}/> */}
+          <div id="profileDiv">
+            <p >{props.value}</p>
+          </div>
         </div>
       </div>
 

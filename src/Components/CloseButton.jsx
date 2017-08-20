@@ -4,43 +4,55 @@ import { StyleSheet, css } from 'aphrodite';
 
 function Close(props) {
   return(
-    <div className={css(styles.closeIcon)} onClick={props.onClick}>
-    </div>
-
+    <div className={css(styles.closeIcon)} onClick={props.onClick}></div>
   );
+
 }
 
 function Minimize(props) {
   return (
-    <div className={css(styles.minIcon)} onClick={props.onClick}>
-    </div>
+    <div className={css(styles.minIcon)} onClick={props.onClick}></div>
   );
+
 }
 
 function Expand(props) {
   return (
-    <div className={css(styles.expIcon)} onClick={props.onClick}>
-    </div>
+    <div className={css(styles.expIcon)} onClick={props.onClick}></div>
   );
+
 }
 
 class CloseButton extends Component {
 
+  trashTrue() {
+    if (!this.props.trash) {
+      return (
+        <div>
+          <Close
+            trash = {this.props.trash}
+            onClick = {() => this.props.onClick(0)}
+          />
+
+          <Minimize
+            trash = {this.props.trash}
+            onClick = {() => this.props.onClick(1)}
+          />
+
+          <Expand
+            trash = {this.props.trash}
+            onClick = {() => this.props.onClick(2)}
+          />
+        </div>
+      );
+    }
+  }
 
   render() {
     return(
       <div>
-        <Close
-          onClick = {() => this.props.onClick(0)}
-        />
+        {this.trashTrue()}
 
-        <Minimize
-          onClick = {() => this.props.onClick(1)}
-        />
-
-        <Expand
-          onClick = {() => this.props.onClick(2)}
-        />
 
       </div>
 

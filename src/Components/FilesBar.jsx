@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { CSSTransitionGroup } from 'react-transition-group' // ES6
 
-import { fadeIn } from 'react-animations';
+import { fadeIn, fadeOut } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite/no-important';
 
 import '../css/HtmlStyle.css';
@@ -37,7 +37,7 @@ function Files(props) {
 
       <div className  = "fileStyle2" style = {{color:"#333333",}} onClick={props.onClick} key = {"1"}>
           <div style={imageStyle} ></div>
-          <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
+          <div  id = "groupBar"  >
 
             <div className= "fileStyle" style = {{color:"#333333",backgroundColor: "#FFFFFF"}} ></div>
           </div>
@@ -50,10 +50,13 @@ function Files(props) {
     );
   } else {
     return (
+      <div key = {props.animate} className={css(styles.fadeIn)} >
 
         <div className = "fileStyle2" style = {{color:"#FFFFFF",}} onClick={props.onClick} key = {"1"}>
           <div style={imageStyle} ></div>
-          <div key = {props.animate} id = "groupBar" className={css(styles.fadeIn)} >
+          <div key = {props.animate} id = "groupBar"  >
+            {/*  Normally the fadein animation goes above, but that causes issues with firefox*/}
+
 
             <div className = "fileStyle" style = {{color:"#FFFFFF",backgroundColor: "#116CD6"}} ></div>
           </div>
@@ -61,6 +64,7 @@ function Files(props) {
           <div id="filesDiv">
             <p>{props.text}</p>
           </div>
+        </div>
         </div>
 
     );
