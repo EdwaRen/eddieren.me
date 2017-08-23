@@ -73,12 +73,12 @@ function Desc(props) {
   }}></p>
 
   var startTitle = <p></p>;
-  if (props.duration != "") {
+  if (props.duration != "" && props.duration != "N/A") {
     startTitle = <p id="startTitle">Duration</p>
   }
 
   var locationTitle = <p></p>
-  if (props.location != "") {
+  if (props.location != "" && props.location != "N/A") {
     locationTitle = <p id="untilTitle">Location</p>
   }
 
@@ -91,6 +91,16 @@ function Desc(props) {
     }}></p>
   }
 
+  var durationLbl;
+  if (props.duration != "N/A") {
+    durationLbl = <p id="startDate">{props.duration}</p>
+  } else {
+  }
+
+  var locationLbl;
+  if (props.location != "N/A") {
+    locationLbl = <p id="untilDate">{props.location}</p>
+  }
 
   return (
     <div id="separator">
@@ -115,8 +125,8 @@ function Desc(props) {
           </div>
 
           <div id="datesText">
-            <p id="startDate">{props.duration}</p>
-            <p id="untilDate">{props.location}</p>
+            {durationLbl}
+            {locationLbl}
 
           </div>
 

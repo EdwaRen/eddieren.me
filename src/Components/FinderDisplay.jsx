@@ -135,10 +135,12 @@ class FinderDisplay extends Component {
       if (this.state.trash == 1) {
         this.setState({
           trash: 0,
+          minimize: 0,
         })
       } else if (this.state.trash == 0) {
         this.setState({
           trash: 1,
+          minimize: 0,
         })
       }
 
@@ -323,6 +325,7 @@ class FinderDisplay extends Component {
 
 
   render() {
+
     var styles = StyleSheet.create({
       fadeIn: {
         animationName: fadeIn,
@@ -452,11 +455,15 @@ class FinderDisplay extends Component {
           />
 
         </div>
+        {/* <Draggable key = {this.state.visible}> */}
+
+        {/* </Draggable> */}
       </div>
       //  {/* </div> */}
 
     )
   }
+
 
 
 }

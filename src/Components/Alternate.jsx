@@ -11,6 +11,43 @@ function refresh() {
 
 }
 
+function renderBar(chart, i) {
+  console.log("Chart is rendering")
+  var classNameStr = "percentage percentage-" + (chart[i+1]);
+  console.log(classNameStr);
+  return(
+    <div>
+      <dd className= {classNameStr} ><span className="text" >{chart[i]}</span></dd>
+
+    </div>
+  );
+}
+
+function createChart(chart) {
+  console.log("Chart", chart);
+
+
+  var chartEnclose = [];
+  if (chart != "0") {
+    for (var i = 0; i < chart.length-1; i++) {
+      chartEnclose.push(renderBar(chart, i));
+      i++
+    }
+
+    return (
+      <div id="chartEnclosure">
+        <dl id = "myChardId">
+          <dt>{chart[chart.length-1]}</dt>
+
+          {chartEnclose}
+
+        </dl>
+      </div>
+    );
+  }
+}
+
+
 function RenderFiles(props) {
   let files = myInfo.info;
   let groups = myInfo.groupNames;
@@ -95,6 +132,9 @@ function RenderFiles(props) {
             __html: files[i][j][1]
           }}></div>
         );
+      } else if (files[i][j].length > 7) {
+        content.push(createChart(files[i][j][7]));
+
       } else {
         content.push(
           <div style = {descStyle} dangerouslySetInnerHTML = {{

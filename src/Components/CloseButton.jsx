@@ -64,10 +64,9 @@ const styles = StyleSheet.create({
   closeIcon: {
     marginTop: "9px",
     marginLeft: "10px",
-    width: "11px",
-    height:"11px",
+    width: "12.5px",
+    height:"12.5px",
     backgroundColor:"#FC615D",
-
     borderRadius: "10px",
     position: "absolute",
     fontFamily: "RalewayReg",
@@ -77,9 +76,9 @@ const styles = StyleSheet.create({
   },
   minIcon: {
     marginTop: "9px",
-    marginLeft: "29px",
-    width: "11px",
-    height:"11px",
+    marginLeft: "30px",
+    width: "12.5px",
+    height:"12.5px",
     backgroundColor:"#FDBD41",
     borderRadius: "10px",
     position: "absolute",
@@ -90,9 +89,9 @@ const styles = StyleSheet.create({
   },
   expIcon: {
     marginTop: "9px",
-    marginLeft: "48px",
-    width: "11px",
-    height:"11px",
+    marginLeft: "50px",
+    width: "12.5px",
+    height:"12.5px",
     backgroundColor:"#34C749",
     borderRadius: "10px",
     position: "absolute",
