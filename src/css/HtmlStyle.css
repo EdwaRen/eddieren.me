@@ -224,6 +224,8 @@ body {
   border-radius: 0px 0px 0px 5px;
 
 
+
+
 }
 .finderSideBarImage {
   position: absolute;
@@ -242,6 +244,7 @@ body {
 }
 
 .finderFilesBar {
+
   float: left;
   width: var(--fileWidth);
   height: var(--fileHeight);
@@ -252,6 +255,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #FFFFFF;
+
+  /*Also found under filestyle and filestyle2*/
+  -webkit-box-shadow:inset 2px 0px 1px -2px #777;
+  -moz-box-shadow:inset 2px 0px 1px -2px #777;
+  box-shadow:inset 2px 0px 1px -2px #777;
 }
 
 .finderDescriptionBar {
@@ -262,9 +270,9 @@ body {
 
   background-color: #FFFFFF;
   border-radius: 0px 0px 5px 0px;
-  -webkit-box-shadow:inset 2px 0px 0.1px -2px #333;
+  /*-webkit-box-shadow:inset 2px 0px 0.1px -2px #333;
   -moz-box-shadow:inset 2px 0px 0.1px -2px #333;
-  box-shadow:inset 2px 0px 0.1px -2px #333 ;
+  box-shadow:inset 2px 0px 0.1px -2px #333 ;*/
 
   -webkit-box-shadow:inset 2px 0px 1px -2px #333;
   -moz-box-shadow:inset 2px 0px 1px -2px #333;
@@ -311,7 +319,7 @@ body {
   text-align: left;
   font-size: 14px;
   font-family: RalewayReg, sans-serif;
-  color: #333333;
+  color: #111111;
 
 }
 #descDescription h1{
@@ -320,7 +328,7 @@ body {
   text-align: center;
   font-size: 19px;
   font-family: RalewayReg;
-  color: #333333;
+  color: #111111;
 
 }
 #descDescription h2{
@@ -330,7 +338,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-family: RalewayRegIta, sans-serif;
-  color: #333333;
+  color: #111111;
 
 }
 
@@ -363,6 +371,7 @@ body {
   overflow: hidden;
   padding-left: 35px;
   position: absolute;
+
 }
 
 #filesDiv p {
@@ -516,11 +525,21 @@ dl {
   width: var(--fileWidth);
   animation-timing-function: linear;
 
+  /*Also found under finderFilesBar */
+  -webkit-box-shadow:inset 2px 0px 1px -2px #777;
+  -moz-box-shadow:inset 2px 0px 1px -2px #777;
+  box-shadow:inset 2px 0px 1px -2px #777;
+
 }
 .fileStyle2 {
   height: 36px;
   width: var(--fileWidth);
   animation-timing-function: linear;
+
+  /*Also found under finderFilesBar */
+  -webkit-box-shadow:inset 2px 0px 1px -2px #777;
+  -moz-box-shadow:inset 2px 0px 1px -2px #777;
+  box-shadow:inset 2px 0px 1px -2px #777;
 
 }
 

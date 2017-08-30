@@ -5,8 +5,10 @@ import Alternate from './Alternate';
 // import $ from 'jquery';
 import Draggable from 'react-draggable'; // The default
 import FooterDisplay from './FooterDisplay';
+import MobileDisplay from './MobileDisplay'
 
 function detectmob() {
+  //Detects if user is on mobile
   if(window.innerWidth <= 600 && window.innerHeight <= 800) {
     return true;
   } else {
@@ -82,12 +84,7 @@ class Background extends Component {
       console.log("Mobile my dude")
       return(
         <div id = "bodyBackground">
-          <Alternate
-            key = {this.state.display}
-
-            mobile = {1}
-            onClick={this.alternateDisplay}
-          />
+          <MobileDisplay/>
         </div>      )
 
       } else  {

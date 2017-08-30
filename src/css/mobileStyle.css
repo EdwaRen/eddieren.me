@@ -1,0 +1,74 @@
+
+#mobWrapper {
+  text-align: center;
+}
+
+#mobGroup {
+  display: inline-block;
+
+  text-align: center;
+  height: 35px;
+  width: 90%;
+  /*margin-left: -45%;*/
+  padding-top: 15px;
+  margin-top: -5px;
+  overflow: hidden;
+  position: static;
+  background-color: #EEEEEE;
+  opacity: 1.0;
+  font-family: RalewayReg, sans-serif;
+
+}
+
+#mobFile {
+  display: inline-block;
+
+  text-align: center;
+  height: 55px;
+  width: 90%;
+  /*margin-left: -45%;*/
+  padding-top: 5px;
+  margin-top: -5px;
+  overflow: hidden;
+  position: static;
+  background-color: #FFFFFF;
+  opacity: 1.0;
+  font-family: RalewayReg, sans-serif;
+
+}
+
+#mobGroupWrap {
+  padding-top: 30px;
+}
+
+#mobTopBar {
+  background-color: #CCCCCC;
+  height: 55px;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+#mobTopBar p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: RalewayReg, sans-serif;
+}
+
+#mobBottomBar {
+  background-color: #CCCCCC;
+  height: 75px;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+
+  margin-top: -5px;
+}
+#mobBottomBar p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: RalewayReg, sans-serif;
+}

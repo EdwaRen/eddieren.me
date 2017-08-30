@@ -28,7 +28,14 @@ function Files(props) {
     fadeIn: {
       animationName: fadeIn,
       animationDuration: '0.3s'
-    }
+    },
+    //
+    // separator: {
+    //   '-webkit-box-shadow':"inset 2px 0px 1px -2px #333",
+    //   '-moz-box-shadow':"inset 2px 0px 1px -2px #333",
+    //   'box-shadow':"inset 2px 0px 1px -2px #333",
+    // }
+
   })
   console.log("animate", props.animate);
 
@@ -37,7 +44,7 @@ function Files(props) {
 
       <div className  = "fileStyle2" style = {{color:"#333333",}} onClick={props.onClick} key = {"1"}>
           <div style={imageStyle} ></div>
-          <div  id = "groupBar"  >
+          <div  className={css(styles.separator)}  >
 
             <div className= "fileStyle" style = {{color:"#333333",backgroundColor: "#FFFFFF"}} ></div>
           </div>
@@ -54,7 +61,7 @@ function Files(props) {
 
         <div className = "fileStyle2" style = {{color:"#FFFFFF",}} onClick={props.onClick} key = {"1"}>
           <div style={imageStyle} ></div>
-          <div key = {props.animate} id = "groupBar"  >
+          <div key = {props.animate} className={css(styles.separator)} >
             {/*  Normally the fadein animation goes above, but that causes issues with firefox*/}
 
 

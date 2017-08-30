@@ -52,7 +52,7 @@ function Group(props) {
   if (props.indexed == 0) {
     return (
 
-      <div className = "groupStyle2" style={{color: "#333333",}}  onClick={props.onClick}>
+      <div className = "groupStyle2" style={{color: "#000000",}}  onClick={props.onClick}>
         <div style={imageStyle}></div>
         <div key = {props.groupIndex} className={css(styles.fadeIn)} >
 
@@ -70,10 +70,10 @@ function Group(props) {
       <div key = {props.groupIndex} className={css(styles.fadeIn)} >
         <div className = "groupStyle2"  onClick={props.onClick}>
           <div style={imageStyle}></div>
-          <div > 
+          <div >
             {/*  Normally the fadein animation goes above, but that causes issues with firefox*/}
 
-            <div  className = "groupStyle" style = {{backgroundColor: "#BBBBBB", color: "#000000", opacity: "1.0"}}></div>
+            <div  className = "groupStyle" style = {{backgroundColor: "#CCCCCC", color: "#000000", opacity: "1.0"}}></div>
           </div>
           {/* <img src = {props.image}/> */}
           <div id="profileDiv">
@@ -111,6 +111,24 @@ class GroupsBar extends React.Component {
     );
   }
 
+  renderAllGroups() {
+    var combinedGroups = []
+
+    console.log("rendering groups", (this.props.groups).length);
+    for (var i = 0; i < (this.props.groups).length-1; i++) {
+      console.log("Group rendered", i);
+      combinedGroups.push(this.renderGroup(i));
+
+
+    }
+
+    return(
+      <div>
+        {combinedGroups}
+      </div>
+    );
+  }
+
   render() {
 
     // const styles = StyleSheet.create({
@@ -132,13 +150,14 @@ class GroupsBar extends React.Component {
           <p>Find</p>
 
         </div>
-        {this.renderGroup(0)}
+        {this.renderAllGroups()}
+        {/* {this.renderGroup(0)}
         {this.renderGroup(1)}
         {this.renderGroup(2)}
         {this.renderGroup(3)}
         {this.renderGroup(4)}
         {this.renderGroup(5)}
-        {this.renderGroup(6)}
+        {this.renderGroup(6)} */}
 
       </div>
 

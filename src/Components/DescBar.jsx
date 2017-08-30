@@ -7,9 +7,9 @@ import '../css/styleGraph.scss';
 
 
 function renderBar(chart, i) {
-  console.log("Chart is rendering")
+  //Renders a single bar in a chart.
+  // As a reminder, the chart variable goes like [Javascript, 90, React, 90, C++, 80]
   var classNameStr = "percentage percentage-" + (chart[i+1]);
-  console.log(classNameStr);
   return(
     <div>
       <dd className= {classNameStr} ><span className="text" >{chart[i]}</span></dd>
@@ -24,7 +24,9 @@ function createChart(chart) {
 
   var chartEnclose = [];
   if (chart != "0") {
+
     for (var i = 0; i < chart.length-1; i++) {
+      // Gets each bar and label from renderBar()
       chartEnclose.push(renderBar(chart, i));
       i++
     }
@@ -59,29 +61,36 @@ function Desc(props) {
     /*background-color: #111111;*/
     /*background-image: url("images/Edward_ProfilePic.png");*/
   }
+
+  // Creates the image in description container. No formatting support
   var imageDiv = <div></div>
   if (props.image != "") {
     imageDiv = <div  style={descImage}></div>
   }
 
+  // Creates the title in description container which supports formatting
   var title = <p style = {{fontSize: "19px", textAlign: "center", paddingLeft: "15px", paddingRight: "15px", marginTop: ""}} dangerouslySetInnerHTML={{
     __html: props.title
   }} ></p>
 
+  // Creates the main text in description container which supports formatting
   var description = <p id="fileDescription" dangerouslySetInnerHTML={{
     __html: props.text
   }}></p>
 
+  // Creates the static duration text in description container. No formatting support
   var startTitle = <p></p>;
   if (props.duration != "" && props.duration != "N/A") {
     startTitle = <p id="startTitle">Duration</p>
   }
 
+  // Creates the static location text in description container. No formatting support
   var locationTitle = <p></p>
   if (props.location != "" && props.location != "N/A") {
     locationTitle = <p id="untilTitle">Location</p>
   }
 
+  // Creates the subtitle in description container which supports formatting. Has conditionning to trigger an alternate simplified 'basic' page.
   var subtitle = <h1></h1>
   if (props.subtitle == "alternate") {
     subtitle = <p id = "fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta",color: "#0000EE", marginTop: "-17px", textAlign: "center"}} onClick={props.onClick}  ><u>Basic Page Here</u></p>
@@ -91,12 +100,14 @@ function Desc(props) {
     }}></p>
   }
 
+  // Creates the duration date in description container. No formatting support
   var durationLbl;
   if (props.duration != "N/A") {
     durationLbl = <p id="startDate">{props.duration}</p>
   } else {
   }
 
+  // Creates the location in description container. No formatting support
   var locationLbl;
   if (props.location != "N/A") {
     locationLbl = <p id="untilDate">{props.location}</p>

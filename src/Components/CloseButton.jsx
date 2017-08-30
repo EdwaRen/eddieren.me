@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
 import { StyleSheet, css } from 'aphrodite';
 
+
 function Close(props) {
+  //Red closebutton
   return(
     <div className={css(styles.closeIcon)} onClick={props.onClick}></div>
   );
@@ -10,6 +12,7 @@ function Close(props) {
 }
 
 function Minimize(props) {
+  //Yellow minimize button
   return (
     <div className={css(styles.minIcon)} onClick={props.onClick}></div>
   );
@@ -17,6 +20,7 @@ function Minimize(props) {
 }
 
 function Expand(props) {
+  //Green expand button
   return (
     <div className={css(styles.expIcon)} onClick={props.onClick}></div>
   );
@@ -27,6 +31,7 @@ class CloseButton extends Component {
 
   trashTrue() {
     if (!this.props.trash) {
+      // Each of the three navigaiton buttons returns a different response [0, 1, 2] for identification
       return (
         <div>
           <Close

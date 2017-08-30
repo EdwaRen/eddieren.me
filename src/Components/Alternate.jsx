@@ -4,17 +4,10 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 
 import myInfo from '../Info/PersonalInfo.js';
 
-function refresh() {
-  // history.pushState(null, '/');
-
-  // window.location.reload();
-
-}
 
 function renderBar(chart, i) {
-  console.log("Chart is rendering")
-  var classNameStr = "percentage percentage-" + (chart[i+1]);
-  console.log(classNameStr);
+  //Creates each bar in a chart
+  var classNameStr = "percentage percentage-" + (chart[i+1]); //chart[0] is my name
   return(
     <div>
       <dd className= {classNameStr} ><span className="text" >{chart[i]}</span></dd>
@@ -24,17 +17,17 @@ function renderBar(chart, i) {
 }
 
 function createChart(chart) {
-  console.log("Chart", chart);
-
 
   var chartEnclose = [];
   if (chart != "0") {
     for (var i = 0; i < chart.length-1; i++) {
+      //Pushes each bar into the total chartEnclose array
       chartEnclose.push(renderBar(chart, i));
       i++
     }
 
     return (
+      //Formatting and outputting the chart
       <div id="chartEnclosure">
         <dl id = "myChardId">
           <dt>{chart[chart.length-1]}</dt>
@@ -191,6 +184,8 @@ class Alternate extends Component {
         left: "50%",
         transform: "translateX(-50%) translateY(-50%)",
         overflowY: "scroll",
+        '-webkit-overflow-scrolling': "touch",
+
         marginLeft:"0px",
       },
       backId: {
@@ -211,7 +206,6 @@ class Alternate extends Component {
     return (
       <div className={css(styles.altDisplay)}>
         <div className={css(styles.backId)}>
-
           <RenderFiles
             onClick= {() => this.props.onClick(1)}
 
