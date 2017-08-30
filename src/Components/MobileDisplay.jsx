@@ -7,9 +7,12 @@ import MobileGroup from './MobileGroup'
 
 
 class MobileDisplay extends Component {
-  constructor() {
-    super();
+constructor(props) {
+  super(props) ;
+  this.state = {
+    mobile: 0,
   }
+}
 
 
 
@@ -19,7 +22,7 @@ class MobileDisplay extends Component {
     return(
 
       <MobileGroup
-        displayState = {0}
+        onClick = { i => this.props.onClick(i)}
       />
 
 

@@ -1,3 +1,7 @@
+@font-face { font-family: RalewayReg; src: url('../Raleway/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayBld; src: url('../Raleway/Raleway-Bold.ttf'); }
+@font-face { font-family: RalewayMed; src: url('../Raleway/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayRegIta; src: url('../Raleway/Raleway-Italic.ttf'); }
 
 #mobWrapper {
   text-align: center;
@@ -71,4 +75,59 @@
   margin-top: 15px;
   font-size: 16px;
   font-family: RalewayReg, sans-serif;
+}
+#mobDescWrap {
+  display: inline-block;
+
+  width: 90%;
+  background-color:  #FFF;
+}
+
+#mobDescDescription {
+  /*overflow-y:scroll;*/
+
+  margin-top: 0px;
+}
+
+#mobDescDescription p{
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 14px;
+  font-family: RalewayReg, sans-serif;
+  color: #111111;
+
+}
+#mobDescDescription h1{
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 19px;
+  font-family: RalewayReg;
+  color: #111111;
+
+}
+#mobDescDescription h2{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 14px;
+  font-family: RalewayRegIta, sans-serif;
+  color: #111111;
+
+}
+
+#mobBackArrow {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/left2.png");
+  opacity: 0.5;
+  /*background-color: #111111;*/
+  background-size: cover;
+
 }

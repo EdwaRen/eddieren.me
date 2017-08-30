@@ -82,31 +82,49 @@ class Background extends Component {
 
     if (detectmob()) {
       console.log("Mobile my dude")
-      return(
-        <div id = "bodyBackground">
-          <MobileDisplay/>
-        </div>      )
-
-      } else  {
-        console.log("DEsktop my dude")
+      if (this.state.display == 0) {
 
 
-
-        return (
-          <div>
-            {this.chooseDisplays()}
+        return(
+          <div id = "bodyBackground">
+            <MobileDisplay
+              onClick={this.alternateDisplay}
+            />
+          </div>
+        )
+      } else if (this.state.display == 1) {
+        return(
+          <div id = "bodyBackground">
+            <Alternate
+              key = {this.state.display}
+              mobile = {1}
+              onClick={this.alternateDisplay}
+            />
           </div>
 
         );
       }
+
+    } else  {
+      console.log("DEsktop my dude")
+
+
+
+      return (
+        <div>
+          {this.chooseDisplays()}
+        </div>
+
+      );
     }
+  }
 
-    componentDidMount() {
-
-    }
-
-
+  componentDidMount() {
 
   }
 
-  export default Background;
+
+
+}
+
+export default Background;
