@@ -112,6 +112,7 @@ class GroupsBar extends React.Component {
   }
 
   renderAllGroups() {
+    // All groups are looped into the combinedGroups variable
     var combinedGroups = []
 
     console.log("rendering groups", (this.props.groups).length);
@@ -151,13 +152,7 @@ class GroupsBar extends React.Component {
 
         </div>
         {this.renderAllGroups()}
-        {/* {this.renderGroup(0)}
-        {this.renderGroup(1)}
-        {this.renderGroup(2)}
-        {this.renderGroup(3)}
-        {this.renderGroup(4)}
-        {this.renderGroup(5)}
-        {this.renderGroup(6)} */}
+        
 
       </div>
 

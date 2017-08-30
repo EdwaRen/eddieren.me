@@ -44,8 +44,10 @@ function Files(props) {
 
       <div className  = "fileStyle2" style = {{color:"#333333",}} onClick={props.onClick} key = {"1"}>
           <div style={imageStyle} ></div>
+          {/*  An image is displayed to the left of the text*/}
           <div  className={css(styles.separator)}  >
 
+            {/* The backgroundColor is in a separate div than the text */}
             <div className= "fileStyle" style = {{color:"#333333",backgroundColor: "#FFFFFF"}} ></div>
           </div>
 
@@ -113,6 +115,8 @@ class FilesBar extends Component {
     }
 
     numberFilesToRender() {
+      //Renders everything in Files, such as Readme, About FinderMe etc
+      //combinedRenders array is used so only one return statement is necessary
       var combinedRenders =[];
       for (var i = 0; i < (this.props.filesText).length; i++) {
         combinedRenders.push(this.renderFile(i));

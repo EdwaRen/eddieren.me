@@ -19,6 +19,8 @@ function Files(props) {
 }
 
 class MobileFiles extends Component {
+  //Lots of the code here are copied from Filesbar.jsx
+
 
   renderFile(i) {
     var indexReturn = 0;
@@ -34,7 +36,6 @@ class MobileFiles extends Component {
       />
     );
   }
-
   numberFilesToRender() {
     var combinedRenders =[];
     for (var i = 0; i < (this.props.filesText).length; i++) {
@@ -57,10 +58,7 @@ class MobileFiles extends Component {
     return(
 
       <div>
-        {/* <p>Hi There</p> */}
-        {/* {this.renderFile(0)} */}
-
-        {/* {this.renderFile(1)} */}
+  
         {this.numberFilesToRender()}
       </div>
     );

@@ -44,6 +44,7 @@ function IconBackground(props) {
 class IconBar extends Component {
 
   render() {
+    // Icon1 and Icon2 return different values onClick to differentiate them
     return(
       <div>
         <IconBackground
@@ -90,21 +91,6 @@ const styles = StyleSheet.create({
 
   },
 
-  // Icon1: {
-  //   margin: "5px",
-  //   height: '40px',
-  //   width: '40px',
-  //   float: 'left',
-  //   backgroundImage: `url(${FinderIcon})`,
-  //   backgroundSize: "cover",
-  //   ':hover': {
-  //     WebkitFilter: "dropShadow(0 0 10px rgba(255,255,255,.9))",
-  //         MozFilter: "dropShadow(0 0px 10px  rgba(255,255,255,.9))",
-  //         MsFilter: "dropShadow(0 0px 10px  rgba(255,255,255,.9))",
-  //         OFilter: "dropShadow(0 0px 10px  rgba(255,255,255,.9))",
-  //         Filter: "dropShadow(0 0px 10px  rgba(255,255,255,.9))",
-  //   }
-  // },
 
   Icon2Empty: {
     margin: "5px",

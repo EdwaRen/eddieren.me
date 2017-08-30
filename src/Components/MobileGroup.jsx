@@ -34,15 +34,9 @@ function Group(props) {
         {props.name}
       </div>
     </div>
-  )
-}
-
-function MobileFile(props) {
-  console.log("mobile file rendered");
-  return(
-    <div><p>Hi There</p></div>
   );
 }
+
 
 class MobileGroup extends Component {
 
@@ -58,7 +52,7 @@ class MobileGroup extends Component {
   }
 
   fileClick(i) {
-    console.log("file clicked ", i);
+    // Hides the files and shows the description
     this.setState({
       displayState: 2,
       fileState: i,
@@ -67,21 +61,15 @@ class MobileGroup extends Component {
 
 
   groupClick(i) {
-    console.log("Group clicked", i, this.state.displayState);
+    // Hides the groups and shows the files
     this.setState({
       displayState: 1,
       groupState: i,
     });
-    // this.mobileRender(i);
-
-    // this.setState({
-    //   displayState: 1,
-    // });
-
 
   }
   mobileRender(i) {
-    console.log("mobile clicked", i, this.state.displayState);
+    // Renders MobileFiles.jsx
     return (
       <div>
         <MobileFiles
@@ -93,7 +81,8 @@ class MobileGroup extends Component {
   }
 
   descriptionRender() {
-    console.log("rendering desc", this.state.groupState, this.state.fileState);
+    // Renders MobileDesc.jsx
+
     return(
       <div>
         <MobileDesc
@@ -106,7 +95,11 @@ class MobileGroup extends Component {
   }
 
   renderGroup(i) {
+    // Renders function Group(props) above
+
     var groupNumber = i;
+    //THe variable above seems unnecessary, but the site crashes when 'i' is directly substituted somewhere else.
+
     return (
       <Group
         number = {i}
@@ -121,9 +114,9 @@ class MobileGroup extends Component {
   renderAllGroups() {
     var combinedGroups = []
 
-    // console.log("rendering groups", (myInfo.groupNames).length);
+    // Pushes different  components to combinedGroups depending on the displayState.
     if (this.state.displayState == 0) {
-
+      // In retroflection, I should have made MobileGroup a separate jsx file and put all this code into MobileDisplay.jsx.
       for (var i = 0; i < (myInfo.groupNames).length-1; i++) {
         combinedGroups.push(this.renderGroup(i));
       }
@@ -149,6 +142,7 @@ class MobileGroup extends Component {
   }
 
   arrowRender() {
+    // This is responsible for the 'back' button at the top left
     if (this.state.displayState !=0) {
       return (
         <div>
@@ -159,42 +153,42 @@ class MobileGroup extends Component {
             //I don't know why onCLick = {this.displayBack(i)} does not work, but this workaround for some reason works perfectly
             >
 
+            </div>
+          </div>
+        );
+      }
+
+    }
+
+    render() {
+
+
+      return(
+        <div id = "mobGroupWrap">
+          <div id = "mobWrapper">
+            <div id = "mobTopBar">
+              {this.arrowRender()}
+              <p>{myInfo.groupNames[0]}</p>
+            </div>
+          </div>
+
+          {this.renderAllGroups()}
+          <div id = "mobWrapper">
+            <div id = "mobBottomBar">
+              <p>Source code available <a href = "https://github.com/EdwaRen/FinderMe">here</a><br/>Copyright 2017 Edward Ren</p>
+            </div>
+
           </div>
         </div>
       );
+
+
+
     }
 
-  }
-
-  render() {
-
-
-    return(
-      <div id = "mobGroupWrap">
-        <div id = "mobWrapper">
-          <div id = "mobTopBar">
-            {this.arrowRender()}
-            <p>{myInfo.groupNames[0]}</p>
-          </div>
-        </div>
-
-        {this.renderAllGroups()}
-        <div id = "mobWrapper">
-          <div id = "mobBottomBar">
-            <p>Source code available <a href = "https://github.com/EdwaRen/FinderMe">here</a><br/>Copyright 2017 Edward Ren</p>
-          </div>
-
-        </div>
-      </div>
-    );
-
 
 
   }
 
 
-
-}
-
-
-export default MobileGroup;
+  export default MobileGroup;

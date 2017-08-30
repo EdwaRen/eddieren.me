@@ -116,7 +116,7 @@ function Desc(props) {
   }
 
   return (
-    <div id="separator">
+    <div id="mobDesc">
       <div >
 
         {imageDiv}

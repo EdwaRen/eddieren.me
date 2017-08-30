@@ -101,9 +101,7 @@ class FinderDisplay extends Component {
   }
 
   groupClick(i) {
-    // document.getElementById("myGroupId0").children[0].className += " load";
-
-
+    //This is activated when a group (Profile, Work, Projects etc ) is clicked
     this.setState({
       groupIndex: i,
       fileIndex: 0,
@@ -111,6 +109,7 @@ class FinderDisplay extends Component {
     })
   }
   fileClick(i) {
+    //This is activated when a file (Readme, About FinderMe etc ) is clicked
     console.log("File clicked");
     this.setState({
       fileIndex: i,
@@ -120,7 +119,7 @@ class FinderDisplay extends Component {
   }
 
   iconClick(i) {
-    // console.log("File clicked");
+    //This is activated when of the two icons on the bottom left is clicked
     if (i == 1) {
       this.setState({
         reload: this.state.reload+1,
@@ -149,6 +148,7 @@ class FinderDisplay extends Component {
   }
 
   changeState() {
+    //Resets everything to default state and reloads
     this.setState({
       groupIndex: 0,
       fileIndex: 0,
@@ -159,6 +159,7 @@ class FinderDisplay extends Component {
   }
 
   resetAnimation() {
+    //resets the animations to none
     document.getElementById("backShadow").style.webkitAnimationName = "";
     document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "";
     document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "";
@@ -177,7 +178,7 @@ class FinderDisplay extends Component {
   navClick(i) {
 
     if (i == 0 ){
-      console.log("Close Window clicked");
+      // console.log("Close Window clicked");
       setTimeout(this.changeState, 500);
       this.setState({
         trash: 1,
@@ -189,14 +190,14 @@ class FinderDisplay extends Component {
 
 
     } else if (i == 1) {
-      console.log("Minimize Window clicked");
+      // console.log("Minimize Window clicked");
       this.setState({
         trash: 1,
         minimize: 1,
       })
 
     }  else if (i == 2) {
-      console.log("expand window clicked");
+      // console.log("expand window clicked");
       var html = document.getElementsByTagName('html')[0];
 
       if (this.state.expandFull == 0) {
@@ -204,6 +205,7 @@ class FinderDisplay extends Component {
         this.setState({
           expandFull: 1,
         })
+        //Transition animation when the expand navigation button is clicked (green circle in top left of finder display)
         document.getElementById("backShadow").style.webkitAnimationName = "totalTransform";
         document.getElementById("backShadow").style.webkitAnimationDuration = "0.15s";
         document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "totalTransform";
@@ -364,6 +366,7 @@ class FinderDisplay extends Component {
       }
     }
 
+    //Spaghetti code that changes animation based on trash/minimize state. The goal is: Red - fadeout, Yellow - fadeoutUp, other (bottom left icon clicked) - fadein
     const fadeAnimate = css(
       this.state.trash ? (this.state.minimize? styles.fadeOutUp : styles.fadeOut) : styles.fadeIn,
       // this.state.minimize? styles.fadeOutUp : styles.fadeOut
@@ -375,12 +378,9 @@ class FinderDisplay extends Component {
           <div >
             <Draggable key = {this.state.visible}  defaultPosition={{x: 0, y: 0}}>
 
-              {/* <div style = {opacityStyle} key = {this.state.trash}> */}
-              {/* <div id="containment-wrapper"> */}
 
               <div id="backShadow" className="draggable">
                 <div className="bothWindows">
-                  {/* <div className="shadowWindow"></div> */}
                   <div className="finderTopBar">
                     <CloseButton
                       trash = {this.state.trash}
@@ -390,7 +390,8 @@ class FinderDisplay extends Component {
 
                       <div className="finderTopBarIcon"></div>
                       <div className="finderTopBarText">
-                        <p id="finderTopBarTextP">Edward Ren</p>
+                        {/* Your name displayed here, for example 'Edward Ren' */}
+                        <p id="finderTopBarTextP">{myInfo.groupNames[0]}</p>
                       </div>
                     </div>
 
@@ -447,6 +448,7 @@ class FinderDisplay extends Component {
           </div>
         </div>
 
+        {/* Bottom left icons */}
         <div className = "backIcons">
           <IconBar
             trash = {this.state.trash}

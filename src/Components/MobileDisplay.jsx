@@ -9,6 +9,7 @@ import MobileGroup from './MobileGroup'
 class MobileDisplay extends Component {
 constructor(props) {
   super(props) ;
+  // The code below is not really necessary but this doesn't work without it :(
   this.state = {
     mobile: 0,
   }
