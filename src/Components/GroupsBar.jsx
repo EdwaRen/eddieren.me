@@ -112,12 +112,13 @@ class GroupsBar extends React.Component {
   }
 
   renderAllGroups() {
+    console.log("Dear future Eddie, just a reminder that on August 30th 2017, your job goal was (and it still better be) Facebook or bust.");
+
     // All groups are looped into the combinedGroups variable
     var combinedGroups = []
 
     console.log("rendering groups", (this.props.groups).length);
     for (var i = 0; i < (this.props.groups).length-1; i++) {
-      console.log("Group rendered", i);
       combinedGroups.push(this.renderGroup(i));
 
 
@@ -152,7 +153,7 @@ class GroupsBar extends React.Component {
 
         </div>
         {this.renderAllGroups()}
-        
+
 
       </div>
 

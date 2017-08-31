@@ -12,9 +12,11 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 # FinderMe
 
-My personal website created primarily using React in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, there is an alternate 'basic' page for a dynamically generated webpage with all the info on the main index page. A mobile page for this site is available, however due to the lack of many features, it is rather minimalist and is virtually the same as the 'basic' page for desktops.
+My personal website created primarily using React in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, there is an alternate 'basic' page for a dynamically generated webpage with all the info on the main index page. A mobile page for this site is available, however due to the lack of many features, it is rather minimalist.
 
-![Readme Example](./images/readmeDisplayGif.gif)
+<p align="center">
+  <img src="./images/readmeDisplayGif.gif">
+</p>
 
 # Links
 
@@ -44,22 +46,26 @@ This website was purposefully built to emulate the look of the 'Finder' program 
 
 Using React Draggable, a draggable main display was implemented so that the finder tab can be dragged around just like the real program itself. The principle display can be dragged anywhere. Clicking and holding anywhere on the main finder tab will drag it along. Though quite fun to play with on desktop computers, this drag functionality is not yet supported on mobile.
 
-![Draggable Window](/images/draggable.gif)
-
+<p align="center">
+  <img src="./images/draggable.gif">
+</p>
 
 ## Modularity
 
 Different sets of information can be easily added in or swapped out, new groups or files can be added with ease into the program. Through this modular programming, this website can also be used as a template for other purposes.
 
-![Modularity](/images/modularity.png?raw=true "")
-
+<p align="center">
+  <img src="./images/modularity.png">
+</p>
 
 ## Graphs
 
 There was considerable thought put into the decision to either code the languages chart myself or simply upload an image of a chart and call it a day. In the end, I decided the former was better as it provided superior modularity as well as providing more interactivity in the form of tooltips and reactive graph design. All the charts are created using pure HTML and CSS, so the end result is a static page which is supported by GitHub pages. A previous attempt to use Chart.js unfortunately came upon numerous setbacks.
 <!--  In hindsight, I was just horrible at using npm :P-->
 
-![Graphs](/images/graphs.png?raw=true "")
+<p align="center">
+  <img src="./images/graphs.png">
+</p>
 
 ## Icon Controls
 
@@ -67,7 +73,9 @@ The bottom left corner has two icons for controlling the main display. The first
 
 The second icon is a garbage bin that can hide and re-appear the main display. Clicking it will only change the visibility of the main display, and its position will not change. When the main display is hidden, the first button can be clicked to reload the display.
 
-![Icon Bar](/images/iconControlDiagram.jpg?raw=true "")
+<p align="center">
+  <img src="./images/iconControlDiagram.jpg">
+</p>
 
 The red circle on the top-left of the main display can also be clicked to close itself. This will reset any group or file state to default. The finder display can be retrieved by clicking the finder icon or trash icon in the lower left corner.
 
@@ -75,7 +83,18 @@ The yellow circle can be clicked to minimize the tab. This also closes the displ
 
 The green circle, or expand button, can be clicked to expand the finder display. This expands the display to fill 75% of the screen width and 90% of the screen height. Clicking this button again will shrink the display to its default size.Needless to say, this is not available on mobile and an alternative has been provided.
 
-![Expanding](/images/Expanding.gif?raw=true "")
+
+<p align="center">
+  <img src="./images/Expanding.gif">
+</p>
+
+## Mobile
+
+A mobile version is also available although it lacks the draggable feature of the desktop version. The mobile version is activated by detecting the screen size of the user's screen on the initial page load. Hence resizing the screen will not activate the mobile page unless the page itself is also refreshed.
+
+<p align="center">
+  <img src="./images/mobileScreenshot.jpg">
+</p>
 
 
 # Testing
@@ -102,7 +121,9 @@ There, you can edit the information this program displays in the "src/Info/Perso
 
 The "info" variable consist of a multi dimensional array that contains information to be displayed in both the middle (filesBar) and right-most (descBar) tabs. "Info" contains virtually all the customizable information. Info[i] gives the information with respect to the i-th group, so Info[0] gives the data necessary to display the 'Readme' page and the 'About FinderMe' page in an array. Going deeper, Info[i][j] tells us sufficient information necessary to display the descriptionaBar. For example, Info[0][0] gives us another array ['Readme', 'alt-text', 'subtitle', 'text', 'duration', 'location']. For example, to get the subtitle of the second file in the third group, we would use Info[2][1][2] (with the array starting at 0). This format can otherwise be shown like this Info[Group][File][Text Item]
 
-![Instructions](/images/customInfo.png?raw=true "")
+<p align="center">
+  <img src="./images/customInfo.png">
+</p>
 
 In Info, the first list contains details for all groups. Next, the list-in-a-list contains details for all files in ONE group. Lastly, the last list-in-a-list has a length of 7 and goes in detail for each file. This last-list (of length 7) has the following format
 
@@ -118,7 +139,9 @@ Which correspond to the following graph labelled as such
 5 - Duration <br />
 6 - Location <br />
 
-![Instructions](/images/diagram_Desc_Info.jpg?raw=true "")
+<p align="center">
+  <img src="./images/diagram_Desc_Info.jpg">
+</p>
 
 All the text can be set with HTML, so inputting
 ```
@@ -134,7 +157,9 @@ will bold the word 'Edward', resulting in
 
 Due to the nature of displaying images through React over traditional JavaScript, image displays are no longer customizable through "/src/Info/PersonalInfo.js" but instead it can be done at "/src/Components/FinderDisplay.jsx". The images section starts from line 23 to line 75 and all images need to be manually imported in the style of 'import IMAGE_NAME from ./SOURCE'. Once the images have been imported, the images must be loaded into three variables to display depending on location, 'groupIconImages, fileIconImages, infoDescImages'.
 
-![Custom Image](/images/customImage.png?raw=true "")
+<p align="center">
+  <img src="./images/customImage.png">
+</p>
 
 
 ### Using Custom Charts
@@ -149,8 +174,9 @@ While normally an information array (files variable) has a length of 6, extendin
 6 - Location <br />
 **7 - [Bar Name, Bar Length (out of 100), Bar Name 2, Bar Length 2, ... Chart Name]** <br />
 
-
-![Custom Chart](/images/chartDiagram.jpg?raw=true "")
+<p align="center">
+  <img src="./images/chartDiagram.jpg">
+</p>
 
 When the files array length is greater than 7, then the last value will be the title of the chart. In this version, only bar graphs are supported.
 <br />
@@ -184,7 +210,6 @@ Fully functional on Firefox and in certain areas, the website works even smoothe
 Using Safari has a known issue with displaying box-shadows of non-rectangular divs. Otherwise, Safari works flawlessly with FinderMe.
 
 ### Internet Explorer?
-
 Here is a link to download Chrome:
 https://www.google.com/chrome/index.html
 

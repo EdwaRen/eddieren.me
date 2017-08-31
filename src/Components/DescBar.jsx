@@ -48,12 +48,15 @@ function Desc(props) {
 
   const descImage = {
     /*position: static;*/
-    display: "block",
+    // display: "block",
     margin: "auto",
-    width: "80px",
     height: "80px",
+
+    width: "auto",
     marginTop: "20px",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
+    backgroundRepeat:   "no-repeat",
+    backgroundPosition: "center center",
 
     opacity: "1.0",
     backgroundImage: `url(${props.image})`,
@@ -151,7 +154,7 @@ function Desc(props) {
 class DescBar extends Component {
 
   renderDisplay() {
-    console.log("Image", this.props.contentImages);
+    // console.log("Image", this.props.contentImages);
     if ((this.props.content).length > 7) {
       return (
         <Desc

@@ -81,7 +81,7 @@ class Background extends Component {
 
 
     if (detectmob()) {
-      console.log("Mobile my dude")
+      console.log("Displaying mobile version")
       if (this.state.display == 0) {
 
 
@@ -106,7 +106,7 @@ class Background extends Component {
       }
 
     } else  {
-      console.log("DEsktop my dude")
+      console.log("Displaying desktop version")
 
 
 

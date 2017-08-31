@@ -32,6 +32,7 @@ import CloseButton from './CloseButton';
 import Profile from '../images/Profile.png';
 import Experience from '../images/Experience.png';
 import Projects from '../images/Projects.png';
+import Highlights from '../images/badge.png';
 import Network from '../images/Network.png';
 import Languages from '../images/Languages.png';
 import Education from '../images/Education.png';
@@ -48,11 +49,19 @@ import HTMLCoding from '../images/html-coding.png';
 import Chat from '../images/chat.png';
 import College from '../images/college.png';
 import School from '../images/open-book.png';
+import Newspaper from '../images/newspaper.png';
+import Award from '../images/award.png';
+
+
 import ProfilePic from '../images/Edward_ProfilePic.png';
+import MetroLogo from '../images/MetroNewsLogo.png';
+import CANewsLogo from '../images/CANewsOttawaLogo.png';
+import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
+
 
 //Image icons to be displayed in left-most "groupsBar" (All images are displayed at once)
 var groupIconImages = [
-  Profile, Experience, Projects, Network, Languages, Education, Other,
+  Profile, Experience, Projects, Highlights, Network, Languages, Education, Other,
 ]
 
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
@@ -60,6 +69,7 @@ var fileIconImages = [
   [Document, Document], //Profile
   [Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
+  [Newspaper, Newspaper, Newspaper, Award, Award], //Highlights
   [LinkedIn, GitHub, Facebook, Email], //Network
   [HTMLCoding, Chat], //Languages
   [College, School], //Education
@@ -70,6 +80,7 @@ var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
   ["", "", ""], //Projects
+  [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""],
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Languages
   ["", ""], //Education
