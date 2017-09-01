@@ -14,12 +14,17 @@ import myInfo from '../Info/PersonalInfo.js'
 import MobileFiles from './MobileFiles'
 import MobileDesc from './MobileDesc'
 
+import MetroLogo from '../images/MetroNewsLogo.png';
+import CANewsLogo from '../images/CANewsOttawaLogo.png';
+import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
+
 
 
 var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
   ["", "", ""], //Projects
+  [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""],
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Languages
   ["", ""], //Education
