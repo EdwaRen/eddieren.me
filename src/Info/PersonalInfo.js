@@ -35,6 +35,8 @@ var Info = [
   [
     [ "Recycle Can","", "Founder, Chief iOS and Web Developer", "Integrated application using delegates, MapKit, geocoding, and automatic route plotting connected to our database of over 20000 locations. <br ><br >Data Processing of over 50-megabyte raw text files in Microsoft Excel using VBA and formulas. <br > <br >Integrated a respective website using Google Maps API with over 13000 page visits in addition to 16000 mobile application downloads.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
+    ["WATonomous", "", "GM Autonomous Car Team: Web developper", "Redesigned website using React and Bootstrap for the University of Waterloo’s autonomous car team <br /> <br />Provided page for back end recruitment used by over 300 applicants for three recruitment seasons annually<br /> <br />Maintained and updated legacy website using LeanWebTools while redesigning current webpage"],
+
     [ "Morsecret","", "Founder, Overall Developer", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By", ""],
 
     [ "Team Goals","", "Founder, Overall Developer", "Website coded with React and supported by Firebase to create a real-time database that organizes goals for a team.<br ><br >Employed Javascript ES6 with Redux to support a high degree of user interactivity with website.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""]

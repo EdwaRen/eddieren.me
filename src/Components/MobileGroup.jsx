@@ -24,7 +24,7 @@ var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
   ["", "", ""], //Projects
-  [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""],
+  [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""], //highlights
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Languages
   ["", ""], //Education
