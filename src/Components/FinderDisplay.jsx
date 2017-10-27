@@ -68,7 +68,7 @@ var groupIconImages = [
 var fileIconImages = [
   [Document, Document], //Profile
   [Coding, Coding],  //Experience
-  [ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
+  [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
   [Newspaper, Newspaper, Newspaper, Award, Award], //Highlights
   [LinkedIn, GitHub, Facebook, Email], //Network
   [HTMLCoding, Chat], //Languages
@@ -79,7 +79,7 @@ var fileIconImages = [
 var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
-  ["", "", ""], //Projects
+  ["", "", "", ""], //Projects
   [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""],
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Languages

@@ -33,9 +33,9 @@ var Info = [
 
   //Projects
   [
-    [ "Recycle Can","", "Founder, Chief iOS and Web Developer", "Integrated application using delegates, MapKit, geocoding, and automatic route plotting connected to our database of over 20000 locations. <br ><br >Data Processing of over 50-megabyte raw text files in Microsoft Excel using VBA and formulas. <br > <br >Integrated a respective website using Google Maps API with over 13000 page visits in addition to 16000 mobile application downloads.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "Integrated application using delegates, MapKit, geocoding, and automatic route plotting connected to our database of over 20000 locations. <br ><br >Data Processing of over 50-megabyte raw text files in Microsoft Excel using VBA and formulas. <br > <br >Integrated a respective website using Google Maps API with over 13000 page visits in addition to 16000 mobile application downloads.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
-    ["WATonomous", "", "GM Autonomous Car Team: Web developper", "Redesigned website using React and Bootstrap for the University of Waterloo’s autonomous car team <br /> <br />Provided page for back end recruitment used by over 300 applicants for three recruitment seasons annually<br /> <br />Maintained and updated legacy website using LeanWebTools while redesigning current webpage"],
+    ["WATonomous", "", "Team Lead, Full Stack Web Developer: <a href = 'www.watonomous.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/webtonomous' >Git</a>", "Redesigned website using React and Bootstrap for the University of Waterloo’s autonomous car team <br /> <br />Provided page for back end recruitment used by over 300 applicants for three recruitment seasons annually<br /> <br />Maintained and updated legacy website using LeanWebTools while redesigning current webpage", "September 2017 - Present", "Waterloo", ""],
 
     [ "Morsecret","", "Founder, Overall Developer", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By", ""],
 
@@ -45,7 +45,7 @@ var Info = [
   //Highlights
   [
 
-    ["MetroNews", "", "Work Featured on News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'http://www.metronews.ca/news/ottawa/2017/08/30/ottawa-student-s-recycling-app-a-success.html'>here.</a>", "Summer 2017", "Ottawa"],
+    ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'http://www.metronews.ca/news/ottawa/2017/08/30/ottawa-student-s-recycling-app-a-success.html'>here.</a>", "Summer 2017", "Ottawa"],
     [ "CA News Ottawa", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on CA News Ottawa online news network. Article can be found <a href = 'http://www.canewsottawa.ca/single-post/2017/08/28/Ottawa-Teen-Takes-on-the-Toxic-Problem-of-Electronic-Waste'>here.</a>", "Summer 2017", "Ottawa"],
   ["Ottawa TechWatch", "", "Work Featured by News", "Online article written concerning Recycle Can on Ottawa TechWatch online news network. Article can be found <a href = 'http://www.ottawatechwatch.com/story.php?title=recycle-can]'>here.</a>", "Summer 2017", "Ottawa"],
     ["Debate Semi-finalist", "", "Provincial Tournament", "Semi-finalist in annual Ontario Student Debating Society (OSDU) provincial tournament. Fluent bilingual debater.", "May 2016", "Toronto"],
