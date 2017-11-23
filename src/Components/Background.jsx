@@ -6,6 +6,9 @@ import Alternate from './Alternate';
 import Draggable from 'react-draggable'; // The default
 import FooterDisplay from './FooterDisplay';
 import MobileDisplay from './MobileDisplay'
+import KeyHandler, {KEYPRESS} from 'react-key-handler';
+
+
 
 function detectmob() {
   //Detects if user is on mobile
@@ -77,6 +80,9 @@ class Background extends Component {
 
 
 
+
+
+
   render() {
 
 
@@ -112,6 +118,7 @@ class Background extends Component {
 
       return (
         <div>
+
           {this.chooseDisplays()}
         </div>
 
