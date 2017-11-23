@@ -11,7 +11,11 @@ module.exports = {
     path: path.join(__dirname, 'public')
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    "alias": {
+      "react": "preact-compat",
+      "react-dom": "preact-compat"
+    }
   },
   plugins: [
     new webpack.DefinePlugin({

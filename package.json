@@ -9,6 +9,8 @@
     "gh-pages": "^1.0.0",
     "inline-style-prefixer": "^3.0.7",
     "jquery": "^3.2.1",
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
     "radium": "^0.19.4",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
