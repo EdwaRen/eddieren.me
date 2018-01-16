@@ -19,7 +19,7 @@ function renderBar(chart, i) {
 }
 
 function createChart(chart) {
-  console.log("Chart", chart);
+  // console.log("Chart", chart);
 
 
   var chartEnclose = [];

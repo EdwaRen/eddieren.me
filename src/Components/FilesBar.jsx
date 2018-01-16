@@ -37,7 +37,7 @@ function Files(props) {
     // }
 
   })
-  console.log("animate", props.animate);
+  // console.log("animate", props.animate);
 
   var newText = props.text;
   if (props.text.length > 22) {

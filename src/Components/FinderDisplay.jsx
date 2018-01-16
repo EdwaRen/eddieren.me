@@ -121,7 +121,7 @@ class FinderDisplay extends Component {
   }
   fileClick(i) {
     //This is activated when a file (Readme, About FinderMe etc ) is clicked
-    console.log("File clicked");
+    // console.log("File clicked");
     this.setState({
       fileIndex: i,
       animate: this.state.animate+1,
@@ -283,7 +283,7 @@ class FinderDisplay extends Component {
         html.style.setProperty("--descHeight", "380px");
         html.style.setProperty("--chartWidth", "140px");
         setTimeout(this.resetAnimation, 150);
-        console.log("minimizng");
+        // console.log("minimizng");
         this.setState({
           expandFull: 0,
         })
