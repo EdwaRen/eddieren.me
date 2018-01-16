@@ -39,6 +39,11 @@ function Files(props) {
   })
   console.log("animate", props.animate);
 
+  var newText = props.text;
+  if (props.text.length > 22) {
+    newText = props.text.substring(0, 18) + " ...";
+  }
+
   if (props.indexed == 0) {
     return (
 
@@ -52,7 +57,7 @@ function Files(props) {
           </div>
 
           <div id="filesDiv">
-            <p>{props.text}</p>
+            <p>{newText}</p>
           </div>
         </div>
 
@@ -71,7 +76,7 @@ function Files(props) {
           </div>
 
           <div id="filesDiv">
-            <p>{props.text}</p>
+            <p>{newText}</p>
           </div>
         </div>
         </div>

@@ -61,7 +61,7 @@ import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
 
 //Image icons to be displayed in left-most "groupsBar" (All images are displayed at once)
 var groupIconImages = [
-  Profile, Experience, Projects, Highlights, Network, Languages, Education, Other,
+  Profile, Experience, Projects, Highlights,Languages, Network, Education, Other,
 ]
 
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
@@ -69,9 +69,9 @@ var fileIconImages = [
   [Document, Document], //Profile
   [Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
-  [Newspaper, Newspaper, Newspaper, Award, Award], //Highlights
+  [Newspaper, Newspaper, Newspaper, Award, Award, Award, Award], //Highlights
+  [HTMLCoding,HTMLCoding, Chat], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
-  [HTMLCoding, Chat], //Languages
   [College, School], //Education
   [Document, Document, Document, Document, Document], //Other
 ]
@@ -80,9 +80,9 @@ var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
   ["", "", "", ""], //Projects
-  [MetroLogo, OttawaTechLogo, "", ""],
+  [MetroLogo,CANewsLogo, OttawaTechLogo, "", "", "", ""],
+  ["", "", ""], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
-  ["", ""], //Languages
   ["", ""], //Education
   ["", "", "", "", ""], //Other
 ]
