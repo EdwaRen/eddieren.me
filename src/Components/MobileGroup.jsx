@@ -23,10 +23,10 @@ import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
 var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", ""], //Experience
-  ["", "", ""], //Projects
-  [MetroLogo, CANewsLogo, OttawaTechLogo, "", ""], //highlights
+  ["", "", "", ""], //Projects
+  [MetroLogo,CANewsLogo, OttawaTechLogo, "", "", "", ""],
+  ["", "", ""], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
-  ["", ""], //Languages
   ["", ""], //Education
   ["", "", "", "", ""], //Other
 ]
