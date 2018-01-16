@@ -31,7 +31,7 @@ class Background extends Component {
   }
 
   alternateDisplay() {
-    console.log("Alternate Display clicked");
+    // console.log("Alternate Display clicked");
     if (this.state.display == 0) {
       this.setState({
         display: 1,
@@ -47,7 +47,7 @@ class Background extends Component {
 
 
   chooseDisplays() {
-    console.log("display state", this.state.display);
+    // console.log("display state", this.state.display);
     if (this.state.display == 0) {
 
       return(
@@ -87,7 +87,7 @@ class Background extends Component {
 
 
     if (detectmob()) {
-      console.log("Displaying mobile version")
+      // console.log("Displaying mobile version")
       if (this.state.display == 0) {
 
 
@@ -112,7 +112,7 @@ class Background extends Component {
       }
 
     } else  {
-      console.log("Displaying desktop version")
+      // console.log("Displaying desktop version")
 
 
 

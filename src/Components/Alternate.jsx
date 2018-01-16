@@ -201,7 +201,7 @@ class Alternate extends Component {
 
 
 
-    console.log("Alternate!")
+    // console.log("Alternate!")
 
     return (
       <div className={css(styles.altDisplay)}>
