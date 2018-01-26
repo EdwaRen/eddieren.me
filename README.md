@@ -28,7 +28,8 @@ My personal website created primarily using React in conjunction with HTML/CSS. 
 2. [Testing](#testing)
 3. [Documentation](#template)
    * [Importing Images](#importing-images)
-   * [Charts](#using-custom-charts)<br />
+   * [Charts](#using-custom-charts)
+   * [SSL Certification](#ssl-certification)<br />
 4. [Other Versions](#other-versions)
 5. [Browser Compatibility](#browser-compatibility)
    * [Google Chrome](#google-chrome)
@@ -184,6 +185,11 @@ When the files array length is greater than 7, then the last value will be the t
 For more customizable chart options, you can mess with /css/styleGraph.css and #chartEnclosure in /css/HtmlStyles.css.
 
 As a reminder, charts are only accessible when the "Info[i][j]" value is an array of strings, rather than a single string variable, otherwise no chart will be made.
+
+### SSL Certification
+
+FinderMe is currently viewable at edwardren.me which has an HTTPS certificate. If hosted on GitHub pages with a custom domain, any site can be HTTPS-certified by following the tutorial below,
+https://hackernoon.com/set-up-ssl-on-github-pages-with-custom-domains-for-free-a576bdf51bc
 
 # Other Versions
 
