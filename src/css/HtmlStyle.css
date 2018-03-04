@@ -562,13 +562,25 @@ dl {
 
 
 }
+/*
+html.style.setProperty("--totalWidth", "75vw");
+html.style.setProperty("--totalHeight", "90vh");
+html.style.setProperty("--topWidth",  "75vw");
+html.style.setProperty("--topHeight", "10vh");
+html.style.setProperty("--groupWidth", "16vw");
+html.style.setProperty("--groupHeight", "75vh");
+html.style.setProperty("--fileWidth", "23vw");
+html.style.setProperty("--fileHeight", "75vh");
+html.style.setProperty("--descWidth", "36vw");
+html.style.setProperty("--descHeight", "75vh");
+html.style.setProperty("--chartWidth", "24vw"); */
 /*More SPAGEHTTI CODE!!*/
-@keyframes totalTransformRev { from {width: 75vw; height: 90vh;} to {width: var(--totalWidth); height: var(--totalHeight);}}
+@keyframes totalTransformRev { from {width: 80vw; height: 90vh;} to {width: var(--totalWidth); height: var(--totalHeight);}}
 @keyframes topTransformRev {from {width: 75vw; height: 10vh;} to {width: var(--totalWidth); height: var(--topHeight);}}
-@keyframes groupTransformRev {from {width: 15vw; height: 75vh;} to {width: var(--groupWidth); height: var(--groupHeight);}}
-@keyframes fileTransformRev {from {width: 15vw; height: 75vh;} to {width: var(--fileWidth); height: var(--fileHeight);}}
-@keyframes descTransformRev {from {width: 45vw; height: 75vh;} to {width: var(--descWidth); height: var(--descHeight);}}
-@keyframes chartTransformRev {from {width: 35vw; } to {width: var(--chartWidth); }}
-@keyframes bottomTransformRev { from {padding-top: 10vh; width: 100vw; height: 75vh; } to {padding-top: var(--topHeight); width: var(--totalWidth); height: var(--groupHeight); }}
-@keyframes fileStyleTransformRev {from {width: 15vw; } to {width: var(--fileWidth); }}
-@keyframes groupStyleTransformRev { from {width: 15vw; } to {width: var(--fileWidth); }}
+@keyframes groupTransformRev {from {width: 16vw; height: 75vh;} to {width: var(--groupWidth); height: var(--groupHeight);}}
+@keyframes fileTransformRev {from {width: 23vw; height: 75vh;} to {width: var(--fileWidth); height: var(--fileHeight);}}
+@keyframes descTransformRev {from {width: 36vw; height: 75vh;} to {width: var(--descWidth); height: var(--descHeight);}}
+@keyframes chartTransformRev {from {width: 24vw; } to {width: var(--chartWidth); }}
+@keyframes bottomTransformRev { from {padding-top: 10vh; width: 90vw; height: 75vh; } to {padding-top: var(--topHeight); width: var(--totalWidth); height: var(--groupHeight); }}
+@keyframes fileStyleTransformRev {from {width: 23vw; } to {width: var(--fileWidth); }}
+@keyframes groupStyleTransformRev { from {width: 16vw; } to {width: var(--fileWidth); }}

@@ -10,14 +10,7 @@ import KeyHandler, {KEYPRESS} from 'react-key-handler';
 
 
 
-function detectmob() {
-  //Detects if user is on mobile
-  if(window.innerWidth <= 600 && window.innerHeight <= 800) {
-    return true;
-  } else {
-    return false;
-  }
-}
+
 
 
 class Background extends Component {
@@ -25,10 +18,38 @@ class Background extends Component {
     super(props);
     this.state =  {
       display : 0,
+      mobileDisplay: 0,
+      width: window.innerWidth,
+      height:window.innerHeight,
     }
+
     this.alternateDisplay = this.alternateDisplay.bind(this);
+    // this.detectmob = this.detectmob.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
   }
+
+  componentDidMount() {
+    window.scrollTo(0,0);
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleScroll);
+  }
+
+
+
+  updateWindowDimensions() {
+    this.setState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+    console.log(this.state);
+  }
+
 
   alternateDisplay() {
     console.log("Alternate Display clicked");
@@ -44,8 +65,6 @@ class Background extends Component {
 
   }
 
-
-
   chooseDisplays() {
     console.log("display state", this.state.display);
     if (this.state.display == 0) {
@@ -55,6 +74,7 @@ class Background extends Component {
         <div id = "bodyBackground">
           <FinderDisplay
             onClick={this.alternateDisplay}
+            mobileDisplay = {this.mobileDisplay}
           />
           <FooterDisplay />
 
@@ -84,34 +104,30 @@ class Background extends Component {
 
 
   render() {
+    console.log(this.state.width);
+    if (this.state.width <=800 && this.state.display == 0) {
 
 
-    if (detectmob()) {
-      // console.log("Displaying mobile version")
-      if (this.state.display == 0) {
+      return(
+        <div id = "bodyBackground">
+          <MobileDisplay
+            onClick={this.alternateDisplay}
+            mobileDisplay = {this.mobileDisplay}
+          />
+        </div>
+      )
+    } else if (this.state.display == 1 && this.state.width <=800) {
+      return(
+        <div id = "bodyBackground">
+          <Alternate
+            key = {this.state.display}
+            mobile = {1}
+            onClick={this.alternateDisplay}
+          />
+        </div>
 
-
-        return(
-          <div id = "bodyBackground">
-            <MobileDisplay
-              onClick={this.alternateDisplay}
-            />
-          </div>
-        )
-      } else if (this.state.display == 1) {
-        return(
-          <div id = "bodyBackground">
-            <Alternate
-              key = {this.state.display}
-              mobile = {1}
-              onClick={this.alternateDisplay}
-            />
-          </div>
-
-        );
-      }
-
-    } else  {
+      );
+    }  else  {
       console.log("Displaying desktop version")
 
 
@@ -126,9 +142,6 @@ class Background extends Component {
     }
   }
 
-  componentDidMount() {
-
-  }
 
 
 
