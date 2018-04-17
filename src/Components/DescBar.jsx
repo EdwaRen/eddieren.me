@@ -19,7 +19,6 @@ function renderBar(chart, i) {
 }
 
 function createChart(chart) {
-  // console.log("Chart", chart);
 
 
   var chartEnclose = [];
@@ -154,7 +153,6 @@ function Desc(props) {
 class DescBar extends Component {
 
   renderDisplay() {
-    // console.log("Image", this.props.contentImages);
     if ((this.props.content).length > 7) {
       return (
         <Desc

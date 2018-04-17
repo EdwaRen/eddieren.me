@@ -21,8 +21,6 @@ function renderBar(chart, i) {
 }
 
 function createChart(chart) {
-  console.log("Chart", chart);
-
 
   var chartEnclose = [];
   if (chart != "0") {
@@ -156,7 +154,6 @@ function Desc(props) {
 class MobileDesc extends Component {
 
   renderDisplay() {
-    console.log("Image", this.props.contentImages);
     if ((this.props.content).length > 7) {
       return (
         <Desc
@@ -189,7 +186,6 @@ class MobileDesc extends Component {
   }
 
   render() {
-    console.log("description rendered")
     return (
       <div id = "mobWrapper">
         <div id = "mobDescWrap">

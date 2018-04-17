@@ -121,7 +121,6 @@ class FinderDisplay extends Component {
   }
   fileClick(i) {
     //This is activated when a file (Readme, About FinderMe etc ) is clicked
-    // console.log("File clicked");
     this.setState({
       fileIndex: i,
       animate: this.state.animate+1,
@@ -189,7 +188,6 @@ class FinderDisplay extends Component {
   navClick(i) {
 
     if (i == 0 ){
-      // console.log("Close Window clicked");
       setTimeout(this.changeState, 500);
       this.setState({
         trash: 1,
@@ -201,14 +199,12 @@ class FinderDisplay extends Component {
 
 
     } else if (i == 1) {
-      // console.log("Minimize Window clicked");
       this.setState({
         trash: 1,
         minimize: 1,
       })
 
     }  else if (i == 2) {
-      console.log(this.state.expandFull);
 
       if (this.state.expandFull == 0) {
         this.setState({
@@ -220,7 +216,6 @@ class FinderDisplay extends Component {
         })
       }
       if (this.state.width <= 800) {
-        console.log("mobile detected");
 
         this.state.mobileDisplay = 1;
       }

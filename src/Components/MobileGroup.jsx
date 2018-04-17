@@ -32,7 +32,6 @@ var infoDescImages = [
 ]
 
 function Group(props) {
-  // console.log("myInfo", myInfo.groupNames);
   return (
     <div id = "mobWrapper">
       <div id = "mobGroup" onClick={props.onClick}>
@@ -140,7 +139,6 @@ class MobileGroup extends Component {
   }
 
   displayBack(i) {
-    console.log("Arrow clicked", i);
     this.setState({
       displayState: this.state.displayState-1,
     })
