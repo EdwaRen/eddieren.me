@@ -64,7 +64,6 @@ class Background extends Component {
   }
 
   chooseDisplays() {
-    console.log("display state", this.state.display);
     if (this.state.display == 0) {
 
       return(
