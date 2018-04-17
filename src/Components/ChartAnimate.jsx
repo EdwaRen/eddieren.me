@@ -2,12 +2,10 @@
 module.exports = function ChartAnimateConfirm(props){
   // Handles the expand button
   var myInfo = require('../Info/PersonalInfo.js');
-  console.log(myInfo.info[0][0]);
   var expandState = 0;
   var html = document.getElementsByTagName('html')[0];
 
   if (props.expandFull == 0) {
-    console.log("expandfull 0");
     //SPAGHETTI CODE!!!
     expandState = 1;
     //Transition animation when the expand navigation button is clicked (green circle in top left of finder display)

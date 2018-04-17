@@ -78,6 +78,7 @@
 }
 #mobDescWrap {
   display: inline-block;
+  margin-top: -5px;
 
   width: 90%;
   background-color:  #FFF;
@@ -85,8 +86,9 @@
 
 #mobDescDescription {
   /*overflow-y:scroll;*/
+  /* margin-top: -5px;
 
-  margin-top: 0px;
+  margin-top: 0px; */
 }
 
 #mobDescDescription p{

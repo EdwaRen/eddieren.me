@@ -47,12 +47,10 @@ class Background extends Component {
       width: window.innerWidth,
       height: window.innerHeight,
     });
-    console.log(this.state);
   }
 
 
   alternateDisplay() {
-    console.log("Alternate Display clicked");
     if (this.state.display == 0) {
       this.setState({
         display: 1,
@@ -104,7 +102,6 @@ class Background extends Component {
 
 
   render() {
-    console.log(this.state.width);
     if (this.state.width <=800 && this.state.display == 0) {
 
 
@@ -128,7 +125,6 @@ class Background extends Component {
 
       );
     }  else  {
-      console.log("Displaying desktop version")
 
 
 

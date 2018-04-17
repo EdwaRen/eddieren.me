@@ -8,7 +8,6 @@ import { StyleSheet, css } from 'aphrodite/no-important';
 import myInfo from '../Info/PersonalInfo.js';
 
 function Files(props) {
-  console.log("my files");
   return (
     <div id = "mobWrapper">
       <div id = "mobFile" onClick={props.onClick}>
@@ -53,12 +52,11 @@ class MobileFiles extends Component {
 
 
   render() {
-    console.log("filestext");
 
     return(
 
       <div>
-  
+
         {this.numberFilesToRender()}
       </div>
     );
