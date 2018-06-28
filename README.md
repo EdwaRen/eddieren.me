@@ -1,7 +1,7 @@
 <!--
 Copyright (c) 2017 by Edward Ren. All Rights Reserved.
  -->
-[![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)](http://Edwardren.me)
+[![Build Status](https://travis-ci.org/EdwaRen/edwardren.me.svg?branch=master)](https://travis-ci.org/EdwaRen/edwardren.me)
 [![Npm](https://img.shields.io/npm/v/npm.svg)](https://github.com/EdwaRen/FinderMe/releases/tag/v1.3.0)
 [![Aphrodite]( https://img.shields.io/badge/aphrodite-v1.2.3-blue.svg
 )](https://github.com/Khan/aphrodite)
@@ -10,7 +10,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 
 
-# FinderMe
+# Edwardren.me (FinderMe)
 
 My personal website created primarily using React in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, there is an alternate 'basic' page for a dynamically generated webpage with all the info on the main index page. A mobile page for this site is available, however due to the lack of many features, it is rather minimalist.
 
