@@ -7,4 +7,12 @@ cache:
 script:
   - npm install
   - npm test #Runs Tests
-  - npm run build
+  - npm start
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $githubToken
+  local_dir: build
+  on:
+    branch: master
