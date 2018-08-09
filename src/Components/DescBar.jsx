@@ -95,7 +95,7 @@ function Desc(props) {
   // Creates the subtitle in description container which supports formatting. Has conditionning to trigger an alternate simplified 'basic' page.
   var subtitle = <h1></h1>
   if (props.subtitle == "alternate") {
-    subtitle = <p id = "fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta",color: "#0000EE", marginTop: "-17px", textAlign: "center"}} onClick={props.onClick}  ><u>Basic Page Here</u></p>
+    subtitle = <p id = "fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta",color: "#0000EE", marginTop: "-17px", textAlign: "center"}}  ><u><a target="_blank"  href = "Edward_Ren_Resume.pdf">Resume</a></u></p>
   } else {
     subtitle = <p id="fileSubTitle" style = {{fontSize: "14px", fontFamily: "RalewayRegIta", marginTop: "-17px", textAlign: "center"}} dangerouslySetInnerHTML={{
       __html: props.subtitle
