@@ -20,7 +20,7 @@ var Info = [
   //Profile
   [
 
-    [ "Readme","Hi I'm Edward! I love architecting interactive web designs. I love especially coding in Javascript, Python, and C++. Welcome to my online portfolio!<br /><br /> My resume can be found <a href=\"./resume.pdf\" download=\"resume.pdf\">here</a>.", "alternate", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >Navigate through the tabs under the 'find' bar to the right. Alternatively, a 'basic' page is provided above and my resume is <a href=\"./resume.pdf\" download=\"resume.pdf\">here</a>. Also, try dragging this window tab around.", "Summer 2017", "Ottawa", ""],
+    [ "Readme","Hi I'm Edward! I love architecting interactive web designs. I love especially coding in Python, JavaScript, and C++. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Also, try dragging this window tab around.", "Summer 2017", "Ottawa", ""],
 
     [ "About FinderMe","", "Personal website coded with React", "FinderMe is a personal website built with React and can be templated to support customized text, images, and charts. <br /> <br />This interactive website was inspired by Apple's Finder program and was stylized using React-CSS tools such as Aphrodite. Check out the mobile version of FinderMe by resizing the screen and hitting refresh. FinderMe is optimized for Chrome and Firefox.<br /><br /> Coded with a 'bit' too much of coffee.","Summer 2017", "N/A", ""]
   ],
