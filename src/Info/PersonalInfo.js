@@ -26,21 +26,21 @@ var Info = [
   ],
   //Experience
   [
-    ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Initiated dockerized licensing system with Django to increase certification efficiency by 1000%<br \><br \>Designed weighted association rule machine learning classifier to reduce false positives in open source software licensing prediction model by 30%<br \><br \>Integrated microservice architecture using Kafka streams achieving latency reduction in interapplication communication by 95%+", "September 2017 - Present", "Waterloo", ""],
+    ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Initiated dockerized licensing system with Django to increase certification efficiency by 1000%.<br \><br \>Designed weighted association rule machine learning classifier to reduce false positives in open source software licensing prediction model by 30%.<br \><br \>Integrated microservice architecture using Kafka streams achieving latency reduction in interapplication communication by 95%+.", "September 2017 - Present", "Waterloo", ""],
 
-    ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' > Website</a>", "Led development of the main WATonomous website with React.js with 2000+ monthly visitors<br \><br \>Constructed backend server with Node.js and Express.js to process file transfers into MongoDB<br \><br \>Initialized deployment and integration of a Django-based applicant interface for 300+ users<br /><br />Containerized production site in Docker with SSL and Nginx optimization for 300% speedup", "September 2017 - Present", "Waterloo", ""],
+    ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' > Website</a>", "Led development of the main WATonomous website with React.js with 2000+ monthly visitors.<br \><br \>Constructed backend server with Node.js and Express.js to process file transfers into MongoDB.<br \><br \>Initialized deployment and integration of a Django-based applicant interface for 300+ users.<br /><br />Containerized production site in Docker with SSL and Nginx optimization for 300% speedup.", "September 2017 - Present", "Waterloo", ""],
 
-    [ "Ciena","", "Embedded Software Intern", "Used hierarchical tree structure of meta-data to classify and detect licensing anomalies in external open sourced packages with Visual Basic improving compliance efficiency by 200%<br \><br \>Crawled remote package repositories to predict URLs for 2100+ licenses from 80+ sources<br \><br \>Designed section of Ciena’s intranet with Angular to display weekly reports of data intelligence", "Summer 2016", "Ottawa-Kanata", ""],
+    [ "Ciena","", "Embedded Software Intern", "Used hierarchical tree structure of meta-data to classify and detect licensing anomalies in external open sourced packages with Visual Basic improving compliance efficiency by 200%.<br \><br \>Crawled remote package repositories to predict URLs for 2100+ licenses from 80+ sources.<br \><br \>Designed section of Ciena’s intranet with Angular to display weekly reports of data intelligence.", "Summer 2016", "Ottawa-Kanata", ""],
 
   ],
 
   //Projects
   [
-    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using MapKit <br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center.<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using MapKit.<br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
-    [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth<br \><br \>Synchronized website with Firebase REST API to update components in real time", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time.<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth.<br \><br \>Synchronized website with Firebase REST API to update components in real time.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
-    [ "Morsecret","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Morsecret'>Git</a>", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback", "Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Morsecret","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Morsecret'>Git</a>", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback.", "Summer 2017", "Ottawa-Colonel By", ""],
 
 
   ],
@@ -51,14 +51,14 @@ var Info = [
     ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'https://weblink.ocdsb.ca/WebLink/DocView.aspx?dbid=0&id=2963740&page=1&cr=1'>here.</a>", "Summer 2017", "Ottawa"],
     ["Ottawa TechWatch", "", "Work Featured by News", "Online article written concerning Recycle Can on Ottawa TechWatch online news network. Article can be found <a href = 'http://www.ottawatechwatch.com/story.php?title=recycle-can]'>here.</a>", "Summer 2017", "Ottawa"],
 
-    ["Scholarship of distinction", "", "Awarded to students achieving 95%+", "University of Waterloo President’s scholarship of distinction ", "May 2017", "Ottawa"],
+    ["Scholarship of distinction", "", "Awarded to students achieving 95%+", "University of Waterloo President’s scholarship of distinction.", "May 2017", "Ottawa"],
 
-    ["International Baccalaureate", "", "Diploma", "Exceeded and surpassed expectations in International Baccalaureate program graduating within top 88th percentile", "May 2017", "Ottawa"],
+    ["International Baccalaureate", "", "Diploma", "Exceeded and surpassed expectations in International Baccalaureate program graduating within top 88th percentile.", "May 2017", "Ottawa"],
 
     ["Debate Semi-finalist", "", "Provincial Tournament", "Semi-finalist in annual Ontario Student Debating Society (OSDU) provincial tournament. Fluent bilingual debater.", "May 2016", "Toronto"],
     ["ICS Subject Award", "", "Highest Mark In Course", "Attained subject award in Introduction to Computer Science course with over 80 students enrolled.", "2015", "Colonel By"],
     ["President's Scholarship of Distinction", "", "University of Waterloo Entrance Award", "Awarded to students who have attained a 95+ entrance average.", "2017", "Waterloo"],
-    ["Waterloo Mathematic Contests", "", "National Contests Organized by the CEMC", "Euclid, Cayley, and Fermat Math Contest: Top 25% Nationwide", "2015-2017", "Waterloo"],
+    ["Waterloo Mathematic Contests", "", "National Contests Organized by the CEMC", "Euclid, Cayley, and Fermat Math Contest: Top 25% Nationwide.", "2015-2017", "Waterloo"],
 
   ],
 
@@ -76,13 +76,9 @@ var Info = [
   [
 
     [ "LinkedIn","url('images/Network/linkedin.png')", myUrl,"", "N/A", "N/A",  "" ],
-
     [ "GitHub","url('images/Network/github2.png')", myUrl2, "", "N/A", "N/A", "" ],
-
     [ "Facebook","url('images/Network/facebook2.png')",  myUrl3, "", "N/A", "N/A",  "" ],
-
     [ "Mail","url('images/Network/email2.png')", myUrl4, "", "N/A", "N/A", ""  ]
-
 
   ],
 
@@ -106,7 +102,7 @@ var Info = [
 
     [ "Cross Country Team","","Long Distance Runner", "Participated as a runner on the Colonel By Cross Country team and competed at the Louis Riel meets each year.", "2014 - 2017", "Ottawa-Colonel By", ""],
 
-    [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming, Speed Rubik's Cubing", "N/A", "N/A", ""],
+    [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming, Speed Rubik's Cubing.", "N/A", "N/A", ""],
 
 
   ],
