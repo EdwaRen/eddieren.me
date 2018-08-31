@@ -36,7 +36,7 @@ var Info = [
 
   //Projects
   [
-    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using delegates, MapKit, geocoding, and automatic route plotting from geographical data <br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using MapKit <br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
     [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth<br \><br \>Synchronized website with Firebase REST API to update components in real time", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
