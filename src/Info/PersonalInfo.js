@@ -20,21 +20,23 @@ var Info = [
   //Profile
   [
 
-    [ "Readme","Hi I'm Edward! I love architecting interactive web designs. I love especially coding in Python, JavaScript, and C++. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward! I love architecting interactive web designs.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Also, try dragging this window tab around.", "Summer 2017", "Ottawa", ""],
+    [ "Readme","Hi I'm Edward! I am a software engineering student at the University of Waterloo with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward! I am a software engineering student at the University of Waterloo with a passion in machine learning and backend web development.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Also, try dragging this window tab around.", "Summer 2017", "Ottawa", ""],
 
-    [ "About FinderMe","", "Personal website coded with React", "FinderMe is a personal website built with React and can be templated to support customized text, images, and charts. <br /> <br />This interactive website was inspired by Apple's Finder program and was stylized using React-CSS tools such as Aphrodite. Check out the mobile version of FinderMe by resizing the screen and hitting refresh. FinderMe is optimized for Chrome and Firefox.<br /><br /> Coded with a 'bit' too much of coffee.","Summer 2017", "N/A", ""]
+    [ "About FinderMe","", "Personal website coded with React", "FinderMe is a personal website built with React and can be templated to support customized text, images, and charts. <br /> <br />This interactive website was inspired by Apple's Finder program. Check out the mobile version of FinderMe by resizing the screen and hitting refresh. FinderMe is optimized for Chrome and Firefox.<br /><br /> Coded with a 'bit' too much of coffee.","Summer 2017", "N/A", ""]
   ],
   //Experience
   [
-    ["WATonomous", "", "Website Team Lead, Full Stack: <a href = 'www.watonomous.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/webtonomous' >Git</a>", "Assembled webpages with React.js and Bootstrap while maintaining legacy website with WordPress<br \><br \>Constructed scaleable signup page with Node.js and Express.js to asynchronously save applications into MongoDB<br \><br \>Automatically synced entries using the Google Drive API to upload applicant resumes and database backups", "September 2017 - Present", "Waterloo", ""],
+    ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Initiated dockerized licensing system with Django to increase certification efficiency by 1000%<br \><br \>Designed weighted association rule machine learning classifier to reduce false positives in open source software licensing prediction model by 30%<br \><br \>Integrated microservice architecture using Kafka streams achieving latency reduction in interapplication communication by 95%+", "September 2017 - Present", "Waterloo", ""],
 
-    [ "Ciena","", "Embedded Software Licensing", "Implemented Visual Basic to help automate process to verify packages thus reducing time spent by 75%<br \><br \>Algorithmically generated URLs with error handling for 2000+ licenses from 80+ sources<br \><br \>Redesigned a section of Ciena’s intranet with HTML/CSS to show a user-friendly display of weekly reports ", "Summer 2016", "Ottawa-Kanata", ""],
+    ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' > Website</a>", "Led development of the main WATonomous website with React.js with 2000+ monthly visitors<br \><br \>Constructed backend server with Node.js and Express.js to process file transfers into MongoDB<br \><br \>Initialized deployment and integration of a Django-based applicant interface for 300+ users<br /><br />Containerized production site in Docker with SSL and Nginx optimization for 300% speedup", "September 2017 - Present", "Waterloo", ""],
+
+    [ "Ciena","", "Embedded Software Intern", "Used hierarchical tree structure of meta-data to classify and detect licensing anomalies in external open sourced packages with Visual Basic improving compliance efficiency by 200%<br \><br \>Crawled remote package repositories to predict URLs for 2100+ licenses from 80+ sources<br \><br \>Designed section of Ciena’s intranet with Angular to display weekly reports of data intelligence", "Summer 2016", "Ottawa-Kanata", ""],
 
   ],
 
   //Projects
   [
-    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "Assembled built-in real-time navigation app using Swift with over 18000+ users on iOS by integrating application using delegates, MapKit, geocoding, and automatic route plotting from geographical data <br ><br \>Constructed website with React.js supporting 13000+ page visits<br \><br\>Displayed locations on website with Google Fusion Tables as a low-cost alternative to mimic selecting data from database queries", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using delegates, MapKit, geocoding, and automatic route plotting from geographical data <br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
     [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth<br \><br \>Synchronized website with Firebase REST API to update components in real time", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
@@ -46,9 +48,13 @@ var Info = [
   //Highlights
   [
 
-    ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'http://www.metronews.ca/news/ottawa/2017/08/30/ottawa-student-s-recycling-app-a-success.html'>here.</a>", "Summer 2017", "Ottawa"],
-    [ "CA News Ottawa", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on CA News Ottawa online news network. Article can be found <a href = 'http://www.canewsottawa.ca/single-post/2017/08/28/Ottawa-Teen-Takes-on-the-Toxic-Problem-of-Electronic-Waste'>here.</a>", "Summer 2017", "Ottawa"],
+    ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'https://weblink.ocdsb.ca/WebLink/DocView.aspx?dbid=0&id=2963740&page=1&cr=1'>here.</a>", "Summer 2017", "Ottawa"],
     ["Ottawa TechWatch", "", "Work Featured by News", "Online article written concerning Recycle Can on Ottawa TechWatch online news network. Article can be found <a href = 'http://www.ottawatechwatch.com/story.php?title=recycle-can]'>here.</a>", "Summer 2017", "Ottawa"],
+
+    ["Scholarship of distinction", "", "Awarded to students achieving 95%+", "University of Waterloo President’s scholarship of distinction ", "May 2017", "Ottawa"],
+
+    ["International Baccalaureate", "", "Diploma", "Exceeded and surpassed expectations in International Baccalaureate program graduating within top 88th percentile", "May 2017", "Ottawa"],
+
     ["Debate Semi-finalist", "", "Provincial Tournament", "Semi-finalist in annual Ontario Student Debating Society (OSDU) provincial tournament. Fluent bilingual debater.", "May 2016", "Toronto"],
     ["ICS Subject Award", "", "Highest Mark In Course", "Attained subject award in Introduction to Computer Science course with over 80 students enrolled.", "2015", "Colonel By"],
     ["President's Scholarship of Distinction", "", "University of Waterloo Entrance Award", "Awarded to students who have attained a 95+ entrance average.", "2017", "Waterloo"],
@@ -59,10 +65,10 @@ var Info = [
   //Languages
   [
 
-    [ "Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", ["Swift", 90, "JavaScript",90, "C++", 90, "Python", 90, "Visual Basic",85, "Java" , 75 , "CSS", 75 , "HTML", 75, "C#", 65, "Objective-C", 55,"Bash", 55, "Proficiency"]],
-    [ "Tools","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", ["Node.js", 90, "React.js",85, "Express.js", 70, "Git", 70, "MongoDB",60, "Proficiency"]],
+    [ "Languages","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", ["Python", 85, "JavaScript",85, "C++", 80, "Swift", 70, "Visual Basic",60, "Java" , 55 , "CSS", 55 , "HTML", 55, "Proficiency"]],
+    [ "Tools","", "Experience Level", "", "2011 (Earliest) - Present", "N/A",   "url('images/html-coding.png')", ["Node.js", 90, "Django", 85, "React.js",85, "Docker", 70, "Git", 70, "Keras", 60, "MongoDB",60, "Proficiency"]],
 
-    [ "Linguistics","","Language Skills", "Proficient: English, French.<br > <br > Experienced: Mandarin.", "N/A", "N/A", ""],
+    [ "Linguistics","","Language Skills", "Fluent: English, French.<br > <br > Experienced: Mandarin.", "N/A", "N/A", ""],
 
   ],
 
@@ -94,7 +100,7 @@ var Info = [
   [
     [ "CLS","","Aerospace Research Assistant", "Cooperated with researchers to analyze elemental composition of a Boeing 737 turbine engine using beamlines from the Canadian Light Source (CLS) national synchrotron.<br ><br >Presented findings to over 200 students and professors at the University of Saskatchewan.", "Summer 2016", "Saskatoon",  ""],
 
-    [ "SHAD","","SHAD (Formerly Shad Valley) Alumnus", "1 of 7 students from my high school selected to participate in SHAD, a competitive national entrepreneurial enrichment program.", "Summer 2016", "University of Saskatchewan", ""],
+    [ "SHAD","","SHAD (Formerly Shad Valley) Alumnus", "1 of 7 students from high school selected to participate in SHAD, a competitive national entrepreneurial enrichment program.", "Summer 2016", "University of Saskatchewan", ""],
 
     [ "Debate","","Debating Society - Executive Committee", "Semi-finalist in Ontario Provincial Debating Championships (2016).<br ><br >Practiced for 5 hours a week after school and competed at various provincial and national tournaments.", "2012 - 2017", "Nationwide", ""],
 

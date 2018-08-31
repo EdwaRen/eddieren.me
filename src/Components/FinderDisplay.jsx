@@ -68,9 +68,9 @@ var groupIconImages = [
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
 var fileIconImages = [
   [Document, Document], //Profile
-  [Coding, Coding],  //Experience
+  [Coding, Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
-  [Newspaper, Newspaper, Newspaper, Award, Award, Award, Award], //Highlights
+  [Newspaper, Newspaper, Award,Award, Award, Award, Award, Award], //Highlights
   [HTMLCoding,HTMLCoding, Chat], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
   [College, School], //Education
@@ -79,9 +79,9 @@ var fileIconImages = [
 //Images to be displayed in right-most "descBar" (Only 1 image is displayed at once)
 var infoDescImages = [
   [ProfilePic, ""], //Profile
-  ["", ""], //Experience
+  ["", "", ""], //Experience
   ["", "", "", ""], //Projects
-  [MetroLogo,CANewsLogo, OttawaTechLogo, "", "", "", ""],
+  [MetroLogo,CANewsLogo, "", "", "", "", "", ""],
   ["", "", ""], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Education
