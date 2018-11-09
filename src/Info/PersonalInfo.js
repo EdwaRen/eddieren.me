@@ -20,27 +20,27 @@ var Info = [
   //Profile
   [
 
-    [ "Readme","👋 Hi I'm Edward, a software engineering student at the University of Waterloo with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "👋 Hi I'm Edward, a software engineering student at the University of Waterloo with a blazing passion in data science and web backends.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Try dragging the screen or clicking the buttons in the top left.<br /><br /> Welcome to my digital portfolio!", "N/A", "N/A", ""],
+    [ "👋 Readme","Hi I'm Edward, a software engineering student at the University of Waterloo with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward, a software engineering student at the University of Waterloo with a passion in data science and web backends.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Try dragging the screen or clicking the buttons in the top left.<br /><br /> Welcome to my digital portfolio!", "N/A", "N/A", ""],
 
-    [ "About Me","", "Aspiring To Learn", "In my sophomore year, I published my first iOS app, an introduction that flooded me with an unregulated curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Website built with a 'bit' too much caffeine. Would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
+    [ "About Me","", "Aspiring To Learn", "In my sophomore year, I published my first iOS app, an introduction that flooded me with an unregulated curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Truthfully, I built this website with a 'bit' too much caffeine and would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
   ],
   //Experience
   [
     ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Worked with an amazing team to develop a big data licensing platform using the Django framework.<br /><br />Skills: Django, Docker, MongoDB, Tensorflow, Kafka", "May 2018 - August 2018", "Ottawa", ""],
 
-    ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' > Website</a>", "Led versatile team to develop watonomous.ca with React and Node.js and deployed with Nginx.", "September 2017 - Present", "Waterloo", ""],
+    ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' target='_blank'> Website</a>", "Led versatile team to develop watonomous.ca with React and Node.js and deployed with Nginx.<br /><br />Skills: Node.js, Express.js, MongoDB, Nginx, React", "September 2017 - Present", "Waterloo", ""],
 
-    [ "Ciena","", "Embedded Software Intern", "Used hierarchical tree structure of meta-data to classify and detect licensing anomalies in external open sourced packages with Visual Basic improving compliance efficiency by 200%.<br \><br \>Crawled remote package repositories to predict URLs for 2100+ licenses from 80+ sources.<br \><br \>Designed section of Ciena’s intranet with Angular to display weekly reports of data intelligence.", "Summer 2016", "Ottawa-Kanata", ""],
+    [ "Ciena","", "Embedded Software Intern", "Implemented algorithms to analyze file structures and created many central web pages displaying analytics from multiple sources for our new team.<br /><br />Skills: Visual Basic, Angular, D3.js", "Summer 2016", "Ottawa-Kanata", ""],
 
   ],
 
   //Projects
   [
-    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'www.recyclecan.ca' > Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' >Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center.<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using MapKit.<br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Recycle Can","", "Founder, Chief iOS and Web Developer <br /> <a href = 'https://www.recyclecan.ca'  target='_blank'> Website</a> | <a href = 'https://github.com/EdwaRen/Recycle_Can_iOS' target='_blank'>Git</a>", "iOS and web navigation tool that guides users to the closest electronic waste recycling center.<br /><br />Assembled built-in real-time navigation app using Swift with 18000+ lifetiime users on iOS by integrating application using MapKit.<br ><br \>Constructed website supporting Google Maps API using React.js accepting 1500+ peak monthly visits.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
-    [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time.<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth.<br \><br \>Synchronized website with Firebase REST API to update components in real time.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Team Goals","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Team_Goals' target='_blank'>Git</a>", "Public goal sharing web app to effectively communicate tasks between a team in real time.<br \><br \>Assembled using React.js with backend support powered by Redux and authenticated with Firebase Auth.<br \><br \>Synchronized website with Firebase REST API to update components in real time.", "Spring 2017 - Summer 2017", "Ottawa-Colonel By", ""],
 
-    [ "Morsecret","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Morsecret'>Git</a>", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback.", "Summer 2017", "Ottawa-Colonel By", ""],
+    [ "Morsecret","", "Founder, Overall Developer: <a href = 'https://github.com/EdwaRen/Morsecret' target='_blank'>Git</a>", "Morsecret is an ad-hoc distributed application that uses a novel haptic steganographic approach for real-time chat messaging.<br ><br >Privately communicates using morse code facilitated by Firebase.<br ><br >Employed Model-View-Controller (MVC) architectural pattern to process conversion of alphabetical characters into haptic feedback.", "Summer 2017", "Ottawa-Colonel By", ""],
 
 
   ],
@@ -48,9 +48,10 @@ var Info = [
   //Highlights
   [
 
-    ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'https://weblink.ocdsb.ca/WebLink/DocView.aspx?dbid=0&id=2963740&page=1&cr=1'>here.</a>", "Summer 2017", "Ottawa"],
-    ["Ottawa TechWatch", "", "Work Featured by News", "Online article written concerning Recycle Can on Ottawa TechWatch online news network. Article can be found <a href = 'http://www.ottawatechwatch.com/story.php?title=recycle-can]'>here.</a>", "Summer 2017", "Ottawa"],
-
+    ["MetroNews", "", "Work Featured by News", "Interviewed and had an article written concerning Recycle Can on MetroNews online and print publications. Article can be found <a href = 'https://weblink.ocdsb.ca/WebLink/DocView.aspx?dbid=0&id=2963740&page=1' target='_blank'>here.</a>", "Summer 2017", "Ottawa"],
+    ["Ottawa TechWatch", "", "Work Featured by News", "Online article written concerning Recycle Can on Ottawa TechWatch online news network. Article can be found <a href = 'http://www.ottawatechwatch.com/story.php?title=recycle-can' target='_blank'>here.</a>", "Summer 2017", "Ottawa"],
+    ["Inventure", "", "Backend Lead: <a href = 'https:/meetinventure.com' target='_blank'>Website</a>", "Constructed backend support tool with Express.js for Inventure, an Ottawa based entrepreneurial accelerator for young student innovators.", "May 2018 - August 2018", "Ottawa"],
+    ["ACT 35/36", "", "Ranked 99th percentile", "Excelled in the ACT with a composite score of 35 amongst more than six million candidates", "January 2017", "Ottawa"],
     ["Scholarship of distinction", "", "Awarded to students achieving 95%+", "University of Waterloo President’s scholarship of distinction.", "May 2017", "Ottawa"],
 
     ["International Baccalaureate", "", "Diploma", "Exceeded and surpassed expectations in International Baccalaureate program graduating within top 88th percentile.", "May 2017", "Ottawa"],
@@ -102,7 +103,7 @@ var Info = [
 
     [ "Cross Country Team","","Long Distance Runner", "Participated as a runner on the Colonel By Cross Country team and competed at the Louis Riel meets each year.", "2014 - 2017", "Ottawa-Colonel By", ""],
 
-    [ "Interests","", "Hobbies and Amusement", "Skiing, Swimming, Rock Climbing, Hiking, Piano, Chess, Trivia, Competitive Programming, Speed Rubik's Cubing.", "N/A", "N/A", ""],
+    [ "Interests","", "Hobbies and Amusement", "Cross country, Blitz chess, Speedcubing, Skiing, Swimming, Hiking, Quizbowl trivia", "N/A", "N/A", ""],
 
 
   ],
