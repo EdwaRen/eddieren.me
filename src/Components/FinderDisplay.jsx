@@ -70,7 +70,7 @@ var fileIconImages = [
   [Document, Document], //Profile
   [Coding, Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
-  [Newspaper, Newspaper, Award,Award, Award, Award, Award, Award], //Highlights
+  [Newspaper, Newspaper,HTMLCoding, Award,  Award,Award, Award, Award, Award, Award], //Highlights
   [HTMLCoding,HTMLCoding, Chat], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
   [College, School], //Education
@@ -81,7 +81,7 @@ var infoDescImages = [
   [ProfilePic, ""], //Profile
   ["", "", ""], //Experience
   ["", "", "", ""], //Projects
-  [MetroLogo,CANewsLogo, "", "", "", "", "", ""],
+  [MetroLogo,OttawaTechLogo,"", "",  "", "", "", "", "", ""],
   ["", "", ""], //Languages
   [LinkedIn, GitHub, Facebook, Email], //Network
   ["", ""], //Education
