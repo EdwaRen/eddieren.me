@@ -57,6 +57,7 @@ function Desc(props) {
     backgroundRepeat:   "no-repeat",
     backgroundPosition: "center center",
 
+
     opacity: "1.0",
     backgroundImage: `url(${props.image})`,
     position:"static"
