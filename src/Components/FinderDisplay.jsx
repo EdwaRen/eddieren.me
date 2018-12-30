@@ -53,7 +53,7 @@ import Newspaper from '../images/newspaper.png';
 import Award from '../images/award.png';
 
 
-import ProfilePic from '../images/Edward_ProfilePic.png';
+import ProfilePic from '../images/me_irl.png';
 import MetroLogo from '../images/MetroNewsLogo.png';
 import CANewsLogo from '../images/CANewsOttawaLogo.png';
 import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
