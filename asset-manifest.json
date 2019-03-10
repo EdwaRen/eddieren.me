@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.2e63599a.css",
-  "main.css.map": "static/css/main.2e63599a.css.map",
-  "main.js": "static/js/main.9c1ac07a.js",
-  "main.js.map": "static/js/main.9c1ac07a.js.map",
+  "main.css": "static/css/main.0b3bcb7b.css",
+  "main.css.map": "static/css/main.0b3bcb7b.css.map",
+  "main.js": "static/js/main.6fef28ae.js",
+  "main.js.map": "static/js/main.6fef28ae.js.map",
   "static/media/CANewsOttawaLogo.png": "static/media/CANewsOttawaLogo.952ef50a.png",
   "static/media/Edward_ProfilePic.png": "static/media/Edward_ProfilePic.cd9cda58.png",
   "static/media/MetroNewsLogo.png": "static/media/MetroNewsLogo.9a4b5307.png",
@@ -13,5 +13,5 @@
   "static/media/Raleway-Regular.ttf": "static/media/Raleway-Regular.580d0778.ttf",
   "static/media/me_irl.png": "static/media/me_irl.7b6634bd.png",
   "static/media/styleGraph.scss": "static/media/styleGraph.64d03ac2.scss",
-  "static/media/triangulated-image.jpg": "static/media/triangulated-image.de66bda9.jpg"
+  "static/media/triangulated-image.svg": "static/media/triangulated-image.f27173dd.svg"
 }
