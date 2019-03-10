@@ -3,11 +3,11 @@
 
 //These string variables were used for the 'Network' tab to link text to my facebook, github, linkedin, etc
 var str = "My LinkedIn";
-var myUrl = str.link("https://www.linkedin.com/in/edwardren/") ;
+var myUrl = str.link("https://www.linkedin.com/in/edwardren/") + "<br /> linkedin.com/in/edwardren/";
 var str2 = "My GitHub";
-var myUrl2 = str2.link("https://github.com/EdwaRen") ;
+var myUrl2 = str2.link("https://github.com/EdwaRen") + "<br />github.com/EdwaRen";
 var str3 = "My Facebook";
-var myUrl3 = str3.link("https://www.facebook.com/eddie.ren.1") ;
+var myUrl3 = str3.link("https://www.facebook.com/eddie.ren.1") + "<br /> facebook.com/eddie.ren.1" ;
 var str4 = "My Email";
 var myUrl4 = str4.link("mailto:edward.ren.2013@gmail.com") + "<br > Edward.ren.2013@gmail.com";
 
@@ -20,12 +20,14 @@ var Info = [
   //Profile
   [
 
-    [ "Readme 👋 ","Hi I'm Edward, a software engineering student at the University of Waterloo with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward, a software engineering student at the University of Waterloo with a passion in data science and web backends.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Try dragging the screen or clicking the buttons in the top left.<br /><br /> Welcome to my digital portfolio!", "N/A", "N/A", ""],
+    [ "Readme 👋 ","Hi I'm Edward, a software engineering student with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward, a software engineering student with a passion in data science and web backends.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Try dragging the screen or clicking the buttons in the top left.<br /><br /> Welcome to my digital portfolio!", "N/A", "N/A", ""],
 
-    [ "About Me","", "Aspiring To Learn", "In my sophomore year, I published my first iOS app, an introduction that flooded me with an unregulated curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Truthfully, I built this website with a 'bit' too much caffeine and would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
+    [ "About Me","", "'Life's short, it's only O(n)'", "In my sophomore year in high school, I published my first iOS app, an introduction that flooded me with an unregulated curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Truthfully, I built this website with a 'bit' too much caffeine and would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
   ],
   //Experience
   [
+    ["IBM", "", "Cognitive Software Engineer - Advanced Analytics", "Worked closely with data science team to deploy remote Jupyter notebook kernels and optimized dataframe operations with parallelism.<br /><br />Skills: Pandas, IPython, SQL, Keras", "Jan 2019 - April 2019", "Calgary", ""],
+
     ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Worked with an amazing team to develop a big data licensing platform using the Django framework.<br /><br />Skills: Django, Docker, MongoDB, Tensorflow, Kafka", "May 2018 - August 2018", "Ottawa", ""],
 
     ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' target='_blank'> Website</a>", "Led versatile team to develop watonomous.ca with React and Node.js and deployed with Nginx.<br /><br />Skills: Node.js, Express.js, MongoDB, Nginx, React", "September 2017 - Present", "Waterloo", ""],
@@ -103,7 +105,7 @@ var Info = [
 
     [ "Cross Country Team","","Long Distance Runner", "Participated as a runner on the Colonel By Cross Country team and competed at the Louis Riel meets each year.", "2014 - 2017", "Ottawa-Colonel By", ""],
 
-    [ "Interests","", "Hobbies and Amusement", "Cross country, Blitz chess, Speedcubing, Skiing, Swimming, Hiking, Quizbowl trivia", "N/A", "N/A", ""],
+    [ "Interests","", "Hobbies and Amusement", "Cross country, Blitz chess, Speedcubing, Skiing, Swimming, Hiking, Quizbowl trivia <br /><br />Follow me on Instagram @ed.yren!", "N/A", "N/A", ""],
 
 
   ],

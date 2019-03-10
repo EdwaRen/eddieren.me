@@ -64,7 +64,7 @@ html {
 body {
   margin: 0;
   /*background-color: #A66FA6;*/
-  background-image: url("../images/triangulated-image.jpg");
+  background-image: url("../images/triangulated-image.svg");
   background-size: 100% 100%;
   background-attachment: fixed;
   /*overflow: hidden;*/
