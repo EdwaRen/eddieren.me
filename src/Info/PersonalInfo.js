@@ -22,7 +22,7 @@ var Info = [
 
     [ "Readme 👋 ","Hi I'm Edward, a software engineering student with a passion in machine learning and backend web development. Welcome to my online portfolio!<br /><br />", "alternate", "Hi I'm Edward, a software engineering student with a passion in data science and web backends.<br > <br >You can navigate through the tabs under the 'find' bar to the right. Try dragging the screen or clicking the buttons in the top left.<br /><br /> Welcome to my digital portfolio!", "N/A", "N/A", ""],
 
-    [ "About Me","", "'Life's short, it's only O(n)'", "In my sophomore year in high school, I published my first iOS app, an introduction that flooded me with an unregulated curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Truthfully, I built this website with a 'bit' too much caffeine and would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
+    [ "About Me","", "'Life's short, it's only O(n)'", "In my sophomore year of high school, I published my first iOS app, an introduction that brought me to an evolving curiosity in software engineering.<br /><br />As a university student, I am seeking internship opportunities and would love to bring my skills and character into upcoming endeavors.<br /><br />Truthfully, I built this website with a 'bit' too much caffeine and would absolutely crave to enjoy a coffee chat with anyone reading this!","N/A", "N/A", ""]
   ],
   //Experience
   [
