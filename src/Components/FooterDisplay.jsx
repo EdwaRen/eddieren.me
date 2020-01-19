@@ -10,7 +10,7 @@ class FooterDisplay extends Component {
       // <Draggable>
           <div id="footer">
             <div id="bottomText">
-              <p>Star this project on <a target="_blank" href="https://github.com/EdwaRen/edwardren.me">GitHub</a>!   <br />Edward Ren 2019 ☕</p>
+              <p>Star this project on <a target="_blank" href="https://github.com/EdwaRen/edwardren.me">GitHub</a>   <br />Edward Ren 2020 ☕</p>
             </div>
           </div>
         // {/* </Draggable> */}
