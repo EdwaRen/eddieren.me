@@ -26,6 +26,7 @@ var Info = [
   ],
   //Experience
   [
+    ["Shopify", "", "Backend Developer", "", "Jan 2021 - April 2021", "Ottawa - Remote", ""],
     ["Postmates", "", "Backend Developer", "", "May 2020 - Aug 2020", "SF - Remote", ""],
     ["TextNow", "", "Full Stack Developer", "Led and contributed to the development of internal tools with Ruby on Rails to deliver analytics for legal and mobile teams.<br /><br />Skills: Ruby on Rails, JavaScript, React, SQL", "Sept 2019 - Dec 2019", "Waterloo", ""],
 

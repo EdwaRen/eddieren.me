@@ -68,7 +68,7 @@ var groupIconImages = [
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
 var fileIconImages = [
   [Document, Document], //Profile
-  [Coding, Coding, Coding, Coding, Coding, Coding],  //Experience
+  [Coding, Coding, Coding, Coding, Coding, Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
   [Newspaper, Newspaper,HTMLCoding, Award,  Award,Award, Award, Award, Award, Award], //Highlights
   [HTMLCoding,HTMLCoding, Chat], //Languages
