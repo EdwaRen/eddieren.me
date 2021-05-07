@@ -62,19 +62,11 @@ html {
 }
 
 body {
-  margin: 0;
-  /*background-color: #A66FA6;*/
-  background-image: url("../images/triangulated-image.svg");
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  overflow: hidden;
-  overflow-y: hidden;
-  /* background: url(images/bg.jpg) no-repeat center center fixed; 
+  background: url("../images/triangulated-image.svg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
-
+  background-size: cover;
 }
 
 #bodyBackground {
