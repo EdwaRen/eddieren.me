@@ -67,9 +67,13 @@ body {
   background-image: url("../images/triangulated-image.svg");
   background-size: 100% 100%;
   background-attachment: fixed;
-  /*overflow: hidden;*/
-  overflow-y: scroll;
-
+  overflow: hidden;
+  overflow-y: hidden;
+  /* background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 
 }
 

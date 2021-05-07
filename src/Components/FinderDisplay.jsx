@@ -1,6 +1,3 @@
-
-
-
 //Importing necessary elements for React
 import React, {Component} from 'react';
 import '../css/HtmlStyle.css';
@@ -13,9 +10,7 @@ import Draggable from 'react-draggable';
 //Animations (most are unused);
 // import $ from 'jquery';
 import { fadeIn } from 'react-animations';
-import { fadeOut, fadeOutUp, zoomOut, slideOutLeft } from 'react-animations';
-import { zoomOutDown} from 'react-animations';
-import { VelocityTransitionGroup } from 'velocity-react';
+import { fadeOut, fadeOutUp } from 'react-animations';
 import 'velocity-animate/velocity.ui';
 
 //Aphrodite for CSS styling
@@ -55,7 +50,6 @@ import Award from '../images/award.png';
 
 import ProfilePic from '../images/me_irl.png';
 import MetroLogo from '../images/MetroNewsLogo.png';
-import CANewsLogo from '../images/CANewsOttawaLogo.png';
 import OttawaTechLogo from '../images/OttawaTechWatchLogo.png';
 
 var ChartAnimate = require("./ChartAnimate.jsx");
@@ -79,7 +73,7 @@ var fileIconImages = [
 //Images to be displayed in right-most "descBar" (Only 1 image is displayed at once)
 var infoDescImages = [
   [ProfilePic, ""], //Profile
-  ["", "", ""], //Experience
+  ["", "", "", "", "", "", ""], //Experience
   ["", "", "", ""], //Projects
   [MetroLogo,OttawaTechLogo,"", "",  "", "", "", "", "", ""],
   ["", "", ""], //Languages
