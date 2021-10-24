@@ -26,16 +26,13 @@ var Info = [
   ],
   //Experience
   [
+    ["Facebook", "", "AI Tools Developer", "", "Sept 2021 - Dec 2021", "NYC - Remote", "Model optimization developer for AI Solutions with Pytorch"],
     ["Shopify", "", "Backend Developer", "", "Jan 2021 - April 2021", "Ottawa - Remote", ""],
     ["Postmates", "", "Backend Developer", "", "May 2020 - Aug 2020", "SF - Remote", ""],
     ["TextNow", "", "Full Stack Developer", "Led and contributed to the development of internal tools with Ruby on Rails to deliver analytics for legal and mobile teams.<br /><br />Skills: Ruby on Rails, JavaScript, React, SQL", "Sept 2019 - Dec 2019", "Waterloo", ""],
-
     ["IBM", "", "Cognitive Software Engineer - Advanced Analytics", "Worked closely with data science team to deploy remote Jupyter notebook kernels and optimized dataframe operations with parallelism.<br /><br />Skills: Pandas, IPython, SQL, Keras", "Jan 2019 - Apr 2019", "Calgary", ""],
-
     ["Blackberry - QNX", "", "Software Engineering Student - Open Source", "Worked with an amazing team to develop a big data licensing platform using the Django framework.<br /><br />Skills: Django, Docker, MongoDB, Tensorflow, Kafka", "May 2018 - Aug 2018", "Ottawa", ""],
-
     ["WATonomous", "", "Full Stack Development Lead: <a href = 'www.watonomous.ca' target='_blank'> Website</a>", "Led versatile team to develop watonomous.ca with React and Node.js and deployed with Nginx.<br /><br />Skills: Node.js, Express.js, MongoDB, Nginx, React", "Sept 2017 - Aug 2018", "Waterloo", ""],
-
     [ "Ciena","", "Embedded Software Intern", "Implemented algorithms to analyze file structures and created many central web pages displaying analytics from multiple sources for our new team.<br /><br />Skills: Visual Basic, Angular, D3.js", "Summer 2016", "Ottawa-Kanata", ""],
 
   ],

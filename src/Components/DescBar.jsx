@@ -48,8 +48,8 @@ function Desc(props) {
   const descImage = {
     /*position: static;*/
     // display: "block",
-    margin: "auto",
-    height: "80px",
+    // margin: "auto",
+    height: "100px",
 
     width: "auto",
     marginTop: "20px",
@@ -58,9 +58,9 @@ function Desc(props) {
     backgroundPosition: "center center",
 
 
-    opacity: "1.0",
+    // opacity: "1.0",
     backgroundImage: `url(${props.image})`,
-    position:"static"
+    // position:"static"
     /*background-color: #111111;*/
     /*background-image: url("images/Edward_ProfilePic.png");*/
   }

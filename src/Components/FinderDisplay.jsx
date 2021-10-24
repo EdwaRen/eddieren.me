@@ -62,7 +62,7 @@ var groupIconImages = [
 //Image icons to be displayed in middle "filesBar" (Only 1 array of images are displayed at once)
 var fileIconImages = [
   [Document, Document], //Profile
-  [Coding, Coding, Coding, Coding, Coding, Coding, Coding],  //Experience
+  [Coding, Coding, Coding, Coding, Coding, Coding, Coding, Coding],  //Experience
   [ProjectsIcon, ProjectsIcon, ProjectsIcon, ProjectsIcon],   //Projects
   [Newspaper, Newspaper,HTMLCoding, Award,  Award,Award, Award, Award, Award, Award], //Highlights
   [HTMLCoding,HTMLCoding, Chat], //Languages
@@ -84,9 +84,6 @@ var infoDescImages = [
 //Custom images ends
 
 class FinderDisplay extends Component {
-
-
-
   constructor(props) {
     super(props);
     this.state = {
@@ -103,7 +100,6 @@ class FinderDisplay extends Component {
     this.changeState = this.changeState.bind(this);
     this.resetAnimation = this.resetAnimation.bind(this);
   }
-
 
   groupClick(i) {
     //This is activated when a group (Profile, Work, Projects etc ) is clicked
@@ -130,9 +126,6 @@ class FinderDisplay extends Component {
         visible: this.state.visible+1,
         trash : 0
       })
-
-
-
 
     } else if (i == 2) {
       if (this.state.trash == 1) {
@@ -163,7 +156,6 @@ class FinderDisplay extends Component {
   }
 
   resetAnimation() {
-    //resets the animations to none
     document.getElementById("backShadow").style.webkitAnimationName = "";
     document.getElementsByClassName("bothWindows")[0].style.webkitAnimationName = "";
     document.getElementsByClassName("finderTopBar")[0].style.webkitAnimationName = "";
@@ -188,9 +180,6 @@ class FinderDisplay extends Component {
         minimize: 0,
 
       })
-
-
-
 
     } else if (i == 1) {
       this.setState({
@@ -217,10 +206,6 @@ class FinderDisplay extends Component {
     }
   }
 
-
-
-
-
   render() {
 
     var styles = StyleSheet.create({
@@ -230,17 +215,13 @@ class FinderDisplay extends Component {
 
       },
       fadeOut: {
-        // animationName: merge(fadeOutDown, zoomOutDown),
         animationName: fadeOut,
-
         animationDuration: '0.2s'
 
       },
 
       fadeOutUp: {
-        // animationName: merge(fadeOutDown, zoomOutDown),
         animationName: fadeOutUp,
-
         animationDuration: '0.2s'
       },
 
@@ -352,11 +333,9 @@ class FinderDisplay extends Component {
           />
 
         </div>
-        {/* <Draggable key = {this.state.visible}> */}
 
         {/* </Draggable> */}
       </div>
-      //  {/* </div> */}
 
     )
   }
