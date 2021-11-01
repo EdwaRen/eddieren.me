@@ -10,7 +10,7 @@ Copyright (c) 2017 by Edward Ren. All Rights Reserved.
 
 
 
-# Edwardren.me (FinderMe)
+# eddieren.me (FinderMe)
 
 My personal website created primarily using React in conjunction with HTML/CSS. Pure CSS charts were also used to display proficiencies in different programming languages. If the site user does not wish to interact with default UI, there is an alternate 'basic' page for a dynamically generated webpage with all the info on the main index page. A mobile page for this site is available, however due to the lack of many features, it is rather minimalist.
 
